@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B502516F1AAFC586002AE33F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502516E1AAFC586002AE33F /* AppDelegate.swift */; };
+		B50251711AAFC586002AE33F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50251701AAFC586002AE33F /* ViewController.swift */; };
+		B50251741AAFC586002AE33F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50251721AAFC586002AE33F /* Main.storyboard */; };
+		B50251761AAFC586002AE33F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50251751AAFC586002AE33F /* Images.xcassets */; };
+		B50251791AAFC586002AE33F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50251771AAFC586002AE33F /* LaunchScreen.xib */; };
+		B50251851AAFC586002AE33F /* Chineasy_Click_Through_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50251841AAFC586002AE33F /* Chineasy_Click_Through_PrototypeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B502517F1AAFC586002AE33F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B50251611AAFC586002AE33F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B50251681AAFC586002AE33F;
+			remoteInfo = "Chineasy Click-Through Prototype";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B50251691AAFC586002AE33F /* Chineasy Click-Through Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chineasy Click-Through Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B502516D1AAFC586002AE33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B502516E1AAFC586002AE33F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B50251701AAFC586002AE33F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B50251731AAFC586002AE33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B50251751AAFC586002AE33F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B50251781AAFC586002AE33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B502517E1AAFC586002AE33F /* Chineasy Click-Through PrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chineasy Click-Through PrototypeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50251831AAFC586002AE33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B50251841AAFC586002AE33F /* Chineasy_Click_Through_PrototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chineasy_Click_Through_PrototypeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B50251661AAFC586002AE33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B502517B1AAFC586002AE33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B50251601AAFC586002AE33F = {
+			isa = PBXGroup;
+			children = (
+				B502516B1AAFC586002AE33F /* Chineasy Click-Through Prototype */,
+				B50251811AAFC586002AE33F /* Chineasy Click-Through PrototypeTests */,
+				B502516A1AAFC586002AE33F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B502516A1AAFC586002AE33F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B50251691AAFC586002AE33F /* Chineasy Click-Through Prototype.app */,
+				B502517E1AAFC586002AE33F /* Chineasy Click-Through PrototypeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B502516B1AAFC586002AE33F /* Chineasy Click-Through Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				B502516E1AAFC586002AE33F /* AppDelegate.swift */,
+				B50251701AAFC586002AE33F /* ViewController.swift */,
+				B50251721AAFC586002AE33F /* Main.storyboard */,
+				B50251751AAFC586002AE33F /* Images.xcassets */,
+				B50251771AAFC586002AE33F /* LaunchScreen.xib */,
+				B502516C1AAFC586002AE33F /* Supporting Files */,
+			);
+			path = "Chineasy Click-Through Prototype";
+			sourceTree = "<group>";
+		};
+		B502516C1AAFC586002AE33F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B502516D1AAFC586002AE33F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B50251811AAFC586002AE33F /* Chineasy Click-Through PrototypeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B50251841AAFC586002AE33F /* Chineasy_Click_Through_PrototypeTests.swift */,
+				B50251821AAFC586002AE33F /* Supporting Files */,
+			);
+			path = "Chineasy Click-Through PrototypeTests";
+			sourceTree = "<group>";
+		};
+		B50251821AAFC586002AE33F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B50251831AAFC586002AE33F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B50251681AAFC586002AE33F /* Chineasy Click-Through Prototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50251881AAFC586002AE33F /* Build configuration list for PBXNativeTarget "Chineasy Click-Through Prototype" */;
+			buildPhases = (
+				B50251651AAFC586002AE33F /* Sources */,
+				B50251661AAFC586002AE33F /* Frameworks */,
+				B50251671AAFC586002AE33F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chineasy Click-Through Prototype";
+			productName = "Chineasy Click-Through Prototype";
+			productReference = B50251691AAFC586002AE33F /* Chineasy Click-Through Prototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B502517D1AAFC586002AE33F /* Chineasy Click-Through PrototypeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B502518B1AAFC586002AE33F /* Build configuration list for PBXNativeTarget "Chineasy Click-Through PrototypeTests" */;
+			buildPhases = (
+				B502517A1AAFC586002AE33F /* Sources */,
+				B502517B1AAFC586002AE33F /* Frameworks */,
+				B502517C1AAFC586002AE33F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B50251801AAFC586002AE33F /* PBXTargetDependency */,
+			);
+			name = "Chineasy Click-Through PrototypeTests";
+			productName = "Chineasy Click-Through PrototypeTests";
+			productReference = B502517E1AAFC586002AE33F /* Chineasy Click-Through PrototypeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B50251611AAFC586002AE33F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Stacey & Bryan";
+				TargetAttributes = {
+					B50251681AAFC586002AE33F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B502517D1AAFC586002AE33F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B50251681AAFC586002AE33F;
+					};
+				};
+			};
+			buildConfigurationList = B50251641AAFC586002AE33F /* Build configuration list for PBXProject "Chineasy Click-Through Prototype" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B50251601AAFC586002AE33F;
+			productRefGroup = B502516A1AAFC586002AE33F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B50251681AAFC586002AE33F /* Chineasy Click-Through Prototype */,
+				B502517D1AAFC586002AE33F /* Chineasy Click-Through PrototypeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B50251671AAFC586002AE33F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50251741AAFC586002AE33F /* Main.storyboard in Resources */,
+				B50251791AAFC586002AE33F /* LaunchScreen.xib in Resources */,
+				B50251761AAFC586002AE33F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B502517C1AAFC586002AE33F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B50251651AAFC586002AE33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50251711AAFC586002AE33F /* ViewController.swift in Sources */,
+				B502516F1AAFC586002AE33F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B502517A1AAFC586002AE33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50251851AAFC586002AE33F /* Chineasy_Click_Through_PrototypeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B50251801AAFC586002AE33F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B50251681AAFC586002AE33F /* Chineasy Click-Through Prototype */;
+			targetProxy = B502517F1AAFC586002AE33F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B50251721AAFC586002AE33F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B50251731AAFC586002AE33F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B50251771AAFC586002AE33F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B50251781AAFC586002AE33F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B50251861AAFC586002AE33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B50251871AAFC586002AE33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B50251891AAFC586002AE33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Chineasy Click-Through Prototype/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B502518A1AAFC586002AE33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Chineasy Click-Through Prototype/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B502518C1AAFC586002AE33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Chineasy Click-Through PrototypeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chineasy Click-Through Prototype.app/Chineasy Click-Through Prototype";
+			};
+			name = Debug;
+		};
+		B502518D1AAFC586002AE33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Chineasy Click-Through PrototypeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chineasy Click-Through Prototype.app/Chineasy Click-Through Prototype";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B50251641AAFC586002AE33F /* Build configuration list for PBXProject "Chineasy Click-Through Prototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50251861AAFC586002AE33F /* Debug */,
+				B50251871AAFC586002AE33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50251881AAFC586002AE33F /* Build configuration list for PBXNativeTarget "Chineasy Click-Through Prototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B50251891AAFC586002AE33F /* Debug */,
+				B502518A1AAFC586002AE33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B502518B1AAFC586002AE33F /* Build configuration list for PBXNativeTarget "Chineasy Click-Through PrototypeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B502518C1AAFC586002AE33F /* Debug */,
+				B502518D1AAFC586002AE33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B50251611AAFC586002AE33F /* Project object */;
+}

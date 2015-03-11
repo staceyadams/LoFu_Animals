@@ -1,0 +1,9 @@
+FONTS:
+
+
+
+- QUICKSAND by Andrew Paglinawan: http://www.fontsquirrel.com/fonts/quicksand
+
+
+
+- BEBAS NEUE by Dharma Type: http://www.fontsquirrel.com/fonts/bebas-neue

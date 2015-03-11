@@ -1,0 +1,7 @@
+FONTS:
+
+
+- QUICKSAND by Andrew Paglinawan: http://www.fontsquirrel.com/fonts/quicksand
+
+- Antonio, Vernon Adams
+: http://www.fontsquirrel.com/fonts/antonio
