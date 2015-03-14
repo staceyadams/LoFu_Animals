@@ -8,13 +8,15 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController, UIScrollViewDelegate {
+class WelcomeViewController: UIViewController, UIScrollViewDelegate
+{
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var startButton: UIButton!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -22,28 +24,36 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSize(width: 1280, height: 568)
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(scrollView: UIScrollView)
+    {
         var page = Int(scrollView.contentOffset.x / 320)
         pageControl.currentPage = page
-        // println(page)
         // on page 4, hide the page control and show the button
-        if (page == 3) {
-            UIView.animateWithDuration(0.2, animations: { () -> Void in
+        if (page == 3)
+        {
+            UIView.animateWithDuration(0.2, animations:
+            {
+                () -> Void in
                 self.pageControl.alpha = 0
                 self.startButton.alpha = 1
             })
         }
-        else {
+        else
+        {
             pageControl.alpha = 1
             startButton.alpha = 0
         }
-        
-        
     }
 
+    @IBAction func onPressStart(sender: AnyObject)
+    {
+        println("i'm being clicked")
+    }
+    
 }
