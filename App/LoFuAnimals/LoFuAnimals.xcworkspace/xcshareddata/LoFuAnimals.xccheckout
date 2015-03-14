@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DA51F2B1-F8E6-4C13-8DFA-B73797414918</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LoFuAnimals</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>281CFE47B6114B32DBAD7858CF21C07B881BD0DF</key>
+		<string>https://github.com/staceyadams/hw1_dropbox.git</string>
+		<key>7AAB518B006255271B6F79077681D3C70EF9ADEB</key>
+		<string>https://github.com/staceyadams/chineasy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>App/LoFuAnimals/LoFuAnimals.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>281CFE47B6114B32DBAD7858CF21C07B881BD0DF</key>
+		<string>../../../..</string>
+		<key>7AAB518B006255271B6F79077681D3C70EF9ADEB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/staceyadams/chineasy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7AAB518B006255271B6F79077681D3C70EF9ADEB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>281CFE47B6114B32DBAD7858CF21C07B881BD0DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7AAB518B006255271B6F79077681D3C70EF9ADEB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>chineasy</string>
+		</dict>
+	</array>
+</dict>
+</plist>

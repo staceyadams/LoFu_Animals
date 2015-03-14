@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8EA649254278BC9D69A5C7 /* Pods_LoFuAnimals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873C3E11E3DA24DDA10750E4 /* Pods_LoFuAnimals.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B5EFDDAF1AB3B916006D96B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */; };
-		B5EFDDB11AB3B916006D96B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFDDB01AB3B916006D96B5 /* ViewController.swift */; };
 		B5EFDDB41AB3B916006D96B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EFDDB21AB3B916006D96B5 /* Main.storyboard */; };
 		B5EFDDB61AB3B916006D96B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EFDDB51AB3B916006D96B5 /* Images.xcassets */; };
 		B5EFDDB91AB3B916006D96B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5EFDDB71AB3B916006D96B5 /* LaunchScreen.xib */; };
 		B5EFDDC51AB3B916006D96B5 /* LoFuAnimalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFDDC41AB3B916006D96B5 /* LoFuAnimalsTests.swift */; };
 		B5EFDDCF1AB3BAF2006D96B5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFDDCE1AB3BAF2006D96B5 /* WelcomeViewController.swift */; };
+		B5F4E6B31AB4CF7900BDCD6B /* FlashcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4E6B21AB4CF7900BDCD6B /* FlashcardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		380D35A473455F90ADAF9161 /* Pods-LoFuAnimals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoFuAnimals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoFuAnimals/Pods-LoFuAnimals.debug.xcconfig"; sourceTree = "<group>"; };
+		873C3E11E3DA24DDA10750E4 /* Pods_LoFuAnimals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoFuAnimals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D538043D491C68D301F74B /* Pods-LoFuAnimals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoFuAnimals.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoFuAnimals/Pods-LoFuAnimals.release.xcconfig"; sourceTree = "<group>"; };
 		B5EFDDA91AB3B916006D96B5 /* LoFuAnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoFuAnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EFDDAD1AB3B916006D96B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5EFDDB01AB3B916006D96B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5EFDDB31AB3B916006D96B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5EFDDB51AB3B916006D96B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5EFDDB81AB3B916006D96B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		B5EFDDC31AB3B916006D96B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5EFDDC41AB3B916006D96B5 /* LoFuAnimalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoFuAnimalsTests.swift; sourceTree = "<group>"; };
 		B5EFDDCE1AB3BAF2006D96B5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B5F4E6B21AB4CF7900BDCD6B /* FlashcardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8EA649254278BC9D69A5C7 /* Pods_LoFuAnimals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,8 @@
 				B5EFDDAB1AB3B916006D96B5 /* LoFuAnimals */,
 				B5EFDDC11AB3B916006D96B5 /* LoFuAnimalsTests */,
 				B5EFDDAA1AB3B916006D96B5 /* Products */,
+				DAFEE5A75E96385FEFDC363A /* Pods */,
+				FF515AAE44C01F3264AB2740 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */,
-				B5EFDDB01AB3B916006D96B5 /* ViewController.swift */,
 				B5EFDDB21AB3B916006D96B5 /* Main.storyboard */,
+				B5F4E6B21AB4CF7900BDCD6B /* FlashcardViewController.swift */,
 				B5EFDDCE1AB3BAF2006D96B5 /* WelcomeViewController.swift */,
 				B5EFDDB51AB3B916006D96B5 /* Images.xcassets */,
 				B5EFDDB71AB3B916006D96B5 /* LaunchScreen.xib */,
@@ -115,6 +122,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DAFEE5A75E96385FEFDC363A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				380D35A473455F90ADAF9161 /* Pods-LoFuAnimals.debug.xcconfig */,
+				A9D538043D491C68D301F74B /* Pods-LoFuAnimals.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF515AAE44C01F3264AB2740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				873C3E11E3DA24DDA10750E4 /* Pods_LoFuAnimals.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5EFDDC81AB3B916006D96B5 /* Build configuration list for PBXNativeTarget "LoFuAnimals" */;
 			buildPhases = (
+				8AB62E9D7EDB2ABFBA71F0AA /* Check Pods Manifest.lock */,
 				B5EFDDA51AB3B916006D96B5 /* Sources */,
 				B5EFDDA61AB3B916006D96B5 /* Frameworks */,
 				B5EFDDA71AB3B916006D96B5 /* Resources */,
+				CD34015A19B1A979CDB01B72 /* Embed Pods Frameworks */,
+				548FD38ECC1B2B1E99C59740 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,14 +237,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		548FD38ECC1B2B1E99C59740 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoFuAnimals/Pods-LoFuAnimals-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AB62E9D7EDB2ABFBA71F0AA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD34015A19B1A979CDB01B72 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoFuAnimals/Pods-LoFuAnimals-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5EFDDA51AB3B916006D96B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5EFDDCF1AB3BAF2006D96B5 /* WelcomeViewController.swift in Sources */,
-				B5EFDDB11AB3B916006D96B5 /* ViewController.swift in Sources */,
 				B5EFDDAF1AB3B916006D96B5 /* AppDelegate.swift in Sources */,
+				B5F4E6B31AB4CF7900BDCD6B /* FlashcardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +413,7 @@
 		};
 		B5EFDDC91AB3B916006D96B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 380D35A473455F90ADAF9161 /* Pods-LoFuAnimals.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoFuAnimals/Info.plist;
@@ -348,6 +424,7 @@
 		};
 		B5EFDDCA1AB3B916006D96B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D538043D491C68D301F74B /* Pods-LoFuAnimals.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoFuAnimals/Info.plist;

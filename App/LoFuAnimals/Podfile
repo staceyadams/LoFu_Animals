@@ -1,0 +1,14 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+use_frameworks!
+
+target 'LoFuAnimals' do
+pod 'MDCSwipeToChoose', '~> 0.2'
+# go to here, search, and click the copy to keyboard file http://cocoapods.org/?q=MDCswi
+
+end
+
+target 'LoFuAnimalsTests' do
+
+end
+
