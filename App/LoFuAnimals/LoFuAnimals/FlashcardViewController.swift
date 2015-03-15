@@ -13,8 +13,7 @@ import MDCSwipeToChoose
 
 class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     
-//    var animals: [String] = ["cat", "dog", "fish", "rabbit", "hamster", "bird"]
-    var animals: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish",]// "flashcard_rabbit", "flashcard_hamster", "flashcard_bird"]
+    var animals: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
     
     var currentPosition: Int = -1 // We increment before using, so set to -1 to begin
     var frontCardView: MDCSwipeToChooseView!
@@ -67,7 +66,6 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         
         animalCard.imageView?.image = UIImage(named: animal) // if there is an image, set it to the first one in the array
         animalCard.backgroundColor = UIColor.clearColor() // color the card bg
-        println("popcard: \(animal)")
         return animalCard
     }
     
@@ -79,7 +77,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         let topPadding: CGFloat=100
         let bottomPadding: CGFloat=100
 //        return CGRectMake(horizontalPadding, topPadding, CGRectGetWidth(self.view.frame) - (horizontalPadding*2), CGRectGetHeight(self.view.frame) - (bottomPadding))
-        return CGRectMake(horizontalPadding, topPadding, 255, 328) // set size based on image size instead of screen space
+        return CGRectMake(horizontalPadding, topPadding, 258, 331) // set size based on image size instead of screen space
     }
     
     func backCardViewFrame() -> CGRect
