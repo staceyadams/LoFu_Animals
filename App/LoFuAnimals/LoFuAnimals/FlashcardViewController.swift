@@ -14,10 +14,9 @@ import MDCSwipeToChoose
 class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     
 //    var animals: [String] = ["cat", "dog", "fish", "rabbit", "hamster", "bird"]
-    var animals: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_hamster", "flashcard_bird"]
-
-    var currentAnimal: String!
-    var animalsRemaining: Int = 0
+    var animals: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish",]// "flashcard_rabbit", "flashcard_hamster", "flashcard_bird"]
+    
+    var currentPosition: Int = -1 // We increment before using, so set to -1 to begin
     var frontCardView: MDCSwipeToChooseView!
     var backCardView: MDCSwipeToChooseView!
     
@@ -27,17 +26,24 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
 
         // Do any additional setup after loading the view.
         
-        frontCardView = popCardViewWithFrame(frontCardViewFrame())
+        frontCardView = popCardViewWithFrame(frontCardViewFrame(), animal: getNextAnimal())
         view.addSubview(frontCardView)
         
-        backCardView = popCardViewWithFrame(backCardViewFrame())
+        backCardView = popCardViewWithFrame(backCardViewFrame(), animal: getNextAnimal())
         view.insertSubview(backCardView, belowSubview: frontCardView)
-        
-        animalsRemaining = animals.count
-        
     }
     
-    func popCardViewWithFrame(frame:CGRect) -> MDCSwipeToChooseView?
+    // Returns the next animal from array, (loops back to beginning if we're at the end), and increment
+    // the pointer to the next position. We can call this multiple times to keep moving to the next, etc.
+    func getNextAnimal() -> String
+    {
+        currentPosition++ // Move to next position
+        if (currentPosition == animals.count) { currentPosition = 0; } // Make sure we loop around
+        return animals[currentPosition]
+    }
+    
+    // Sets up the card view with the passed in animal
+    func popCardViewWithFrame(frame:CGRect, animal:String) -> MDCSwipeToChooseView?
     {
         if animals.count == 0 {return nil} // if there are no animals in the array, don't do anything
         
@@ -58,10 +64,10 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         options.nopeColor = UIColor.clearColor()
         
         var animalCard = MDCSwipeToChooseView(frame: frame, options: options)
-        animalCard.imageView?.image = UIImage(named: animals[0]) // if there is an image, set it to the first one in the array
+        
+        animalCard.imageView?.image = UIImage(named: animal) // if there is an image, set it to the first one in the array
         animalCard.backgroundColor = UIColor.clearColor() // color the card bg
-        currentAnimal = animals[0]
-        animals.removeAtIndex(0)
+        println("popcard: \(animal)")
         return animalCard
     }
     
@@ -86,50 +92,58 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     // MARK: - Swipe to choose delegate
     func viewDidCancelSwipe(view: UIView!)
     {
-        // when there aren't any cards left, go to the next screen
-        if animalsRemaining < 0
-        {
-            performSegueWithIdentifier("showSummary", sender: self)
-    
-        }
+        //println("cancel: \(animals[currentPosition])")
     }
     
     func view(view: UIView!, shouldBeChosenWithDirection direction: MDCSwipeDirection) -> Bool
     {
-        // do stuff here when a direction has been chosen, before it disappears off screen
+        //println("should: \(animals[currentPosition])")
         return true
     }
     
     func view(view: UIView!, wasChosenWithDirection direction: MDCSwipeDirection)
     {
-        if direction == MDCSwipeDirection.Left
+        // Swipe right to delete the card.
+        if (direction == MDCSwipeDirection.Right)
         {
-            animals.append(currentAnimal) // if swiped left, add this animal back into the end of the array
-            // @todo: this is actually setting the one after, not the one we want
-        }
-        else
-        {
-            animalsRemaining-=1 // reduce the count of number of cards left by 1
+            // currentPosition points to the *back* card, we want to remove the *front*.
+            // Make sure if back was at the start of array, we consider front to be end.
+            var indexToRemove = currentPosition - 1
+            if (indexToRemove == -1) { indexToRemove = animals.count - 1 }
+            
+            // Remove the element
+            animals.removeAtIndex(indexToRemove)
+            
+            // If position wasn't the start, we need to decrement. If it *was* the start
+            // then we removed from the end, so there's no change to make to currentPosition.
+            if (currentPosition > 0 ) { currentPosition-- }
+            
+            // If that position was the final item, currentPosition will no longer be valid.
+            if (currentPosition == animals.count) {currentPosition = 0}
         }
         
+        // If we removed everything, then we're done.
+        if (animals.count == 0)
+        {
+            performSegueWithIdentifier("showSummary", sender: self)
+            return
+        }
+        
+        // If we get to here, there are more things to show
         frontCardView = backCardView // the back card is now the new front card
+        backCardView  = popCardViewWithFrame(backCardViewFrame(), animal: getNextAnimal())
         
-        if animals.count > 0 // if there are still cards, then populate the back card with a new back card
+        // If we have a new back view, fade in under the new front.
+        if backCardView != nil
         {
-            backCardView = popCardViewWithFrame(backCardViewFrame())
-            if backCardView != nil
-            {
-                backCardView.alpha = 0
-                self.view.insertSubview(backCardView, belowSubview: frontCardView)
-                UIView.animateWithDuration(0.2, animations:
-                { () -> Void in
-                    self.backCardView.alpha = 1
-                }, completion: nil)
-            }
+            backCardView.alpha = 0
+            self.view.insertSubview(backCardView, belowSubview: frontCardView)
+            UIView.animateWithDuration(0.2, animations:
+            { () -> Void in
+                self.backCardView.alpha = 1
+            }, completion: nil)
         }
     }
-    
-    
     
     // @todo why does it error on the buttons but not on the swipes??
     
