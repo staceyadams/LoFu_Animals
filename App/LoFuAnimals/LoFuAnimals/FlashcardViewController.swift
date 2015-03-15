@@ -6,16 +6,18 @@
 //  Copyright (c) 2015 Stacey & Bryan. All rights reserved.
 //
 
+// reference ChoosePersonViewController.m for all the things we are customizing
+
 import UIKit
 import MDCSwipeToChoose
 
 class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
 
-    var animals: [String] = ["cat", "dog", "fish", "hamster", "rabbit", "bird"]
+    var animals: [String] = ["cat", "dog", "fish", "rabbit", "hamster", "bird"]
+    var currentAnimal: String!
+    var animalsRemaining: Int = 0
     var frontCardView: MDCSwipeToChooseView!
     var backCardView: MDCSwipeToChooseView!
-    var currentAnimal: String!
-    var questionsRemaining: Int = 0
     
     override func viewDidLoad()
     {
@@ -29,45 +31,40 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         backCardView = popCardViewWithFrame(backCardViewFrame())
         view.insertSubview(backCardView, belowSubview: frontCardView)
         
-        questionsRemaining = animals.count
-        
-        
-        
+        animalsRemaining = animals.count
         
     }
     
     func popCardViewWithFrame(frame:CGRect) -> MDCSwipeToChooseView?
     {
-        if animals.count == 0 {return nil}
+        if animals.count == 0 {return nil} // if there are no animals in the array, don't do anything
+        
+        // set the options from MDCSwipeToChooseViewOptions
         let options = MDCSwipeToChooseViewOptions()
         options.delegate = self
-        options.likedText = "Learned" // delete if you can't set size of text
-        options.nopeText = "Later"
-        options.likedColor = UIColor.clearColor()
-        options.threshold = 160
+        options.threshold = 10
         options.onPan =
         {
             (state: MDCPanState!) in
             let frame = self.backCardViewFrame()
-            self.backCardView.frame = CGRectMake(frame.origin.x, frame.origin.y - state.thresholdRatio * CGFloat(10), CGRectGetWidth(frame), CGRectGetHeight(frame))
+            self.backCardView.frame = CGRectMake(frame.origin.x - state.thresholdRatio * CGFloat(5), frame.origin.y - state.thresholdRatio * CGFloat(5), CGRectGetWidth(frame), CGRectGetHeight(frame))
         }
-        // println(frame)
+        // hide the text because I can't figure out how to size the text
+        options.likedText = "Learned"
+        options.nopeText = "Later"
+        options.likedColor = UIColor.clearColor()
+        options.nopeColor = UIColor.clearColor()
+        
         var animalCard = MDCSwipeToChooseView(frame: frame, options: options)
-        animalCard.imageView?.image = UIImage(named: animals[0])
-        animalCard.backgroundColor = UIColor.blueColor()
-        
-        
-        
+        animalCard.imageView?.image = UIImage(named: animals[0]) // if there is an image, set it to the first one in the array
+        animalCard.backgroundColor = UIColor.blueColor() // color the card bg
         currentAnimal = animals[0]
         animals.removeAtIndex(0)
-//        animalCard.backgroundColor = UIColor(white: 0.4, alpha: 0.5)
         return animalCard
     }
     
     
-    
-    
-    // MARK: - Back/Front Positions
+    // MARK: - Card positions and sizing
     func frontCardViewFrame() -> CGRect
     {
         let horizontalPadding: CGFloat=20
@@ -79,69 +76,51 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     func backCardViewFrame() -> CGRect
     {
         let frontCard = self.frontCardViewFrame()
-        return CGRectMake(frontCard.origin.x, frontCard.origin.y + 10, CGRectGetWidth(frontCard), CGRectGetHeight(frontCard))
+        return CGRectMake(frontCard.origin.x + 5, frontCard.origin.y + 5, CGRectGetWidth(frontCard), CGRectGetHeight(frontCard))
     }
-
     
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    // MARK: - Swipe to Choose Delegate
-    // reference ChoosePersonViewController.m
+    // MARK: - Swipe to choose delegate
     func viewDidCancelSwipe(view: UIView!)
     {
-        println("cancel")
-        println("questions: \(questionsRemaining)")
-
-        // show summary screen on completion
-        if questionsRemaining < 0
+        // when there aren't any cards left, go to the next screen
+        if animalsRemaining < 0
         {
             performSegueWithIdentifier("showSummary", sender: self)
     
         }
     }
     
-//    func view(view: UIView!, shouldBeChosenWithDirection direction: MDCSwipeDirection) -> Bool
-//    {
-//        println("direction chosen, before you get rid of it")
-//        return true
-//    }
+    func view(view: UIView!, shouldBeChosenWithDirection direction: MDCSwipeDirection) -> Bool
+    {
+        // do stuff here when a direction has been chosen, before it disappears off screen
+        return true
+    }
     
     func view(view: UIView!, wasChosenWithDirection direction: MDCSwipeDirection)
     {
-        println("direction chosen, after you get rid of it")
         if direction == MDCSwipeDirection.Left
         {
-            println("left")
-            animals.append(currentAnimal)
+            animals.append(currentAnimal) // if swiped left, add this animal back into the end of the array
         }
         else
         {
-            println("right")
-            questionsRemaining-=1
+            animalsRemaining-=1 // reduce the count of number of cards left by 1
         }
-        frontCardView = backCardView
-        println(animals.count)
-        if animals.count > 0
+        
+        frontCardView = backCardView // the back card is now the new front card
+        
+        if animals.count > 0 // if there are still cards, then populate the back card with a new back card
         {
             backCardView = popCardViewWithFrame(backCardViewFrame())
-            if backCardView != nil {
-                
-    //        {
-    //            backCardView.alpha = 0
+            if backCardView != nil
+            {
+                backCardView.alpha = 0
                 self.view.insertSubview(backCardView, belowSubview: frontCardView)
-                // add in animation to fade backcardview alpha 1
-    //            backCardView.alpha = 1 //start at 0
+                UIView.animateWithDuration(0.2, animations:
+                { () -> Void in
+                    self.backCardView.alpha = 1
+                }, completion: nil)
             }
         }
     }
