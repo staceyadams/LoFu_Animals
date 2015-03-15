@@ -6,14 +6,16 @@
 //  Copyright (c) 2015 Stacey & Bryan. All rights reserved.
 //
 
-// reference ChoosePersonViewController.m for all the things we are customizing
+// reference ChoosePersonViewController.m in the LikedorNope example for all the things we are customizing
 
 import UIKit
 import MDCSwipeToChoose
 
 class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
+    
+//    var animals: [String] = ["cat", "dog", "fish", "rabbit", "hamster", "bird"]
+    var animals: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_hamster", "flashcard_bird"]
 
-    var animals: [String] = ["cat", "dog", "fish", "rabbit", "hamster", "bird"]
     var currentAnimal: String!
     var animalsRemaining: Int = 0
     var frontCardView: MDCSwipeToChooseView!
@@ -49,7 +51,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
             let frame = self.backCardViewFrame()
             self.backCardView.frame = CGRectMake(frame.origin.x - state.thresholdRatio * CGFloat(5), frame.origin.y - state.thresholdRatio * CGFloat(5), CGRectGetWidth(frame), CGRectGetHeight(frame))
         }
-        // hide the text because I can't figure out how to size the text
+        // hide the text because I can't figure out how to customize on init
         options.likedText = "Learned"
         options.nopeText = "Later"
         options.likedColor = UIColor.clearColor()
@@ -57,7 +59,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         
         var animalCard = MDCSwipeToChooseView(frame: frame, options: options)
         animalCard.imageView?.image = UIImage(named: animals[0]) // if there is an image, set it to the first one in the array
-        animalCard.backgroundColor = UIColor.blueColor() // color the card bg
+        animalCard.backgroundColor = UIColor.clearColor() // color the card bg
         currentAnimal = animals[0]
         animals.removeAtIndex(0)
         return animalCard
@@ -67,16 +69,17 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     // MARK: - Card positions and sizing
     func frontCardViewFrame() -> CGRect
     {
-        let horizontalPadding: CGFloat=20
-        let topPadding: CGFloat=60
-        let bottomPadding: CGFloat=200
-        return CGRectMake(horizontalPadding, topPadding, CGRectGetWidth(self.view.frame) - (horizontalPadding*2), CGRectGetHeight(self.view.frame) - (bottomPadding))
+        let horizontalPadding: CGFloat=33
+        let topPadding: CGFloat=100
+        let bottomPadding: CGFloat=100
+//        return CGRectMake(horizontalPadding, topPadding, CGRectGetWidth(self.view.frame) - (horizontalPadding*2), CGRectGetHeight(self.view.frame) - (bottomPadding))
+        return CGRectMake(horizontalPadding, topPadding, 255, 328) // set size based on image size instead of screen space
     }
     
     func backCardViewFrame() -> CGRect
     {
         let frontCard = self.frontCardViewFrame()
-        return CGRectMake(frontCard.origin.x + 5, frontCard.origin.y + 5, CGRectGetWidth(frontCard), CGRectGetHeight(frontCard))
+        return CGRectMake(frontCard.origin.x + 3, frontCard.origin.y + 3, CGRectGetWidth(frontCard), CGRectGetHeight(frontCard))
     }
     
     
@@ -102,6 +105,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         if direction == MDCSwipeDirection.Left
         {
             animals.append(currentAnimal) // if swiped left, add this animal back into the end of the array
+            // @todo: this is actually setting the one after, not the one we want
         }
         else
         {
@@ -125,6 +129,9 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         }
     }
     
+    
+    
+    // @todo why does it error on the buttons but not on the swipes??
     
     @IBAction func pressLater(sender: AnyObject)
     {
