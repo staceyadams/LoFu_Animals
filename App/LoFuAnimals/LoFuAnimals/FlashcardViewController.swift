@@ -21,12 +21,9 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     @IBOutlet weak var cardsLeftLabel: UILabel!
     
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         frontCardView = popCardViewWithFrame(frontCardViewFrame(), animal: getNextAnimal())
         view.addSubview(frontCardView)
@@ -35,10 +32,6 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         view.insertSubview(backCardView, belowSubview: frontCardView)
         
         cardsLeftLabel.text = "\(animals.count) animals left"
-        
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
-
-        
     }
 
     
@@ -50,6 +43,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         if (currentPosition == animals.count) { currentPosition = 0; } // Make sure we loop around
         return animals[currentPosition]
     }
+    
     
     // Sets up the card view with the passed in animal
     func popCardViewWithFrame(frame:CGRect, animal:String) -> MDCSwipeToChooseView?
@@ -83,7 +77,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     func frontCardViewFrame() -> CGRect
     {
         let horizontalPadding: CGFloat=33
-        let topPadding: CGFloat=110
+        let topPadding: CGFloat=25//110
         let bottomPadding: CGFloat=100
 //        return CGRectMake(horizontalPadding, topPadding, CGRectGetWidth(self.view.frame) - (horizontalPadding*2), CGRectGetHeight(self.view.frame) - (bottomPadding))
         return CGRectMake(horizontalPadding, topPadding, 258, 331) // set size based on image size instead of screen space
@@ -135,7 +129,8 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         // If all cards are gone, segue to summary screen
         if (animals.count == 0)
         {
-            performSegueWithIdentifier("showSummary", sender: self)
+            // remove from the content view on the learning VC
+            self.view.removeFromSuperview()
             return
         }
         
