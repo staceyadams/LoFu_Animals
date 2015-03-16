@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F8EA649254278BC9D69A5C7 /* Pods_LoFuAnimals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873C3E11E3DA24DDA10750E4 /* Pods_LoFuAnimals.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B53FB7451AB65C2F00BD4BBA /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB7441AB65C2F00BD4BBA /* AppState.swift */; };
 		B5EFDDAF1AB3B916006D96B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */; };
 		B5EFDDB41AB3B916006D96B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EFDDB21AB3B916006D96B5 /* Main.storyboard */; };
 		B5EFDDB61AB3B916006D96B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EFDDB51AB3B916006D96B5 /* Images.xcassets */; };
@@ -31,6 +32,7 @@
 		380D35A473455F90ADAF9161 /* Pods-LoFuAnimals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoFuAnimals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoFuAnimals/Pods-LoFuAnimals.debug.xcconfig"; sourceTree = "<group>"; };
 		873C3E11E3DA24DDA10750E4 /* Pods_LoFuAnimals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoFuAnimals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D538043D491C68D301F74B /* Pods-LoFuAnimals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoFuAnimals.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoFuAnimals/Pods-LoFuAnimals.release.xcconfig"; sourceTree = "<group>"; };
+		B53FB7441AB65C2F00BD4BBA /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B5EFDDA91AB3B916006D96B5 /* LoFuAnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoFuAnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EFDDAD1AB3B916006D96B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				B5EFDDB51AB3B916006D96B5 /* Images.xcassets */,
 				B5EFDDB71AB3B916006D96B5 /* LaunchScreen.xib */,
 				B5EFDDAC1AB3B916006D96B5 /* Supporting Files */,
+				B53FB7441AB65C2F00BD4BBA /* AppState.swift */,
 			);
 			path = LoFuAnimals;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				B5EFDDCF1AB3BAF2006D96B5 /* WelcomeViewController.swift in Sources */,
 				B5EFDDAF1AB3B916006D96B5 /* AppDelegate.swift in Sources */,
 				B5F4E6B31AB4CF7900BDCD6B /* FlashcardViewController.swift in Sources */,
+				B53FB7451AB65C2F00BD4BBA /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     @IBOutlet weak var cardsLeftLabel: UILabel!
     
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -34,6 +35,10 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         view.insertSubview(backCardView, belowSubview: frontCardView)
         
         cardsLeftLabel.text = "\(animals.count) animals left"
+        
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
+
+        
     }
 
     
@@ -78,7 +83,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     func frontCardViewFrame() -> CGRect
     {
         let horizontalPadding: CGFloat=33
-        let topPadding: CGFloat=100
+        let topPadding: CGFloat=110
         let bottomPadding: CGFloat=100
 //        return CGRectMake(horizontalPadding, topPadding, CGRectGetWidth(self.view.frame) - (horizontalPadding*2), CGRectGetHeight(self.view.frame) - (bottomPadding))
         return CGRectMake(horizontalPadding, topPadding, 258, 331) // set size based on image size instead of screen space
@@ -161,4 +166,13 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     {
         frontCardView.mdc_swipe(MDCSwipeDirection.Right)
     }
+    
+
+    // Back button
+    @IBAction func didClickBackButton(sender: AnyObject)
+    {
+        navigationController!.popViewControllerAnimated(true)
+    }
+    
+    
 }

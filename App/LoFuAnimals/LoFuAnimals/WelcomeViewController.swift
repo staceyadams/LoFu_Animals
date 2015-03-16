@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+            
         // Do any additional setup after loading the view.
         scrollView.delegate = self
         scrollView.contentSize = CGSize(width: 1280, height: 568)
