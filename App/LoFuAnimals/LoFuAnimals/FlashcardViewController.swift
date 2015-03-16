@@ -19,6 +19,8 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     var frontCardView: MDCSwipeToChooseView!
     var backCardView: MDCSwipeToChooseView!
     
+    @IBOutlet weak var cardsLeftLabel: UILabel!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -30,7 +32,10 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         
         backCardView = popCardViewWithFrame(backCardViewFrame(), animal: getNextAnimal())
         view.insertSubview(backCardView, belowSubview: frontCardView)
+        
+        cardsLeftLabel.text = "\(animals.count) animals left"
     }
+
     
     // Returns the next animal from array, (loops back to beginning if we're at the end), and increment
     // the pointer to the next position. We can call this multiple times to keep moving to the next, etc.
@@ -63,14 +68,13 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         options.nopeColor = UIColor.clearColor()
         
         var animalCard = MDCSwipeToChooseView(frame: frame, options: options)
-        
         animalCard.imageView?.image = UIImage(named: animal) // if there is an image, set it to the first one in the array
         animalCard.backgroundColor = UIColor.clearColor() // color the card bg
         return animalCard
     }
     
     
-    // MARK: - Card positions and sizing
+    // Card positions and sizing
     func frontCardViewFrame() -> CGRect
     {
         let horizontalPadding: CGFloat=33
@@ -87,21 +91,21 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     }
     
     
-    // MARK: - Swipe to choose delegate
+    // Left or Right?
     func viewDidCancelSwipe(view: UIView!)
     {
-        //println("cancel: \(animals[currentPosition])")
+        // do stuff here if it's not swiped far enough
     }
     
     func view(view: UIView!, shouldBeChosenWithDirection direction: MDCSwipeDirection) -> Bool
     {
-        //println("should: \(animals[currentPosition])")
+        // do stuff here before the card goes away
         return true
     }
     
     func view(view: UIView!, wasChosenWithDirection direction: MDCSwipeDirection)
     {
-        // Swipe right to delete the card.
+        // Swipe right to delete the card (after learning it)
         if (direction == MDCSwipeDirection.Right)
         {
             // currentPosition points to the *back* card, we want to remove the *front*.
@@ -118,20 +122,23 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
             
             // If that position was the final item, currentPosition will no longer be valid.
             if (currentPosition == animals.count) {currentPosition = 0}
+            
+            // Update count
+            cardsLeftLabel.text = "\(animals.count) animals left"
         }
         
-        // If we removed everything, then we're done.
+        // If all cards are gone, segue to summary screen
         if (animals.count == 0)
         {
             performSegueWithIdentifier("showSummary", sender: self)
             return
         }
         
-        // If we get to here, there are more things to show
+        // Show more cards if we have them
         frontCardView = backCardView // the back card is now the new front card
         backCardView  = popCardViewWithFrame(backCardViewFrame(), animal: getNextAnimal())
         
-        // If we have a new back view, fade in under the new front.
+        // If we have a new back view, fade it in under the new front
         if backCardView != nil
         {
             backCardView.alpha = 0
