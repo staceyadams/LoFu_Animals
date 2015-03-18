@@ -18,7 +18,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     var currentPosition: Int = -1 // We increment before using, so set to -1 to begin
     var frontCardView: MDCSwipeToChooseView!
     var backCardView: MDCSwipeToChooseView!
-    
+
     @IBOutlet weak var cardsLeftLabel: UILabel!
     
     override func viewDidLoad()
@@ -126,6 +126,14 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
             cardsLeftLabel.text = "\(animals.count) animals left"
         }
         
+        
+        func removeChildView(content: UIViewController)
+        {
+            content.willMoveToParentViewController(nil)
+            content.view.removeFromSuperview()
+            content.removeFromParentViewController()
+        }
+        
         // If all cards are gone, segue to summary screen
         if (animals.count == 0)
         {
@@ -133,6 +141,9 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
             self.view.removeFromSuperview()
             return
         }
+
+        
+
         
         // Show more cards if we have them
         frontCardView = backCardView // the back card is now the new front card

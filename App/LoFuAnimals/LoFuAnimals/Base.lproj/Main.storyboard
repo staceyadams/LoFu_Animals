@@ -145,7 +145,7 @@
         <!--LearningControllerScene-->
         <scene sceneID="FbK-8d-bvp">
             <objects>
-                <viewController title="LearningControllerScene" id="VuJ-Fb-lIr" customClass="LearningControllerViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LearningControllerScene" automaticallyAdjustsScrollViewInsets="NO" id="VuJ-Fb-lIr" customClass="LearningControllerViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JGu-lS-v1k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7T-2E-cwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077" y="1814"/>
+            <point key="canvasLocation" x="1079" y="1814"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WF5-mc-5cX">
@@ -310,7 +310,7 @@
         <!--LearningFlashcardsScene-->
         <scene sceneID="65J-DO-CIm">
             <objects>
-                <viewController storyboardIdentifier="flashcardStory" title="LearningFlashcardsScene" id="izJ-H1-pSL" customClass="FlashcardViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="flashcardStory" title="LearningFlashcardsScene" automaticallyAdjustsScrollViewInsets="NO" id="izJ-H1-pSL" customClass="FlashcardViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ha-iw-gxf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,6 +352,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1E-x3-s8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="320" y="1814"/>
+        </scene>
+        <!--LearningSummaryScene-->
+        <scene sceneID="UtY-eR-KYV">
+            <objects>
+                <viewController title="LearningSummaryScene" id="VFn-do-GwY" customClass="LearningSummaryViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oxu-Lq-IJR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="xVL-V7-TXe">
+                                <rect key="frame" x="-1" y="106" width="108" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn: Pets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yXp-Tl-DqV">
+                                <rect key="frame" x="-1" y="30" width="320" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have learned the animals!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dbE-9o-fVg">
+                                <rect key="frame" x="0.0" y="58" width="320" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HPM-Ki-HWe" userLabel="btn-reviewAgain">
+                                <rect key="frame" x="10" y="467" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn-again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="OA1-O9-1ti">
+                                <rect key="frame" x="0.0" y="87" width="319" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CcI-HL-vCD">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="summaryCellId" id="Zhd-kq-AiK" customClass="SummaryCell" customModule="LoFuAnimals" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QaI-4H-EFe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ql1-uu-oO5">
+                                                    <rect key="frame" x="14" y="84" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="108" height="135"/>
+                                        <connections>
+                                            <outlet property="summaryImage" destination="QaI-4H-EFe" id="MTx-3Q-XgJ"/>
+                                            <outlet property="summaryLabelTest" destination="ql1-uu-oO5" id="BsA-bz-Xpc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kmI-z3-EzV">
+                                <rect key="frame" x="95" y="470" width="217" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
+                                <state key="normal" title="Practice Writing">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5568627451" green="0.72941176470000002" blue="0.85882352939999995" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Learn: Pets" id="uYf-zi-Jvr"/>
+                    <connections>
+                        <outlet property="summaryCollectionView" destination="OA1-O9-1ti" id="KJM-v2-OaX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghI-Eu-BTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="1178"/>
         </scene>
     </scenes>
     <resources>

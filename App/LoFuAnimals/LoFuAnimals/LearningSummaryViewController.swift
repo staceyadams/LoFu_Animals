@@ -9,17 +9,37 @@
 import UIKit
 
 class LearningSummaryViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+//, UICollectionViewDataSource, UICollectionViewDelegate {
+//
+//    @IBOutlet weak var summaryCollectionView: UICollectionView!
+//    
+//    var animals: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // Do any additional setup after loading the view.
+//        summaryCollectionView.delegate = self
+//        summaryCollectionView.dataSource = self
+//        
+//    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
+//    
+//    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+//    {
+//        return animals.count
+//    }
+//    
+//    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
+//    {
+//        var cell = summaryCollectionView.dequeueReusableCellWithReuseIdentifier("summaryCellId") as SummaryCell
+//        cell.summaryLabelTest.text = animals[indexPath.row]
+//        return cell
+//    }
     
 
     /*
