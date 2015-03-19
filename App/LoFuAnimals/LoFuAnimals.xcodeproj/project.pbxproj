@@ -14,6 +14,7 @@
 		B53FB74D1AB67B7900BD4BBA /* LearningControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB74C1AB67B7900BD4BBA /* LearningControllerViewController.swift */; };
 		B53FB74F1AB67B9700BD4BBA /* LearningSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB74E1AB67B9700BD4BBA /* LearningSummaryViewController.swift */; };
 		B53FB7511AB67B9E00BD4BBA /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB7501AB67B9E00BD4BBA /* WritingViewController.swift */; };
+		B5DDB97D1AB9DFBA00C6F5C6 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDB97C1AB9DFBA00C6F5C6 /* MatchingViewController.swift */; };
 		B5EFDDAF1AB3B916006D96B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */; };
 		B5EFDDB41AB3B916006D96B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EFDDB21AB3B916006D96B5 /* Main.storyboard */; };
 		B5EFDDB61AB3B916006D96B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EFDDB51AB3B916006D96B5 /* Images.xcassets */; };
@@ -43,6 +44,7 @@
 		B53FB74C1AB67B7900BD4BBA /* LearningControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningControllerViewController.swift; sourceTree = "<group>"; };
 		B53FB74E1AB67B9700BD4BBA /* LearningSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningSummaryViewController.swift; sourceTree = "<group>"; };
 		B53FB7501AB67B9E00BD4BBA /* WritingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
+		B5DDB97C1AB9DFBA00C6F5C6 /* MatchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 		B5EFDDA91AB3B916006D96B5 /* LoFuAnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoFuAnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EFDDAD1AB3B916006D96B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */,
 				B5EFDDB21AB3B916006D96B5 /* Main.storyboard */,
+				B5DDB97C1AB9DFBA00C6F5C6 /* MatchingViewController.swift */,
 				B5342F3C1AB9170400F81B8D /* SummaryCell.swift */,
 				B5F4E6B21AB4CF7900BDCD6B /* FlashcardViewController.swift */,
 				B53FB74A1AB67B6700BD4BBA /* ViewController.swift */,
@@ -317,6 +320,7 @@
 				B5F4E6B31AB4CF7900BDCD6B /* FlashcardViewController.swift in Sources */,
 				B53FB74F1AB67B9700BD4BBA /* LearningSummaryViewController.swift in Sources */,
 				B53FB7451AB65C2F00BD4BBA /* AppState.swift in Sources */,
+				B5DDB97D1AB9DFBA00C6F5C6 /* MatchingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

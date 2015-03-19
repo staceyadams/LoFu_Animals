@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="RTz-CW-lHt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VZB-ne-X81">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -324,6 +324,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2F-OP-TyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-476" y="1814"/>
+        </scene>
+        <!--Matching Game-->
+        <scene sceneID="82z-pA-qWP">
+            <objects>
+                <viewController title="Matching Game" id="VZB-ne-X81" customClass="MatchingViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AnA-Bm-J9p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZEq-j9-7Wc">
+                                <rect key="frame" x="22" y="15" width="105" height="146"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4Uc-k2-65s">
+                                <rect key="frame" x="150" y="15" width="105" height="146"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="a7T-HL-AXQ">
+                                <rect key="frame" x="169" y="398" width="103" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="byu-br-ast" appends="YES" id="TKO-NH-Q5A"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sTP-Gj-w4e">
+                                <rect key="frame" x="150" y="176" width="105" height="146"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2F1-i5-uGc">
+                                <rect key="frame" x="16" y="342" width="103" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AQt-O5-irR" appends="YES" id="g4t-Yi-r18"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="animalCardsImage" destination="ZEq-j9-7Wc" collectionClass="NSMutableArray" id="PNe-cy-bWx"/>
+                        <outletCollection property="animalCardsImage" destination="4Uc-k2-65s" collectionClass="NSMutableArray" id="6nu-qL-Y8u"/>
+                        <outletCollection property="animalCardsImage" destination="sTP-Gj-w4e" collectionClass="NSMutableArray" id="ag4-Zg-yfc"/>
+                        <outletCollection property="animalImage" destination="2F1-i5-uGc" collectionClass="NSMutableArray" id="oCr-qi-Jlp"/>
+                        <outletCollection property="animalImage" destination="a7T-HL-AXQ" collectionClass="NSMutableArray" id="QHx-fk-aHp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WzM-nA-0VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="AQt-O5-irR">
+                    <connections>
+                        <action selector="onDragAnimal:" destination="VZB-ne-X81" id="5qy-tF-BLT"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="byu-br-ast">
+                    <connections>
+                        <action selector="onDragAnimal:" destination="VZB-ne-X81" id="twA-LK-EhX"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-476" y="2480"/>
         </scene>
         <!--LearningFlashcardsScene-->
         <scene sceneID="65J-DO-CIm">
