@@ -26,9 +26,11 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         super.viewDidLoad()
         
         frontCardView = popCardViewWithFrame(frontCardViewFrame(), animal: getNextAnimal())
+        frontCardView.layer.borderColor = UIColor.clearColor().CGColor
         view.addSubview(frontCardView)
         
         backCardView = popCardViewWithFrame(backCardViewFrame(), animal: getNextAnimal())
+        backCardView.layer.borderColor = UIColor.clearColor().CGColor
         view.insertSubview(backCardView, belowSubview: frontCardView)
         
         cardsLeftLabel.text = "\(animals.count) animals left"
@@ -61,15 +63,16 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
             self.backCardView.frame = CGRectMake(frame.origin.x - state.thresholdRatio * CGFloat(5), frame.origin.y - state.thresholdRatio * CGFloat(5), CGRectGetWidth(frame), CGRectGetHeight(frame))
         }
         // hide the text because I can't figure out how to customize on init
-        options.likedText = "Learned"
-        options.nopeText = "Later"
-        options.likedColor = UIColor.clearColor()
-        options.nopeColor = UIColor.clearColor()
+        options.likedText = "✅ Learned!"
+        options.nopeText = "⁉️ Again"
+        options.likedColor = UIColor(red: 42/255, green: 177/255, blue: 0, alpha: 1.0)
+        options.nopeColor = UIColor(red: 207/255, green: 18/255, blue: 19/255, alpha: 1.0)
         
         var animalCard = MDCSwipeToChooseView(frame: frame, options: options)
         animalCard.imageView?.image = UIImage(named: animal) // if there is an image, set it to the first one in the array
         animalCard.backgroundColor = UIColor.clearColor() // color the card bg
         return animalCard
+        
     }
     
     
@@ -80,7 +83,10 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         let topPadding: CGFloat=25//110
         let bottomPadding: CGFloat=100
 //        return CGRectMake(horizontalPadding, topPadding, CGRectGetWidth(self.view.frame) - (horizontalPadding*2), CGRectGetHeight(self.view.frame) - (bottomPadding))
-        return CGRectMake(horizontalPadding, topPadding, 258, 331) // set size based on image size instead of screen space
+        var cardRect = CGRectMake(horizontalPadding, topPadding, 258, 331)
+
+        
+        return cardRect // set size based on image size instead of screen space
     }
     
     func backCardViewFrame() -> CGRect
@@ -141,13 +147,11 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
             self.view.removeFromSuperview()
             return
         }
-
-        
-
         
         // Show more cards if we have them
         frontCardView = backCardView // the back card is now the new front card
         backCardView  = popCardViewWithFrame(backCardViewFrame(), animal: getNextAnimal())
+        backCardView.layer.borderColor = UIColor.clearColor().CGColor
         
         // If we have a new back view, fade it in under the new front
         if backCardView != nil

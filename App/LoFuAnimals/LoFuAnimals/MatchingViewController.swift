@@ -36,7 +36,6 @@ class MatchingViewController: UIViewController {
         animalCardsImage[1].image = UIImage(named:animalsCards[1])
         
         animalImage[1].image = UIImage(named:animalsText[1])
-        animalImage[1].image = UIImage(named:animalsText[1])
         
         animalImage[selectedIndex].image = UIImage(named:animalsText[selectedIndex])
         
@@ -78,13 +77,29 @@ class MatchingViewController: UIViewController {
             
         } else if (sender.state == UIGestureRecognizerState.Ended)
         {
-            
             scale = 1
+            transformAnimal()
+            
+            println("animal center \(animalImage[selectedIndex].center )")
+            println("animal card \(animalCardsImage[selectedIndex].center )")
+            
+            if animalImage[selectedIndex].center == animalCardsImage[selectedIndex].center
+            {
+                println("correct")
+            }
+            
+            else
+            {
+                println("right")
+            }
+            
+            
         }
     }
     
     func transformAnimal(){
         var scaleTransform = CGAffineTransformMakeScale(scale, scale)
+        animalImage[selectedIndex].transform = scaleTransform
     }
 
 }
