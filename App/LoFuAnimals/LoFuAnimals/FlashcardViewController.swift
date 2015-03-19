@@ -25,6 +25,8 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
+        
         frontCardView = popCardViewWithFrame(frontCardViewFrame(), animal: getNextAnimal())
         frontCardView.layer.borderColor = UIColor.clearColor().CGColor
         view.addSubview(frontCardView)
@@ -33,7 +35,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         backCardView.layer.borderColor = UIColor.clearColor().CGColor
         view.insertSubview(backCardView, belowSubview: frontCardView)
         
-        cardsLeftLabel.text = "\(animals.count) animals left"
+        cardsLeftLabel.text = "\(animals.count)"
     }
 
     
@@ -79,11 +81,11 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     // Card positions and sizing
     func frontCardViewFrame() -> CGRect
     {
-        let horizontalPadding: CGFloat=33
-        let topPadding: CGFloat=25//110
-        let bottomPadding: CGFloat=100
+        let horizontalPadding: CGFloat = 15
+        let topPadding: CGFloat = 90
+        let bottomPadding: CGFloat = 100
 //        return CGRectMake(horizontalPadding, topPadding, CGRectGetWidth(self.view.frame) - (horizontalPadding*2), CGRectGetHeight(self.view.frame) - (bottomPadding))
-        var cardRect = CGRectMake(horizontalPadding, topPadding, 258, 331)
+        var cardRect = CGRectMake(horizontalPadding, topPadding, 290, 372)
 
         
         return cardRect // set size based on image size instead of screen space
@@ -92,7 +94,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     func backCardViewFrame() -> CGRect
     {
         let frontCard = self.frontCardViewFrame()
-        return CGRectMake(frontCard.origin.x + 3, frontCard.origin.y + 3, CGRectGetWidth(frontCard), CGRectGetHeight(frontCard))
+        return CGRectMake(frontCard.origin.x + 6, frontCard.origin.y + 6, CGRectGetWidth(frontCard), CGRectGetHeight(frontCard))
     }
     
     
@@ -129,7 +131,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
             if (currentPosition == animals.count) {currentPosition = 0}
             
             // Update count
-            cardsLeftLabel.text = "\(animals.count) animals left"
+            cardsLeftLabel.text = "\(animals.count)"
         }
         
         
@@ -143,8 +145,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         // If all cards are gone, segue to summary screen
         if (animals.count == 0)
         {
-            // remove from the content view on the learning VC
-            self.view.removeFromSuperview()
+            performSegueWithIdentifier("summarySegue", sender: self)
             return
         }
         
