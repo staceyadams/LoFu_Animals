@@ -41,21 +41,14 @@ class MatchingViewController: UIViewController {
         card[4].transform = CGAffineTransformMakeRotation(3.14*0.04)
         card[5].transform = CGAffineTransformMakeRotation(3.14/0.02)
         
-        animalImage[0].image = UIImage(named: animalSticker[0])
-        animalImage[1].image = UIImage(named: animalSticker[1])
-        animalImage[2].image = UIImage(named: animalSticker[2])
-        animalImage[3].image = UIImage(named: animalSticker[3])
-        animalImage[4].image = UIImage(named: animalSticker[4])
-        animalImage[5].image = UIImage(named: animalSticker[5])
         
-        animalImage[0].image = UIImage(named: animalSticker[0])
-        animalImage[1].image = UIImage(named: animalSticker[1])
-        animalImage[2].image = UIImage(named: animalSticker[2])
-        animalImage[3].image = UIImage(named: animalSticker[3])
-        animalImage[4].image = UIImage(named: animalSticker[4])
-        animalImage[5].image = UIImage(named: animalSticker[5])
+        //for var index = 0; index < 6; index++
+        for index in 0...5
+        {
+            animalImage[index].image = UIImage(named: animalSticker[index])
+            card[index].image = UIImage(named: animalCard[index])
+        }
         
-        //selectedIndex = animalCardsImage.viewWithTag(100)
         
     }
 

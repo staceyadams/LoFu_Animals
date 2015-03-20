@@ -29,12 +29,10 @@ class SummaryViewController: UIViewController
         card[4].transform = CGAffineTransformMakeRotation(3.14*0.04)
         card[5].transform = CGAffineTransformMakeRotation(3.14/0.02)
         
-        card[0].image = UIImage(named: animals[0])
-        card[1].image = UIImage(named: animals[1])
-        card[2].image = UIImage(named: animals[2])
-        card[3].image = UIImage(named: animals[3])
-        card[4].image = UIImage(named: animals[4])
-        card[5].image = UIImage(named: animals[5])
+        for index in 0...5
+        {
+            card[index].image = UIImage(named: animals[index])
+        }
     }
 
     override func didReceiveMemoryWarning() {
