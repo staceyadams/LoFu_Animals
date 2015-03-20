@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2El-vV-BJL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VZB-ne-X81">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -324,16 +324,8 @@
                                 <rect key="frame" x="-4" y="369" width="324" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Gjh-0B-78E" userLabel="animal0">
-                                        <rect key="frame" x="8" y="8" width="59" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="FfN-a9-CGA" appends="YES" id="ofa-7G-ucV"/>
-                                        </connections>
-                                    </imageView>
                                     <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bny-DQ-Lpj" userLabel="animal1">
-                                        <rect key="frame" x="46" y="45" width="59" height="64"/>
+                                        <rect key="frame" x="59" y="54" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -341,7 +333,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5tK-64-aZG" userLabel="animal2">
-                                        <rect key="frame" x="106" y="12" width="59" height="64"/>
+                                        <rect key="frame" x="159" y="62" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -349,7 +341,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OHv-Tb-0hU" userLabel="animal3">
-                                        <rect key="frame" x="162" y="45" width="59" height="64"/>
+                                        <rect key="frame" x="14" y="16" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -357,7 +349,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8wI-tN-gSL" userLabel="animal5">
-                                        <rect key="frame" x="257" y="3" width="59" height="64"/>
+                                        <rect key="frame" x="231" y="62" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -365,7 +357,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gTy-5g-qtr" userLabel="animal4">
-                                        <rect key="frame" x="229" y="47" width="59" height="64"/>
+                                        <rect key="frame" x="121" y="16" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -379,6 +371,14 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Gjh-0B-78E" userLabel="animal0">
+                                        <rect key="frame" x="257" y="8" width="59" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="FfN-a9-CGA" appends="YES" id="ofa-7G-ucV"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -562,6 +562,7 @@ Swipe left to study it again later.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="sdf:" destination="N0J-Wg-9Y5" eventType="touchUpInside" id="zGE-40-0Gl"/>
                                     <segue destination="RM9-cm-2y5" kind="modal" modalTransitionStyle="crossDissolve" id="Rlb-6E-5C5"/>
                                 </connections>
                             </button>
@@ -644,9 +645,9 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BPd-jK-3EV"/>
-        <segue reference="WWN-a8-0Pg"/>
-        <segue reference="ppg-Yl-enc"/>
+        <segue reference="dnO-1p-aX3"/>
         <segue reference="vq8-lQ-kfd"/>
+        <segue reference="Rlb-6E-5C5"/>
+        <segue reference="WWN-a8-0Pg"/>
     </inferredMetricsTieBreakers>
 </document>

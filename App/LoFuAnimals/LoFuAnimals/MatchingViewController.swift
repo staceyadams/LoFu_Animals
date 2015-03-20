@@ -17,8 +17,6 @@ class MatchingViewController: UIViewController {
     
     var animalSticker: [String] = ["cat", "dog", "fish", "rabbit", "bird", "hamster"]
     var animalCard: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
-    var currentWord: String!
-    var currentWordImage: String!
     
     var scale: CGFloat! = 1
     var rotate: CGFloat! = 0
@@ -72,16 +70,19 @@ class MatchingViewController: UIViewController {
     {
         var location = sender.locationInView(view)
         var translation = sender.translationInView(view)
+        var imageView = sender.view as UIImageView
         
         if (sender.state == UIGestureRecognizerState.Began)
         {
             scale = 1.5
+            selectedIndex = imageView.tag
+            // println(selectedIndex)
             transformAnimal()
-            originalCenter = animalImage[0].center
+            originalCenter = animalImage[selectedIndex].center
             
         } else if (sender.state == UIGestureRecognizerState.Changed)
         {
-            animalImage[0].center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y + translation.y)
+            animalImage[selectedIndex].center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y + translation.y)
 
             
         } else if (sender.state == UIGestureRecognizerState.Ended)
@@ -91,21 +92,18 @@ class MatchingViewController: UIViewController {
             
             // @TODO once the animal is moved outside of the view, it can no longer be picked up. why????
             
+            println("animal center \(animalImage[selectedIndex].center )")
+            println("card center \(card[selectedIndex].center )")
             
+            if animalImage[selectedIndex].center == card[selectedIndex].center // and then +/- some value so it's just within the bounds of the card
+            {
+                println("correct")
+            }
             
-//            println("animal center \(animalImage[selectedIndex].center )")
-//            println("animal card \(animalCardsImage[selectedIndex].center )")
-//            
-//            if animalImage[selectedIndex].center == animalCardsImage[selectedIndex].center
-//            {
-//                println("correct")
-//            }
-//            
-//            else
-//            {
-//                println("right")
-//            }
-//            
+            else
+            {
+                println("nope")
+            }
             
         }
     }
