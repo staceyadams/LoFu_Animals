@@ -10,27 +10,13 @@ import UIKit
 
 class MatchingViewController: UIViewController {
 
-    @IBOutlet weak var card1: UIImageView!
-    @IBOutlet weak var card2: UIImageView!
-    @IBOutlet weak var card3: UIImageView!
-    @IBOutlet weak var card4: UIImageView!
-    @IBOutlet weak var card5: UIImageView!
-    @IBOutlet weak var card6: UIImageView!
-    @IBOutlet weak var animal1: UIImageView!
-    @IBOutlet weak var animal2: UIImageView!
-    @IBOutlet weak var animal3: UIImageView!
-    @IBOutlet weak var animal4: UIImageView!
-    @IBOutlet weak var animal5: UIImageView!
-    @IBOutlet weak var animal6: UIImageView!
     
-    
+    @IBOutlet var card: [UIImageView]!
     @IBOutlet var animalImage: [UIImageView]!
-    
-   
     var selectedIndex: Int! = 0
     
     var animalSticker: [String] = ["cat", "dog", "fish", "rabbit", "bird", "hamster"]
-    var animalCards: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
+    var animalCard: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
     var currentWord: String!
     var currentWordImage: String!
     
@@ -46,10 +32,28 @@ class MatchingViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        animalImage[1].image = UIImage(named:animalSticker[0])
-        animalImage[2].image = UIImage(named:animalSticker[1])
-      
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
         
+        card[0].transform = CGAffineTransformMakeRotation(3.14*0.02)
+        card[1].transform = CGAffineTransformMakeRotation(3.14/0.02)
+        card[2].transform = CGAffineTransformMakeRotation(3.14*0.03)
+        card[3].transform = CGAffineTransformMakeRotation(3.14/0.01)
+        card[4].transform = CGAffineTransformMakeRotation(3.14*0.04)
+        card[5].transform = CGAffineTransformMakeRotation(3.14/0.02)
+        
+        animalImage[0].image = UIImage(named: animalSticker[0])
+        animalImage[1].image = UIImage(named: animalSticker[1])
+        animalImage[2].image = UIImage(named: animalSticker[2])
+        animalImage[3].image = UIImage(named: animalSticker[3])
+        animalImage[4].image = UIImage(named: animalSticker[4])
+        animalImage[5].image = UIImage(named: animalSticker[5])
+        
+        animalImage[0].image = UIImage(named: animalSticker[0])
+        animalImage[1].image = UIImage(named: animalSticker[1])
+        animalImage[2].image = UIImage(named: animalSticker[2])
+        animalImage[3].image = UIImage(named: animalSticker[3])
+        animalImage[4].image = UIImage(named: animalSticker[4])
+        animalImage[5].image = UIImage(named: animalSticker[5])
         
         //selectedIndex = animalCardsImage.viewWithTag(100)
         
@@ -80,17 +84,21 @@ class MatchingViewController: UIViewController {
         {
             scale = 1.5
             transformAnimal()
-            originalCenter = animalImage[selectedIndex].center
+            originalCenter = animalImage[0].center
             
         } else if (sender.state == UIGestureRecognizerState.Changed)
         {
-            animalImage[selectedIndex].center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y + translation.y)
+            animalImage[0].center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y + translation.y)
 
             
         } else if (sender.state == UIGestureRecognizerState.Ended)
         {
             scale = 1
             transformAnimal()
+            
+            // @TODO once the animal is moved outside of the view, it can no longer be picked up. why????
+            
+            
             
 //            println("animal center \(animalImage[selectedIndex].center )")
 //            println("animal card \(animalCardsImage[selectedIndex].center )")
