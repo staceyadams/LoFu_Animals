@@ -10,13 +10,27 @@ import UIKit
 
 class MatchingViewController: UIViewController {
 
-    @IBOutlet var animalCardsImage: [UIImageView]!
+    @IBOutlet weak var card1: UIImageView!
+    @IBOutlet weak var card2: UIImageView!
+    @IBOutlet weak var card3: UIImageView!
+    @IBOutlet weak var card4: UIImageView!
+    @IBOutlet weak var card5: UIImageView!
+    @IBOutlet weak var card6: UIImageView!
+    @IBOutlet weak var animal1: UIImageView!
+    @IBOutlet weak var animal2: UIImageView!
+    @IBOutlet weak var animal3: UIImageView!
+    @IBOutlet weak var animal4: UIImageView!
+    @IBOutlet weak var animal5: UIImageView!
+    @IBOutlet weak var animal6: UIImageView!
+    
+    
     @IBOutlet var animalImage: [UIImageView]!
     
+   
     var selectedIndex: Int! = 0
     
-    var animalsText: [String] = ["cat", "dog", "fish", "rabbit", "bird", "hamster"]
-    var animalsCards: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
+    var animalSticker: [String] = ["cat", "dog", "fish", "rabbit", "bird", "hamster"]
+    var animalCards: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
     var currentWord: String!
     var currentWordImage: String!
     
@@ -32,12 +46,10 @@ class MatchingViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        animalCardsImage[0].image = UIImage(named:animalsCards[0])
-        animalCardsImage[1].image = UIImage(named:animalsCards[1])
+        animalImage[1].image = UIImage(named:animalSticker[0])
+        animalImage[2].image = UIImage(named:animalSticker[1])
+      
         
-        animalImage[1].image = UIImage(named:animalsText[1])
-        
-        animalImage[selectedIndex].image = UIImage(named:animalsText[selectedIndex])
         
         //selectedIndex = animalCardsImage.viewWithTag(100)
         
@@ -80,19 +92,19 @@ class MatchingViewController: UIViewController {
             scale = 1
             transformAnimal()
             
-            println("animal center \(animalImage[selectedIndex].center )")
-            println("animal card \(animalCardsImage[selectedIndex].center )")
-            
-            if animalImage[selectedIndex].center == animalCardsImage[selectedIndex].center
-            {
-                println("correct")
-            }
-            
-            else
-            {
-                println("right")
-            }
-            
+//            println("animal center \(animalImage[selectedIndex].center )")
+//            println("animal card \(animalCardsImage[selectedIndex].center )")
+//            
+//            if animalImage[selectedIndex].center == animalCardsImage[selectedIndex].center
+//            {
+//                println("correct")
+//            }
+//            
+//            else
+//            {
+//                println("right")
+//            }
+//            
             
         }
     }

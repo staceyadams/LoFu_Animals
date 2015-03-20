@@ -10,14 +10,9 @@ import UIKit
 
 class SummaryViewController: UIViewController
 {
-
-    @IBOutlet weak var card1: UIImageView!
-    @IBOutlet weak var card2: UIImageView!
-    @IBOutlet weak var card3: UIImageView!
-    @IBOutlet weak var card4: UIImageView!
-    @IBOutlet weak var card5: UIImageView!
-    @IBOutlet weak var card6: UIImageView!
-    
+   
+    @IBOutlet var card: [UIImageView]!
+    var animals: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
     
     override func viewDidLoad()
     {
@@ -27,13 +22,19 @@ class SummaryViewController: UIViewController
         
         view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
         
-        card1.transform = CGAffineTransformMakeRotation(3.14*0.02);
-        card2.transform = CGAffineTransformMakeRotation(3.14/0.02);
-        card3.transform = CGAffineTransformMakeRotation(3.14*0.03);
-        card4.transform = CGAffineTransformMakeRotation(3.14/0.01);
-        card5.transform = CGAffineTransformMakeRotation(3.14*0.04);
-        card6.transform = CGAffineTransformMakeRotation(3.14/0.02);
+        card[0].transform = CGAffineTransformMakeRotation(3.14*0.02)
+        card[1].transform = CGAffineTransformMakeRotation(3.14/0.02)
+        card[2].transform = CGAffineTransformMakeRotation(3.14*0.03)
+        card[3].transform = CGAffineTransformMakeRotation(3.14/0.01)
+        card[4].transform = CGAffineTransformMakeRotation(3.14*0.04)
+        card[5].transform = CGAffineTransformMakeRotation(3.14/0.02)
         
+        card[0].image = UIImage(named: animals[0])
+        card[1].image = UIImage(named: animals[1])
+        card[2].image = UIImage(named: animals[2])
+        card[3].image = UIImage(named: animals[3])
+        card[4].image = UIImage(named: animals[4])
+        card[5].image = UIImage(named: animals[5])
     }
 
     override func didReceiveMemoryWarning() {

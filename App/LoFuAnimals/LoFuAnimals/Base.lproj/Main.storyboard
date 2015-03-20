@@ -4,111 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--Welcome View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="WelcomeViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="4HO-7i-4M5">
-                                <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="uGT-MR-Q8k" userLabel="Welcome1">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kjk-sC-xhB">
-                                                <rect key="frame" x="116" y="101" width="85" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.6549019814" green="0.84705889229999998" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="Ve2-Dq-srd" userLabel="Welcome2">
-                                        <rect key="frame" x="320" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qsW-rt-iWf">
-                                                <rect key="frame" x="126" y="104" width="85" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="0.96743838859999998" blue="0.70491619319999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="vOp-58-8zC" userLabel="Welcome3">
-                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fN7-1B-aVk">
-                                                <rect key="frame" x="118" y="105" width="85" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="0.68340739890000002" blue="0.8525323158" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="Zgi-P0-bhM" userLabel="Welcome4">
-                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CR8-JD-3ii">
-                                                <rect key="frame" x="113" y="106" width="85" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.64089013009999996" blue="0.64089013009999996" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                </subviews>
-                            </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="w0g-mF-Hdo">
-                                <rect key="frame" x="125" y="520" width="67" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="currentPageIndicatorTintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </pageControl>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lv6-6q-Wsa">
-                                <rect key="frame" x="28" y="460" width="262" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
-                                <state key="normal" title="Get Started">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RM9-cm-2y5" kind="modal" id="fch-eX-pak"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="1280" height="568"/>
-                    <connections>
-                        <outlet property="pageControl" destination="w0g-mF-Hdo" id="hK2-Tf-sfp"/>
-                        <outlet property="scrollView" destination="4HO-7i-4M5" id="YQ0-nE-opC"/>
-                        <outlet property="startButton" destination="lv6-6q-Wsa" id="Y3L-rK-6dZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4" y="420"/>
-        </scene>
         <!--Menu-->
         <scene sceneID="Nfc-yT-maG">
             <objects>
@@ -142,56 +37,10 @@
             </objects>
             <point key="canvasLocation" x="333" y="1109"/>
         </scene>
-        <!--LearningControllerScene-->
-        <scene sceneID="FbK-8d-bvp">
-            <objects>
-                <viewController title="LearningControllerScene" automaticallyAdjustsScrollViewInsets="NO" id="VuJ-Fb-lIr" customClass="LearningControllerViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JGu-lS-v1k">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="8AZ-nl-fGf" userLabel="heading bar">
-                                <rect key="frame" x="-1" y="20" width="321" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn: Pets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8nM-am-V2J">
-                                <rect key="frame" x="0.0" y="30" width="320" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cnd-3x-eY6" userLabel="btn-back">
-                                <rect key="frame" x="8" y="30" width="31" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btn-back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didClickBackButton:" destination="VuJ-Fb-lIr" eventType="touchUpInside" id="NFp-Ye-GDx"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" id="Sdf-1U-edi" userLabel="contentView">
-                                <rect key="frame" x="0.0" y="68" width="320" height="500"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.55686274509803924" green="0.72941176470588232" blue="0.85882352941176465" alpha="1" colorSpace="deviceRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Learn: Pets" id="Kbw-bl-xKW"/>
-                    <connections>
-                        <outlet property="contentView" destination="Sdf-1U-edi" id="FyJ-BS-bHs"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="duF-Ix-Qx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1184" y="420"/>
-        </scene>
-        <!--LearningWritingScene-->
+        <!--Pets: Writing-->
         <scene sceneID="lRi-t6-MWT">
             <objects>
-                <viewController storyboardIdentifier="writingStory" title="LearningWritingScene" id="RTz-CW-lHt" customClass="WritingViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="writingStory" title="Pets: Writing" id="RTz-CW-lHt" customClass="WritingViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZKo-LR-HL8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,6 +70,7 @@
                                         </state>
                                         <connections>
                                             <action selector="didPressSubmit:" destination="RTz-CW-lHt" eventType="touchUpInside" id="ADG-Qt-mfn"/>
+                                            <segue destination="N0J-Wg-9Y5" kind="modal" modalTransitionStyle="crossDissolve" id="vq8-lQ-kfd"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write the animal above in Chinese." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w1Z-gl-SIF">
@@ -241,6 +91,16 @@
                                         <color key="textColor" white="0.15422559306569342" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hii-Dj-PnT">
+                                        <rect key="frame" x="291" y="34" width="38" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="cheat">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="N0J-Wg-9Y5" kind="modal" modalTransitionStyle="crossDissolve" id="zVR-4B-GRY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pxC-Km-3y7" userLabel="btn-back">
@@ -250,7 +110,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didClickBackButton:" destination="VuJ-Fb-lIr" eventType="touchUpInside" id="f8v-2t-CuJ"/>
                                     <segue destination="RM9-cm-2y5" kind="modal" modalTransitionStyle="crossDissolve" id="zPo-5J-hJK"/>
                                 </connections>
                             </button>
@@ -269,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="944" y="1833"/>
         </scene>
-        <!--LearningSummaryScene-->
+        <!--Pets: Summary - Flashcards-->
         <scene sceneID="tAh-ws-x5J">
             <objects>
-                <viewController storyboardIdentifier="summaryStory" title="LearningSummaryScene" id="iQ8-6S-ZXM" customClass="SummaryViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="summaryStory" title="Pets: Summary - Flashcards" id="iQ8-6S-ZXM" customClass="SummaryViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X9M-NH-6WM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,7 +154,7 @@
                                 <rect key="frame" x="97" y="443" width="117" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Review again?">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -323,7 +182,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didClickBackButton:" destination="VuJ-Fb-lIr" eventType="touchUpInside" id="McN-pr-465"/>
                                     <segue destination="RM9-cm-2y5" kind="modal" modalTransitionStyle="crossDissolve" id="R8O-rB-rbV"/>
                                 </connections>
                             </button>
@@ -331,28 +189,28 @@
                                 <rect key="frame" x="-12" y="88" width="344" height="339"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="zrv-zi-Ybv" userLabel="card1">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="zrv-zi-Ybv" userLabel="card0">
                                         <rect key="frame" x="15" y="40" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_dog" id="8sg-jz-5Pl" userLabel="card2">
+                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_dog" id="8sg-jz-5Pl" userLabel="card1">
                                         <rect key="frame" x="118" y="34" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_fish" id="UoA-v6-M8F" userLabel="card3">
+                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_fish" id="UoA-v6-M8F" userLabel="card3">
                                         <rect key="frame" x="15" y="177" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_rabbit" id="5AS-ct-9Mu" userLabel="card4">
+                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_rabbit" id="5AS-ct-9Mu" userLabel="card2">
                                         <rect key="frame" x="214" y="49" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_hamster" id="qP1-qd-6Kr" userLabel="card6">
-                                        <rect key="frame" x="221" y="177" width="108" height="135"/>
+                                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_bird" id="3Rl-jR-6Sq" userLabel="card4">
+                                        <rect key="frame" x="118" y="177" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_bird" id="3Rl-jR-6Sq" userLabel="card5">
-                                        <rect key="frame" x="118" y="177" width="108" height="135"/>
+                                    <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_hamster" id="qP1-qd-6Kr" userLabel="card5">
+                                        <rect key="frame" x="221" y="177" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -362,22 +220,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Learn: Pets" id="M8T-TI-YsI"/>
                     <connections>
-                        <outlet property="card1" destination="zrv-zi-Ybv" id="lxa-U0-Nv4"/>
-                        <outlet property="card2" destination="8sg-jz-5Pl" id="kQR-9m-Ah4"/>
-                        <outlet property="card3" destination="5AS-ct-9Mu" id="Pux-NR-yaT"/>
-                        <outlet property="card4" destination="UoA-v6-M8F" id="swu-Ij-KE4"/>
-                        <outlet property="card5" destination="3Rl-jR-6Sq" id="xvv-eh-vnT"/>
-                        <outlet property="card6" destination="qP1-qd-6Kr" id="2Zo-Fp-eGZ"/>
+                        <outletCollection property="card" destination="zrv-zi-Ybv" collectionClass="NSMutableArray" id="NU7-x8-3bw"/>
+                        <outletCollection property="card" destination="8sg-jz-5Pl" collectionClass="NSMutableArray" id="FXs-bb-WSb"/>
+                        <outletCollection property="card" destination="5AS-ct-9Mu" collectionClass="NSMutableArray" id="MRM-PU-yuv"/>
+                        <outletCollection property="card" destination="UoA-v6-M8F" collectionClass="NSMutableArray" id="kWW-Yd-egS"/>
+                        <outletCollection property="card" destination="3Rl-jR-6Sq" collectionClass="NSMutableArray" id="96d-sD-wXz"/>
+                        <outletCollection property="card" destination="qP1-qd-6Kr" collectionClass="NSMutableArray" id="jrq-tk-9gI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7T-2E-cwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="493" y="1825"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Pets: Navigation Controller-->
         <scene sceneID="WF5-mc-5cX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2El-vV-BJL" sceneMemberID="viewController">
+                <navigationController title="Pets: Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2El-vV-BJL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5DH-b8-Yzs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -392,71 +250,133 @@
             </objects>
             <point key="canvasLocation" x="-476" y="1814"/>
         </scene>
-        <!--Matching Game-->
+        <!--Pets: Matching-->
         <scene sceneID="82z-pA-qWP">
             <objects>
-                <viewController title="Matching Game" id="VZB-ne-X81" customClass="MatchingViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Pets: Matching" id="VZB-ne-X81" customClass="MatchingViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AnA-Bm-J9p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZEq-j9-7Wc">
-                                <rect key="frame" x="22" y="15" width="105" height="146"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4Uc-k2-65s">
-                                <rect key="frame" x="150" y="15" width="105" height="146"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="a7T-HL-AXQ">
-                                <rect key="frame" x="169" y="398" width="103" height="94"/>
+                            <view contentMode="scaleToFill" id="2vX-ex-8xR" userLabel="Heading">
+                                <rect key="frame" x="0.0" y="25" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="byu-br-ast" appends="YES" id="TKO-NH-Q5A"/>
-                                </connections>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sTP-Gj-w4e">
-                                <rect key="frame" x="150" y="176" width="105" height="146"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2F1-i5-uGc">
-                                <rect key="frame" x="16" y="342" width="103" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Your Knowledge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iaF-4n-te4">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jyj-qL-113" userLabel="btn-back">
+                                <rect key="frame" x="2" y="35" width="31" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="AQt-O5-irR" appends="YES" id="g4t-Yi-r18"/>
-                                </connections>
-                            </imageView>
+                                <state key="normal" image="btn-back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wsx-lD-Xcl">
+                                <rect key="frame" x="0.0" y="488" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.72549019609999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
+                                <state key="normal" title="Learn More Animals">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" id="duL-Da-7AF" userLabel="Words">
+                                <rect key="frame" x="-12" y="42" width="344" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="dC3-WQ-ZEz" userLabel="card1">
+                                        <rect key="frame" x="15" y="40" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_dog" id="MVV-Y7-h4x" userLabel="card2">
+                                        <rect key="frame" x="118" y="34" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_fish" id="Uyn-sa-YlQ" userLabel="card4">
+                                        <rect key="frame" x="213" y="48" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_hamster" id="80Y-nM-hLf" userLabel="card6">
+                                        <rect key="frame" x="221" y="177" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_bird" id="hKy-e9-6UB" userLabel="card5">
+                                        <rect key="frame" x="118" y="177" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_rabbit" id="fZB-PE-MJ9" userLabel="card3">
+                                        <rect key="frame" x="15" y="172" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="llN-Qt-ZS8" userLabel="Animals">
+                                <rect key="frame" x="-4" y="369" width="324" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Gjh-0B-78E" userLabel="animal1">
+                                        <rect key="frame" x="8" y="8" width="59" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bny-DQ-Lpj" userLabel="animal2">
+                                        <rect key="frame" x="39" y="45" width="59" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5tK-64-aZG" userLabel="animal3">
+                                        <rect key="frame" x="101" y="15" width="59" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8wI-tN-gSL" userLabel="animal5">
+                                        <rect key="frame" x="257" y="0.0" width="59" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gTy-5g-qtr" userLabel="animal6">
+                                        <rect key="frame" x="229" y="45" width="59" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OHv-Tb-0hU" userLabel="animal4">
+                                        <rect key="frame" x="162" y="45" width="59" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.6549019814" green="0.84705889229999998" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <connections>
-                        <outletCollection property="animalCardsImage" destination="ZEq-j9-7Wc" collectionClass="NSMutableArray" id="PNe-cy-bWx"/>
-                        <outletCollection property="animalCardsImage" destination="4Uc-k2-65s" collectionClass="NSMutableArray" id="6nu-qL-Y8u"/>
-                        <outletCollection property="animalCardsImage" destination="sTP-Gj-w4e" collectionClass="NSMutableArray" id="ag4-Zg-yfc"/>
-                        <outletCollection property="animalImage" destination="2F1-i5-uGc" collectionClass="NSMutableArray" id="oCr-qi-Jlp"/>
-                        <outletCollection property="animalImage" destination="a7T-HL-AXQ" collectionClass="NSMutableArray" id="QHx-fk-aHp"/>
+                        <outlet property="card1" destination="dC3-WQ-ZEz" id="7N3-Pr-p3z"/>
+                        <outlet property="card2" destination="MVV-Y7-h4x" id="Vm2-ge-8EW"/>
+                        <outlet property="card3" destination="Uyn-sa-YlQ" id="vBu-sc-Y4S"/>
+                        <outlet property="card4" destination="fZB-PE-MJ9" id="FHB-Ag-6hW"/>
+                        <outlet property="card5" destination="hKy-e9-6UB" id="Fyw-jb-t5J"/>
+                        <outlet property="card6" destination="80Y-nM-hLf" id="sOJ-o2-vjL"/>
+                        <outletCollection property="animalImage" destination="Gjh-0B-78E" collectionClass="NSMutableArray" id="YKz-8Q-Fhn"/>
+                        <outletCollection property="animalImage" destination="bny-DQ-Lpj" collectionClass="NSMutableArray" id="l8U-Qp-eKl"/>
+                        <outletCollection property="animalImage" destination="5tK-64-aZG" collectionClass="NSMutableArray" id="rhc-UJ-5qC"/>
+                        <outletCollection property="animalImage" destination="OHv-Tb-0hU" collectionClass="NSMutableArray" id="uiC-TI-qaU"/>
+                        <outletCollection property="animalImage" destination="gTy-5g-qtr" collectionClass="NSMutableArray" id="1M6-VQ-Wtz"/>
+                        <outletCollection property="animalImage" destination="8wI-tN-gSL" collectionClass="NSMutableArray" id="wgZ-jK-cAp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzM-nA-0VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="AQt-O5-irR">
-                    <connections>
-                        <action selector="onDragAnimal:" destination="VZB-ne-X81" id="5qy-tF-BLT"/>
-                    </connections>
-                </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="byu-br-ast">
-                    <connections>
-                        <action selector="onDragAnimal:" destination="VZB-ne-X81" id="twA-LK-EhX"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-476" y="2480"/>
         </scene>
-        <!--LearningFlashcardsScene-->
+        <!--Pets: Flashcards-->
         <scene sceneID="65J-DO-CIm">
             <objects>
-                <viewController storyboardIdentifier="flashcardStory" title="LearningFlashcardsScene" automaticallyAdjustsScrollViewInsets="NO" id="izJ-H1-pSL" customClass="FlashcardViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="flashcardStory" title="Pets: Flashcards" automaticallyAdjustsScrollViewInsets="NO" id="izJ-H1-pSL" customClass="FlashcardViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ha-iw-gxf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -525,7 +445,6 @@ Swipe left to study it again later.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didClickBackButton:" destination="VuJ-Fb-lIr" eventType="touchUpInside" id="6yj-8n-1XW"/>
                                     <segue destination="RM9-cm-2y5" kind="modal" modalTransitionStyle="crossDissolve" id="ppg-Yl-enc"/>
                                 </connections>
                             </button>
@@ -542,100 +461,109 @@ Swipe left to study it again later.</string>
             </objects>
             <point key="canvasLocation" x="4" y="1825"/>
         </scene>
-        <!--LearningSummaryScene-->
-        <scene sceneID="UtY-eR-KYV">
+        <!--Pets: Summary - Writing-->
+        <scene sceneID="4nI-pm-W2k">
             <objects>
-                <viewController title="LearningSummaryScene" id="VFn-do-GwY" customClass="LearningSummaryViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Oxu-Lq-IJR">
+                <viewController title="Pets: Summary - Writing" id="N0J-Wg-9Y5" customClass="SummaryViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jm7-mo-Ydc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="xVL-V7-TXe">
-                                <rect key="frame" x="-1" y="106" width="108" height="135"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="T4C-7p-Eem" userLabel="btn-reviewAgain">
+                                <rect key="frame" x="97" y="443" width="117" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn: Pets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yXp-Tl-DqV">
-                                <rect key="frame" x="-1" y="30" width="320" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have learned the animals!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dbE-9o-fVg">
-                                <rect key="frame" x="0.0" y="58" width="320" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HPM-Ki-HWe" userLabel="btn-reviewAgain">
-                                <rect key="frame" x="10" y="467" width="71" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btn-again">
+                                <state key="normal" title="Review again?">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="RTz-CW-lHt" kind="modal" modalTransitionStyle="crossDissolve" id="dnO-1p-aX3"/>
+                                </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="OA1-O9-1ti">
-                                <rect key="frame" x="0.0" y="87" width="319" height="360"/>
+                            <view contentMode="scaleToFill" id="gSF-BT-c5n" userLabel="Heading">
+                                <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CcI-HL-vCD">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="summaryCellId" id="Zhd-kq-AiK" customClass="SummaryCell" customModule="LoFuAnimals" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QaI-4H-EFe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ql1-uu-oO5">
-                                                    <rect key="frame" x="14" y="84" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <size key="customSize" width="108" height="135"/>
-                                        <connections>
-                                            <outlet property="summaryImage" destination="QaI-4H-EFe" id="MTx-3Q-XgJ"/>
-                                            <outlet property="summaryLabelTest" destination="ql1-uu-oO5" id="BsA-bz-Xpc"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kmI-z3-EzV">
-                                <rect key="frame" x="95" y="470" width="217" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Writing learned!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zya-TU-04n">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JWj-0R-PLC" userLabel="btn-back">
+                                <rect key="frame" x="2" y="30" width="31" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="btn-back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RM9-cm-2y5" kind="modal" modalTransitionStyle="crossDissolve" id="Rlb-6E-5C5"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="boT-8s-QgI">
+                                <rect key="frame" x="-12" y="88" width="344" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_dog" id="hVG-ef-hbe" userLabel="card1">
+                                        <rect key="frame" x="118" y="34" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_fish" id="mN3-YX-GLo" userLabel="card3">
+                                        <rect key="frame" x="15" y="177" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_rabbit" id="r7k-sK-FNL" userLabel="card2">
+                                        <rect key="frame" x="214" y="49" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_hamster" id="Rpf-u2-guh" userLabel="card5">
+                                        <rect key="frame" x="221" y="177" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_bird" id="n8o-7d-xxQ" userLabel="card4">
+                                        <rect key="frame" x="118" y="177" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="MfM-AW-b1m" userLabel="card0">
+                                        <rect key="frame" x="15" y="40" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aCS-fu-zqt">
+                                <rect key="frame" x="0.0" y="488" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.72549019609999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="24"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
-                                <state key="normal" title="Practice Writing">
+                                <state key="normal" title="Test Your Knowledge">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="VZB-ne-X81" kind="modal" modalTransitionStyle="crossDissolve" id="CRt-99-fQ8"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.5568627451" green="0.72941176470000002" blue="0.85882352939999995" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.6549019814" green="0.84705889229999998" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Learn: Pets" id="uYf-zi-Jvr"/>
+                    <navigationItem key="navigationItem" title="Learn: Pets" id="6UM-3b-Adc"/>
                     <connections>
-                        <outlet property="summaryCollectionView" destination="OA1-O9-1ti" id="KJM-v2-OaX"/>
+                        <outletCollection property="card" destination="MfM-AW-b1m" collectionClass="NSMutableArray" id="D7Z-fC-Xla"/>
+                        <outletCollection property="card" destination="hVG-ef-hbe" collectionClass="NSMutableArray" id="99r-1R-Jeh"/>
+                        <outletCollection property="card" destination="r7k-sK-FNL" collectionClass="NSMutableArray" id="kgf-Z0-9hh"/>
+                        <outletCollection property="card" destination="mN3-YX-GLo" collectionClass="NSMutableArray" id="f9d-aL-Std"/>
+                        <outletCollection property="card" destination="n8o-7d-xxQ" collectionClass="NSMutableArray" id="vqZ-7L-KRp"/>
+                        <outletCollection property="card" destination="Rpf-u2-guh" collectionClass="NSMutableArray" id="z0o-X9-ffZ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ghI-Eu-BTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfm-Tz-xmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827" y="420"/>
+            <point key="canvasLocation" x="1409" y="1833"/>
         </scene>
     </scenes>
     <resources>
@@ -655,7 +583,9 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="vq8-lQ-kfd"/>
+        <segue reference="dnO-1p-aX3"/>
+        <segue reference="Rlb-6E-5C5"/>
         <segue reference="CYv-dR-2iv"/>
-        <segue reference="zPo-5J-hJK"/>
     </inferredMetricsTieBreakers>
 </document>
