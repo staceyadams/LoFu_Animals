@@ -92,10 +92,24 @@ class MatchingViewController: UIViewController {
             
             // @TODO once the animal is moved outside of the view, it can no longer be picked up. why????
             
-            println("animal center \(animalImage[selectedIndex].center )")
-            println("card center \(card[selectedIndex].center )")
             
-            if animalImage[selectedIndex].center == card[selectedIndex].center // and then +/- some value so it's just within the bounds of the card
+            var animalImageX = animalImage[selectedIndex].frame.origin.x
+            var cardX = card[selectedIndex].frame.origin.x
+            var animalImageY = animalImage[selectedIndex].frame.origin.y
+            var cardY = card[selectedIndex].frame.origin.y
+            var cardWidth = animalImage[selectedIndex].frame.width
+            var cardHeight = animalImage[selectedIndex].frame.height
+            
+//            println("animal x \(animalImageX)")
+//            println("card x \(cardX)")
+//            println("animal y \(animalImageY)")
+//            println("card y \(cardY)")
+//            println("less than X: \(cardX + cardWidth)")
+//            println("less than Y: \(cardY + cardHeight)")
+            
+            if (animalImageX >= cardX) && (animalImageX <= cardX + cardWidth) &&
+               (animalImageY >= cardY) && (animalImageY <= cardY + cardHeight)
+            
             {
                 println("correct")
             }
