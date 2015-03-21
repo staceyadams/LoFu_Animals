@@ -21,6 +21,13 @@ class SummaryViewController: UIViewController
         // Do any additional setup after loading the view.
         
         view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
+        
+        card[0].transform = CGAffineTransformMakeRotation(3.14*0.02)
+        card[1].transform = CGAffineTransformMakeRotation(3.14/0.02)
+        card[2].transform = CGAffineTransformMakeRotation(3.14*0.03)
+        card[3].transform = CGAffineTransformMakeRotation(3.14/0.01)
+        card[4].transform = CGAffineTransformMakeRotation(3.14*0.04)
+        card[5].transform = CGAffineTransformMakeRotation(3.14/0.02)
                 
         for index in 0...5
         {

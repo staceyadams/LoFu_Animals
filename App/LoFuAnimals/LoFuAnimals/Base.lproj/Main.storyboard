@@ -324,8 +324,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="324" height="569"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" id="iys-bk-856">
+                                        <rect key="frame" x="0.0" y="380" width="320" height="392"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bny-DQ-Lpj" userLabel="animal1">
-                                        <rect key="frame" x="59" y="423" width="59" height="64"/>
+                                        <rect key="frame" x="58" y="453" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -333,7 +338,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5tK-64-aZG" userLabel="animal2">
-                                        <rect key="frame" x="159" y="431" width="59" height="64"/>
+                                        <rect key="frame" x="159" y="453" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -341,23 +346,15 @@
                                         </connections>
                                     </imageView>
                                     <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OHv-Tb-0hU" userLabel="animal3">
-                                        <rect key="frame" x="14" y="385" width="59" height="64"/>
+                                        <rect key="frame" x="13" y="396" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="NaZ-Ha-Ng5" appends="YES" id="AT3-jL-wGK"/>
                                         </connections>
                                     </imageView>
-                                    <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8wI-tN-gSL" userLabel="animal5">
-                                        <rect key="frame" x="231" y="431" width="59" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="U3B-3E-Wrl" appends="YES" id="Jzf-Cp-deh"/>
-                                        </connections>
-                                    </imageView>
                                     <imageView tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gTy-5g-qtr" userLabel="animal4">
-                                        <rect key="frame" x="121" y="385" width="59" height="64"/>
+                                        <rect key="frame" x="118" y="415" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -365,12 +362,36 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Gjh-0B-78E" userLabel="animal0">
-                                        <rect key="frame" x="257" y="377" width="59" height="64"/>
+                                        <rect key="frame" x="238" y="447" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="FfN-a9-CGA" appends="YES" id="ofa-7G-ucV"/>
                                         </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="oOK-fT-X8O" userLabel="icon0">
+                                        <rect key="frame" x="147" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="MYM-4h-M63" userLabel="icon1">
+                                        <rect key="frame" x="147" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="UKk-lH-N3S" userLabel="icon2">
+                                        <rect key="frame" x="147" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="ijh-tk-VIz" userLabel="icon3">
+                                        <rect key="frame" x="147" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="qNV-6X-xin" userLabel="icon4">
+                                        <rect key="frame" x="147" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="Cnb-6M-yN3" userLabel="icon5">
+                                        <rect key="frame" x="147" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the animal to the correct word." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h9h-mh-lLh">
                                         <rect key="frame" x="2" y="482" width="320" height="106"/>
@@ -379,13 +400,13 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn-learned" id="MYM-4h-M63">
-                                        <rect key="frame" x="54" y="423" width="30" height="30"/>
+                                    <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8wI-tN-gSL" userLabel="animal5">
+                                        <rect key="frame" x="202" y="396" width="59" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn-learned" id="oOK-fT-X8O">
-                                        <rect key="frame" x="159" y="423" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="U3B-3E-Wrl" appends="YES" id="Jzf-Cp-deh"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                             </view>
@@ -405,6 +426,12 @@
                         <outletCollection property="card" destination="a5J-ex-Alb" collectionClass="NSMutableArray" id="Fgh-5o-uA0"/>
                         <outletCollection property="card" destination="fCi-7V-lD1" collectionClass="NSMutableArray" id="zZO-eI-QSh"/>
                         <outletCollection property="card" destination="4Ks-rD-5MN" collectionClass="NSMutableArray" id="Z6W-yt-edl"/>
+                        <outletCollection property="statusIcon" destination="oOK-fT-X8O" collectionClass="NSMutableArray" id="ica-48-bMT"/>
+                        <outletCollection property="statusIcon" destination="MYM-4h-M63" collectionClass="NSMutableArray" id="lub-G8-nKX"/>
+                        <outletCollection property="statusIcon" destination="UKk-lH-N3S" collectionClass="NSMutableArray" id="gJt-qj-gU2"/>
+                        <outletCollection property="statusIcon" destination="ijh-tk-VIz" collectionClass="NSMutableArray" id="tBH-eg-iCR"/>
+                        <outletCollection property="statusIcon" destination="qNV-6X-xin" collectionClass="NSMutableArray" id="faS-mS-KXp"/>
+                        <outletCollection property="statusIcon" destination="Cnb-6M-yN3" collectionClass="NSMutableArray" id="yEa-aM-XYN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzM-nA-0VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -645,6 +672,7 @@ Swipe left to study it again later.</string>
         <image name="flashcard_fish" width="258" height="331"/>
         <image name="flashcard_hamster" width="258" height="331"/>
         <image name="flashcard_rabbit" width="258" height="331"/>
+        <image name="icon-correct" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -652,9 +680,9 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="dnO-1p-aX3"/>
+        <segue reference="R8O-rB-rbV"/>
+        <segue reference="CYv-dR-2iv"/>
+        <segue reference="BPd-jK-3EV"/>
         <segue reference="vq8-lQ-kfd"/>
-        <segue reference="Rlb-6E-5C5"/>
-        <segue reference="WWN-a8-0Pg"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,7 +10,9 @@ import UIKit
 
 class MatchingViewController: UIViewController {
 
+
     
+    @IBOutlet var statusIcon: [UIImageView]!
     @IBOutlet var card: [UIImageView]!
     @IBOutlet var animalImage: [UIImageView]!
     var selectedIndex: Int! = 0
@@ -45,9 +47,8 @@ class MatchingViewController: UIViewController {
         {
             animalImage[index].image = UIImage(named: animalSticker[index])
             card[index].image = UIImage(named: animalCard[index])
+            statusIcon[index].alpha = 0
         }
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,9 +77,10 @@ class MatchingViewController: UIViewController {
         {
             scale = 1.5
             selectedIndex = imageView.tag
-            // println(selectedIndex)
-            transformAnimal()
             originalCenter = animalImage[selectedIndex].center
+            transformAnimal()
+            self.statusIcon[self.selectedIndex].alpha = 0
+
             
         } else if (sender.state == UIGestureRecognizerState.Changed)
         {
@@ -90,8 +92,10 @@ class MatchingViewController: UIViewController {
             scale = 1
             transformAnimal()
             
-            // @TODO once the animal is moved outside of the view, it can no longer be picked up. why????
-            
+            UIView.animateWithDuration(0.3, animations:
+            { () -> Void in
+                self.statusIcon[self.selectedIndex].alpha = 1
+            })
             
             var animalImageX = animalImage[selectedIndex].frame.origin.x
             var cardX = card[selectedIndex].frame.origin.x
@@ -107,31 +111,38 @@ class MatchingViewController: UIViewController {
 //            println("less than X: \(cardX + cardWidth)")
 //            println("less than Y: \(cardY + cardHeight)")
             
-            println(cardHeight)
             
             if (animalImageX >= cardX) && (animalImageX <= cardX + cardWidth) &&
                (animalImageY >= cardY) && (animalImageY <= cardY + cardHeight)
             
             {
-                println("correct")
-                
-                animalImage[selectedIndex].center = card[selectedIndex].center
-                //snap to 50x 130x
-                
-                println(animalImageX)
+                animalImage[selectedIndex].center.y = card[selectedIndex].center.y + 25
+                animalImage[selectedIndex].center.x = card[selectedIndex].center.x
+                statusIcon[selectedIndex].image = UIImage(named: "icon-correct")
+                positionIcon()
             }
             
             else
             {
-                println("nope")
+                statusIcon[selectedIndex].image = UIImage(named: "icon-wrong")
+                positionIcon()
+                
+                if animalImageY >= 380
+                {statusIcon[selectedIndex].alpha = 0}
             }
             
         }
     }
     
-    func transformAnimal(){
+    func transformAnimal()
+    {
         var scaleTransform = CGAffineTransformMakeScale(scale, scale)
         animalImage[selectedIndex].transform = scaleTransform
     }
 
+    func positionIcon()
+    {
+        statusIcon[selectedIndex].center.x = animalImage[selectedIndex].center.x + 25
+        statusIcon[selectedIndex].center.y = animalImage[selectedIndex].center.y + 25
+    }
 }
