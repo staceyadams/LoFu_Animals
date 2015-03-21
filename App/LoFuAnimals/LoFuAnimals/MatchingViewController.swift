@@ -15,8 +15,8 @@ class MatchingViewController: UIViewController {
     @IBOutlet var animalImage: [UIImageView]!
     var selectedIndex: Int! = 0
     
-    var animalSticker: [String] = ["cat", "dog", "fish", "rabbit", "bird", "hamster"]
-    var animalCard: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
+    var animalSticker: [String] = ["sticker_cat", "sticker_dog", "sticker_fish", "sticker_rabbit", "sticker_bird", "sticker_hamster"]
+    var animalCard: [String] = ["card_cat", "card_dog", "card_fish", "card_rabbit", "card_bird", "card_hamster"]
     
     var scale: CGFloat! = 1
     var rotate: CGFloat! = 0
@@ -97,8 +97,8 @@ class MatchingViewController: UIViewController {
             var cardX = card[selectedIndex].frame.origin.x
             var animalImageY = animalImage[selectedIndex].frame.origin.y
             var cardY = card[selectedIndex].frame.origin.y
-            var cardWidth = animalImage[selectedIndex].frame.width
-            var cardHeight = animalImage[selectedIndex].frame.height
+            var cardWidth = card[selectedIndex].frame.width
+            var cardHeight = card[selectedIndex].frame.height
             
 //            println("animal x \(animalImageX)")
 //            println("card x \(cardX)")
@@ -107,11 +107,18 @@ class MatchingViewController: UIViewController {
 //            println("less than X: \(cardX + cardWidth)")
 //            println("less than Y: \(cardY + cardHeight)")
             
+            println(cardHeight)
+            
             if (animalImageX >= cardX) && (animalImageX <= cardX + cardWidth) &&
                (animalImageY >= cardY) && (animalImageY <= cardY + cardHeight)
             
             {
                 println("correct")
+                
+                animalImage[selectedIndex].center = card[selectedIndex].center
+                //snap to 50x 130x
+                
+                println(animalImageX)
             }
             
             else
