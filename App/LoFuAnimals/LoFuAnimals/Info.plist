@@ -36,5 +36,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>cartoonist_kooky</string>
+		<string>Delius-Regular</string>
+	</array>
 </dict>
 </plist>

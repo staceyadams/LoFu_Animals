@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3F8EA649254278BC9D69A5C7 /* Pods_LoFuAnimals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873C3E11E3DA24DDA10750E4 /* Pods_LoFuAnimals.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B507A7B81ABE2EEA002AB588 /* cartoonist_kooky_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = B507A7B41ABE2EEA002AB588 /* cartoonist_kooky_readme.txt */; };
+		B507A7B91ABE2EEA002AB588 /* cartoonist_kooky.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B507A7B51ABE2EEA002AB588 /* cartoonist_kooky.ttf */; };
+		B507A7BA1ABE2EEA002AB588 /* Delius-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B507A7B61ABE2EEA002AB588 /* Delius-Regular.ttf */; };
+		B507A7BB1ABE2EEA002AB588 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B507A7B71ABE2EEA002AB588 /* OFL.txt */; };
 		B53FB7451AB65C2F00BD4BBA /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB7441AB65C2F00BD4BBA /* AppState.swift */; };
 		B53FB74B1AB67B6700BD4BBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB74A1AB67B6700BD4BBA /* ViewController.swift */; };
 		B53FB7511AB67B9E00BD4BBA /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB7501AB67B9E00BD4BBA /* WritingViewController.swift */; };
@@ -36,6 +40,10 @@
 		380D35A473455F90ADAF9161 /* Pods-LoFuAnimals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoFuAnimals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoFuAnimals/Pods-LoFuAnimals.debug.xcconfig"; sourceTree = "<group>"; };
 		873C3E11E3DA24DDA10750E4 /* Pods_LoFuAnimals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoFuAnimals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D538043D491C68D301F74B /* Pods-LoFuAnimals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoFuAnimals.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoFuAnimals/Pods-LoFuAnimals.release.xcconfig"; sourceTree = "<group>"; };
+		B507A7B41ABE2EEA002AB588 /* cartoonist_kooky_readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cartoonist_kooky_readme.txt; sourceTree = "<group>"; };
+		B507A7B51ABE2EEA002AB588 /* cartoonist_kooky.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cartoonist_kooky.ttf; sourceTree = "<group>"; };
+		B507A7B61ABE2EEA002AB588 /* Delius-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delius-Regular.ttf"; sourceTree = "<group>"; };
+		B507A7B71ABE2EEA002AB588 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		B53FB7441AB65C2F00BD4BBA /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B53FB74A1AB67B6700BD4BBA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B53FB7501AB67B9E00BD4BBA /* WritingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +81,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B507A7B21ABE2ECD002AB588 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B507A7B31ABE2ED5002AB588 /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B507A7B31ABE2ED5002AB588 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B507A7B41ABE2EEA002AB588 /* cartoonist_kooky_readme.txt */,
+				B507A7B51ABE2EEA002AB588 /* cartoonist_kooky.ttf */,
+				B507A7B61ABE2EEA002AB588 /* Delius-Regular.ttf */,
+				B507A7B71ABE2EEA002AB588 /* OFL.txt */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		B5EFDDA01AB3B916006D96B5 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +123,7 @@
 		B5EFDDAB1AB3B916006D96B5 /* LoFuAnimals */ = {
 			isa = PBXGroup;
 			children = (
+				B507A7B21ABE2ECD002AB588 /* Resources */,
 				B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */,
 				B5EFDDB21AB3B916006D96B5 /* Main.storyboard */,
 				B57A08F41ABB75E300ABEF5A /* SummaryViewController.swift */,
@@ -237,9 +265,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B507A7BB1ABE2EEA002AB588 /* OFL.txt in Resources */,
+				B507A7B91ABE2EEA002AB588 /* cartoonist_kooky.ttf in Resources */,
+				B507A7B81ABE2EEA002AB588 /* cartoonist_kooky_readme.txt in Resources */,
 				B5EFDDB41AB3B916006D96B5 /* Main.storyboard in Resources */,
 				B5EFDDB91AB3B916006D96B5 /* LaunchScreen.xib in Resources */,
 				B5EFDDB61AB3B916006D96B5 /* Images.xcassets in Resources */,
+				B507A7BA1ABE2EEA002AB588 /* Delius-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
