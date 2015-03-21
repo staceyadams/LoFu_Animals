@@ -82,8 +82,8 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     func frontCardViewFrame() -> CGRect
     {
         let horizontalPadding: CGFloat = 15
-        let topPadding: CGFloat = 90
-        let bottomPadding: CGFloat = 100
+        let topPadding: CGFloat = 70
+        let bottomPadding: CGFloat = 0
 //        return CGRectMake(horizontalPadding, topPadding, CGRectGetWidth(self.view.frame) - (horizontalPadding*2), CGRectGetHeight(self.view.frame) - (bottomPadding))
         var cardRect = CGRectMake(horizontalPadding, topPadding, 290, 372)
 
