@@ -16,7 +16,7 @@ class WritingViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var displayWord: UILabel!
     @IBOutlet weak var backgroundTile: UIView!
     
-    var animalsText: [String] = ["猫", "狗", "fish", "rabbit", "bird", "hamster"]
+    var animalsText: [String] = ["猫", "狗", "鱼", "兔子", "鸟", "仓鼠"]
     var animalsCards: [String] = ["cat", "dog", "fish", "rabbit", "bird", "hamster"]
     var currentWord: String!
     var currentWordImage: String!

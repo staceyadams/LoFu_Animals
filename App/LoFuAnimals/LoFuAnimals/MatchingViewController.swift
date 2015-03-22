@@ -12,6 +12,9 @@ class MatchingViewController: UIViewController {
     @IBOutlet var statusIcon: [UIImageView]!
     @IBOutlet var card: [UIImageView]!
     @IBOutlet var animalImage: [UIImageView]!
+    @IBOutlet var cardView: [UIView]!
+    @IBOutlet var cardTextLabel: [UILabel]!
+    
     @IBOutlet weak var trayBG: UIView!
     @IBOutlet weak var text1: UILabel!
     @IBOutlet weak var text2: UILabel!
@@ -21,8 +24,7 @@ class MatchingViewController: UIViewController {
     
     
     var animalSticker: [String] = ["sticker_cat", "sticker_dog", "sticker_fish", "sticker_rabbit", "sticker_bird", "sticker_hamster"]
-    var animalCard: [String] = ["card_cat", "card_dog", "card_fish", "card_rabbit", "card_bird", "card_hamster"]
-    
+    var cardText: [String] = ["猫", "狗", "鱼", "兔子", "鸟", "仓鼠"]
     
     var selectedIndex: Int! = 0
     var correctAnswerCount = 0
@@ -39,21 +41,23 @@ class MatchingViewController: UIViewController {
         
         view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
         
-        card[0].transform = CGAffineTransformMakeRotation(3.14*0.02)
-        card[1].transform = CGAffineTransformMakeRotation(3.14/0.02)
-        card[2].transform = CGAffineTransformMakeRotation(3.14*0.03)
-        card[3].transform = CGAffineTransformMakeRotation(3.14/0.01)
-        card[4].transform = CGAffineTransformMakeRotation(3.14*0.04)
-        card[5].transform = CGAffineTransformMakeRotation(3.14/0.02)
+        cardView[0].transform = CGAffineTransformMakeRotation(3.14*0.02)
+        cardView[1].transform = CGAffineTransformMakeRotation(3.14/0.02)
+        cardView[2].transform = CGAffineTransformMakeRotation(3.14*0.03)
+        cardView[3].transform = CGAffineTransformMakeRotation(3.14/0.01)
+        cardView[4].transform = CGAffineTransformMakeRotation(3.14*0.04)
+        cardView[5].transform = CGAffineTransformMakeRotation(3.14/0.02)
         
         
         //for var index = 0; index < 6; index++
         for index in 0...5
         {
             animalImage[index].image = UIImage(named: animalSticker[index])
-            card[index].image = UIImage(named: animalCard[index])
+            card[index].image = UIImage(named: "paper")
+            cardTextLabel[index].text = cardText[index]
             statusIcon[index].hidden = true
         }
+        
         
         finishedView.alpha = 0
         wiggleStickers()
@@ -108,11 +112,11 @@ class MatchingViewController: UIViewController {
             })
             
             var animalImageX = animalImage[selectedIndex].center.x
-            var cardX = card[selectedIndex].frame.origin.x
+            var cardX = cardView[selectedIndex].frame.origin.x
             var animalImageY = animalImage[selectedIndex].center.y
-            var cardY = card[selectedIndex].frame.origin.y
-            var cardWidth = card[selectedIndex].frame.width
-            var cardHeight = card[selectedIndex].frame.height
+            var cardY = cardView[selectedIndex].frame.origin.y
+            var cardWidth = cardView[selectedIndex].frame.width
+            var cardHeight = cardView[selectedIndex].frame.height
             
 //            println("animal x \(animalImageX)")
 //            println("card x \(cardX)")
@@ -123,7 +127,8 @@ class MatchingViewController: UIViewController {
             
             // If dropped back into tray area, don't show status icon
             if animalImageY >= trayBG.frame.origin.y
-            {statusIcon[selectedIndex].alpha = 0}
+            {statusIcon[selectedIndex].hidden = true}
+            
             
             // If it's within the correct card's dimensions, place it
             // Because the cards are rotated, this math isn't entirely accurate
@@ -131,8 +136,8 @@ class MatchingViewController: UIViewController {
                (animalImageY >= cardY) && (animalImageY <= cardY + cardHeight)
             
             {
-                animalImage[selectedIndex].center.y = card[selectedIndex].center.y + 25
-                animalImage[selectedIndex].center.x = card[selectedIndex].center.x
+                animalImage[selectedIndex].center.y = cardView[selectedIndex].center.y + 25
+                animalImage[selectedIndex].center.x = cardView[selectedIndex].center.x
                 statusIcon[selectedIndex].image = UIImage(named: "icon-correct")
                 positionIcon()
                 correctAnswerCount++
@@ -203,20 +208,28 @@ class MatchingViewController: UIViewController {
         UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
             { () -> Void in
                 var rotate = CGFloat(-2 * M_PI/180)
-                self.homeButton.transform = CGAffineTransformMakeScale(1.2, 1.2)
+                var scaleAnim = CGFloat(1.2)
+                self.homeButton.transform = CGAffineTransformMakeScale(scaleAnim, scaleAnim)
                 self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
                 for index in 0...5
-                    {self.statusIcon[index].transform = CGAffineTransformMakeScale(1.1, 1.1)}
+                {
+                    self.statusIcon[index].transform = CGAffineTransformMakeScale(1.1, 1.1)
+                    self.cardTextLabel[index].transform = CGAffineTransformMakeScale(scaleAnim, scaleAnim)
+                }
             })
             { (finished: Bool) -> Void in
                 // Here we use autoreverse and repeat
                 UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
                     { () -> Void in
                         var rotate = CGFloat(2 * M_PI/180)
-                        self.homeButton.transform = CGAffineTransformMakeScale(1, 1)
+                        var scaleAnim = CGFloat(1)
+                        self.homeButton.transform = CGAffineTransformMakeScale(scaleAnim, scaleAnim)
                         self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
                         for index in 0...5
-                            {self.statusIcon[index].transform = CGAffineTransformMakeScale(1, 1)}
+                        {
+                            self.statusIcon[index].transform = CGAffineTransformMakeScale(1, 1)
+                            self.cardTextLabel[index].transform = CGAffineTransformMakeScale(scaleAnim, scaleAnim)
+                        }
                     })
                     { (Bool) -> Void in }
         }

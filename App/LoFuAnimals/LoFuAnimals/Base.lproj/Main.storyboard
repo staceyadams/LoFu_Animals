@@ -61,7 +61,7 @@ Let me teach you the animals in Chinese!</string>
                                 <rect key="frame" x="134" y="63" width="39" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll down to get started." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nyz-Xn-hJY">
@@ -75,7 +75,7 @@ Let me teach you the animals in Chinese!</string>
                                 <rect key="frame" x="58" y="386" width="233" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="feQ-St-P4I">
@@ -348,30 +348,108 @@ Let me teach you the animals in Chinese!</string>
                                 <rect key="frame" x="0.0" y="0.0" width="344" height="372"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="VI0-K2-l60" userLabel="card0">
-                                        <rect key="frame" x="8" y="29" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_dog" id="ZZ3-cR-Ddc" userLabel="card1">
+                                    <view tag="1" contentMode="scaleToFill" id="Drp-P6-ksC" userLabel="View1">
                                         <rect key="frame" x="111" y="23" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_fish" id="a5J-ex-Alb" userLabel="card3">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_dog" id="ZZ3-cR-Ddc" userLabel="card1">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lyO-4O-653" userLabel="word1">
+                                                <rect key="frame" x="17" y="14" width="83" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="tS8-n9-nNp" userLabel="View0">
+                                        <rect key="frame" x="8" y="29" width="108" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="VI0-K2-l60" userLabel="card0">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BR0-2w-usH" userLabel="word0">
+                                                <rect key="frame" x="17" y="14" width="83" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view tag="3" contentMode="scaleToFill" id="mug-5I-Ztd" userLabel="View3">
                                         <rect key="frame" x="8" y="166" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_hamster" id="4Ks-rD-5MN" userLabel="card5">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_fish" id="a5J-ex-Alb" userLabel="card3">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ap5-M4-Hkw" userLabel="word3">
+                                                <rect key="frame" x="17" y="14" width="83" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view tag="5" contentMode="scaleToFill" id="C8s-U2-GNb" userLabel="View5">
                                         <rect key="frame" x="214" y="166" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_bird" id="fCi-7V-lD1" userLabel="card4">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_hamster" id="4Ks-rD-5MN" userLabel="card5">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zHY-1m-sZU" userLabel="word5">
+                                                <rect key="frame" x="17" y="14" width="83" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view tag="4" contentMode="scaleToFill" id="K34-vD-Ydy" userLabel="View4">
                                         <rect key="frame" x="111" y="166" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_rabbit" id="hFr-cz-fCI" userLabel="card2">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_bird" id="fCi-7V-lD1" userLabel="card4">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L2A-Pe-3FF" userLabel="word4">
+                                                <rect key="frame" x="17" y="14" width="83" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view tag="2" contentMode="scaleToFill" id="NEx-sx-yQZ" userLabel="View2">
                                         <rect key="frame" x="208" y="38" width="108" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_rabbit" id="hFr-cz-fCI" userLabel="card2">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pta-LL-KIz" userLabel="word2">
+                                                <rect key="frame" x="17" y="14" width="83" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="40"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" id="llN-Qt-ZS8" userLabel="Animals">
@@ -522,18 +600,30 @@ Let me teach you the animals in Chinese!</string>
                         <outletCollection property="animalImage" destination="OHv-Tb-0hU" collectionClass="NSMutableArray" id="uiC-TI-qaU"/>
                         <outletCollection property="animalImage" destination="gTy-5g-qtr" collectionClass="NSMutableArray" id="1M6-VQ-Wtz"/>
                         <outletCollection property="animalImage" destination="8wI-tN-gSL" collectionClass="NSMutableArray" id="wgZ-jK-cAp"/>
-                        <outletCollection property="card" destination="VI0-K2-l60" collectionClass="NSMutableArray" id="2JJ-4c-vdE"/>
-                        <outletCollection property="card" destination="ZZ3-cR-Ddc" collectionClass="NSMutableArray" id="Ay3-g1-0BH"/>
-                        <outletCollection property="card" destination="hFr-cz-fCI" collectionClass="NSMutableArray" id="I7r-BB-loR"/>
-                        <outletCollection property="card" destination="a5J-ex-Alb" collectionClass="NSMutableArray" id="Fgh-5o-uA0"/>
-                        <outletCollection property="card" destination="fCi-7V-lD1" collectionClass="NSMutableArray" id="zZO-eI-QSh"/>
-                        <outletCollection property="card" destination="4Ks-rD-5MN" collectionClass="NSMutableArray" id="Z6W-yt-edl"/>
                         <outletCollection property="statusIcon" destination="oOK-fT-X8O" collectionClass="NSMutableArray" id="ica-48-bMT"/>
                         <outletCollection property="statusIcon" destination="MYM-4h-M63" collectionClass="NSMutableArray" id="lub-G8-nKX"/>
                         <outletCollection property="statusIcon" destination="UKk-lH-N3S" collectionClass="NSMutableArray" id="gJt-qj-gU2"/>
                         <outletCollection property="statusIcon" destination="ijh-tk-VIz" collectionClass="NSMutableArray" id="tBH-eg-iCR"/>
                         <outletCollection property="statusIcon" destination="qNV-6X-xin" collectionClass="NSMutableArray" id="faS-mS-KXp"/>
                         <outletCollection property="statusIcon" destination="Cnb-6M-yN3" collectionClass="NSMutableArray" id="yEa-aM-XYN"/>
+                        <outletCollection property="card" destination="VI0-K2-l60" collectionClass="NSMutableArray" id="2JJ-4c-vdE"/>
+                        <outletCollection property="card" destination="ZZ3-cR-Ddc" collectionClass="NSMutableArray" id="Ay3-g1-0BH"/>
+                        <outletCollection property="card" destination="a5J-ex-Alb" collectionClass="NSMutableArray" id="Fgh-5o-uA0"/>
+                        <outletCollection property="card" destination="4Ks-rD-5MN" collectionClass="NSMutableArray" id="Z6W-yt-edl"/>
+                        <outletCollection property="card" destination="fCi-7V-lD1" collectionClass="NSMutableArray" id="zZO-eI-QSh"/>
+                        <outletCollection property="card" destination="hFr-cz-fCI" collectionClass="NSMutableArray" id="I7r-BB-loR"/>
+                        <outletCollection property="cardView" destination="tS8-n9-nNp" collectionClass="NSMutableArray" id="Q3Z-Oe-KEd"/>
+                        <outletCollection property="cardView" destination="Drp-P6-ksC" collectionClass="NSMutableArray" id="2c9-l1-uu7"/>
+                        <outletCollection property="cardView" destination="NEx-sx-yQZ" collectionClass="NSMutableArray" id="gFT-Hv-nnL"/>
+                        <outletCollection property="cardView" destination="mug-5I-Ztd" collectionClass="NSMutableArray" id="WtU-dr-rXE"/>
+                        <outletCollection property="cardView" destination="K34-vD-Ydy" collectionClass="NSMutableArray" id="uHw-dx-k8f"/>
+                        <outletCollection property="cardView" destination="C8s-U2-GNb" collectionClass="NSMutableArray" id="jFm-Xn-Dfw"/>
+                        <outletCollection property="cardTextLabel" destination="BR0-2w-usH" collectionClass="NSMutableArray" id="Pic-3a-CKP"/>
+                        <outletCollection property="cardTextLabel" destination="lyO-4O-653" collectionClass="NSMutableArray" id="mVo-Cl-WCq"/>
+                        <outletCollection property="cardTextLabel" destination="Pta-LL-KIz" collectionClass="NSMutableArray" id="bit-Bh-LGz"/>
+                        <outletCollection property="cardTextLabel" destination="Ap5-M4-Hkw" collectionClass="NSMutableArray" id="fxK-av-QPV"/>
+                        <outletCollection property="cardTextLabel" destination="L2A-Pe-3FF" collectionClass="NSMutableArray" id="qif-42-w8H"/>
+                        <outletCollection property="cardTextLabel" destination="zHY-1m-sZU" collectionClass="NSMutableArray" id="z1O-9G-rgC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzM-nA-0VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -780,8 +870,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="hcK-h2-Pfc"/>
         <segue reference="5wx-4I-4YV"/>
-        <segue reference="sEp-Tj-szb"/>
         <segue reference="CYv-dR-2iv"/>
     </inferredMetricsTieBreakers>
 </document>
