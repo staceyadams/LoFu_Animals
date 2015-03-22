@@ -15,12 +15,18 @@ class MatchingViewController: UIViewController {
     @IBOutlet var statusIcon: [UIImageView]!
     @IBOutlet var card: [UIImageView]!
     @IBOutlet var animalImage: [UIImageView]!
-    var selectedIndex: Int! = 0
-    var correctAnswerCount = 0
+    @IBOutlet weak var trayBG: UIView!
+    @IBOutlet weak var text1: UILabel!
+    @IBOutlet weak var text2: UILabel!
+    @IBOutlet weak var finishedView: UIView!
+    
     
     var animalSticker: [String] = ["sticker_cat", "sticker_dog", "sticker_fish", "sticker_rabbit", "sticker_bird", "sticker_hamster"]
     var animalCard: [String] = ["card_cat", "card_dog", "card_fish", "card_rabbit", "card_bird", "card_hamster"]
     
+    
+    var selectedIndex: Int! = 0
+    var correctAnswerCount = 0
     var scale: CGFloat! = 1
     var rotate: CGFloat! = 0
     var originalCenter: CGPoint!
@@ -49,6 +55,8 @@ class MatchingViewController: UIViewController {
             card[index].image = UIImage(named: animalCard[index])
             statusIcon[index].alpha = 0
         }
+        
+        finishedView.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -133,7 +141,13 @@ class MatchingViewController: UIViewController {
             
             if correctAnswerCount == 6
             {
-                println("celebration")
+                UIView.animateWithDuration(0.3, animations: { () -> Void in
+                    self.trayBG.alpha = 0
+                    self.text1.hidden = true
+                    self.text2.hidden = true
+                    self.finishedView.alpha = 1
+                })
+
             }
             
         }
