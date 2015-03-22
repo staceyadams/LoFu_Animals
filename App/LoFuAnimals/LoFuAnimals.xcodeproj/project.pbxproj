@@ -126,11 +126,8 @@
 				B507A7B21ABE2ECD002AB588 /* Resources */,
 				B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */,
 				B5EFDDB21AB3B916006D96B5 /* Main.storyboard */,
-				B57A08F41ABB75E300ABEF5A /* SummaryViewController.swift */,
-				B5DDB97C1AB9DFBA00C6F5C6 /* MatchingViewController.swift */,
-				B5F4E6B21AB4CF7900BDCD6B /* FlashcardViewController.swift */,
+				B5FD8D941ABE55480044FDE8 /* Pets */,
 				B53FB74A1AB67B6700BD4BBA /* ViewController.swift */,
-				B53FB7501AB67B9E00BD4BBA /* WritingViewController.swift */,
 				B5EFDDCE1AB3BAF2006D96B5 /* WelcomeViewController.swift */,
 				B5EFDDB51AB3B916006D96B5 /* Images.xcassets */,
 				B5EFDDB71AB3B916006D96B5 /* LaunchScreen.xib */,
@@ -163,6 +160,17 @@
 				B5EFDDC31AB3B916006D96B5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5FD8D941ABE55480044FDE8 /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				B57A08F41ABB75E300ABEF5A /* SummaryViewController.swift */,
+				B5DDB97C1AB9DFBA00C6F5C6 /* MatchingViewController.swift */,
+				B5F4E6B21AB4CF7900BDCD6B /* FlashcardViewController.swift */,
+				B53FB7501AB67B9E00BD4BBA /* WritingViewController.swift */,
+			);
+			name = Pets;
 			sourceTree = "<group>";
 		};
 		DAFEE5A75E96385FEFDC363A /* Pods */ = {

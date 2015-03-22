@@ -16,6 +16,7 @@ class MatchingViewController: UIViewController {
     @IBOutlet var card: [UIImageView]!
     @IBOutlet var animalImage: [UIImageView]!
     var selectedIndex: Int! = 0
+    var correctAnswerCount = 0
     
     var animalSticker: [String] = ["sticker_cat", "sticker_dog", "sticker_fish", "sticker_rabbit", "sticker_bird", "sticker_hamster"]
     var animalCard: [String] = ["card_cat", "card_dog", "card_fish", "card_rabbit", "card_bird", "card_hamster"]
@@ -23,7 +24,6 @@ class MatchingViewController: UIViewController {
     var scale: CGFloat! = 1
     var rotate: CGFloat! = 0
     var originalCenter: CGPoint!
-    var startingCenter: CGPoint!
     
     
     override func viewDidLoad()
@@ -97,9 +97,9 @@ class MatchingViewController: UIViewController {
                 self.statusIcon[self.selectedIndex].alpha = 1
             })
             
-            var animalImageX = animalImage[selectedIndex].frame.origin.x
+            var animalImageX = animalImage[selectedIndex].center.x
             var cardX = card[selectedIndex].frame.origin.x
-            var animalImageY = animalImage[selectedIndex].frame.origin.y
+            var animalImageY = animalImage[selectedIndex].center.y
             var cardY = card[selectedIndex].frame.origin.y
             var cardWidth = card[selectedIndex].frame.width
             var cardHeight = card[selectedIndex].frame.height
@@ -111,6 +111,8 @@ class MatchingViewController: UIViewController {
 //            println("less than X: \(cardX + cardWidth)")
 //            println("less than Y: \(cardY + cardHeight)")
             
+            if animalImageY >= 380
+            {statusIcon[selectedIndex].alpha = 0}
             
             if (animalImageX >= cardX) && (animalImageX <= cardX + cardWidth) &&
                (animalImageY >= cardY) && (animalImageY <= cardY + cardHeight)
@@ -120,15 +122,18 @@ class MatchingViewController: UIViewController {
                 animalImage[selectedIndex].center.x = card[selectedIndex].center.x
                 statusIcon[selectedIndex].image = UIImage(named: "icon-correct")
                 positionIcon()
+                correctAnswerCount++
             }
             
             else
             {
                 statusIcon[selectedIndex].image = UIImage(named: "icon-wrong")
                 positionIcon()
-                
-                if animalImageY >= 380
-                {statusIcon[selectedIndex].alpha = 0}
+            }
+            
+            if correctAnswerCount == 6
+            {
+                println("celebration")
             }
             
         }
