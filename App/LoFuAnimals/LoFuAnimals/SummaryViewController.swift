@@ -11,31 +11,28 @@ import UIKit
 class SummaryViewController: UIViewController
 {
    
+    @IBOutlet weak var cardsView: UIView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var speechBubble: UIImageView!
-    @IBOutlet var card: [UIImageView]!
-    var animals: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
+    var cardsViewVC: CardsViewController!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        cardsViewVC = storyboard.instantiateViewControllerWithIdentifier("cardsStory") as CardsViewController
+        
+        addChildViewController(cardsViewVC)
+        var contentView = cardsViewVC.view
+        contentView.frame = cardsView.frame
+        cardsView.addSubview(contentView)
+        cardsViewVC.didMoveToParentViewController(self)
+        
+        
         // Do any additional setup after loading the view.
         
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
-        
-        card[0].transform = CGAffineTransformMakeRotation(3.14*0.02)
-        card[1].transform = CGAffineTransformMakeRotation(3.14/0.02)
-        card[2].transform = CGAffineTransformMakeRotation(3.14*0.03)
-        card[3].transform = CGAffineTransformMakeRotation(3.14/0.01)
-        card[4].transform = CGAffineTransformMakeRotation(3.14*0.04)
-        card[5].transform = CGAffineTransformMakeRotation(3.14/0.02)
-                
-        for index in 0...5
-        {
-            card[index].image = UIImage(named: animals[index])
-        }
-        
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)        
         nextButtonAnimate()
     }
 

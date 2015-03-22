@@ -105,9 +105,9 @@ Let me teach you the animals in Chinese!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Ac-hZ-ULe">
-                                <rect key="frame" x="235" y="152" width="30" height="30"/>
+                                <rect key="frame" x="235" y="152" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go">
+                                <state key="normal" title="Pets">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -128,6 +128,61 @@ Let me teach you the animals in Chinese!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaD-sd-Ac2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="655" y="1089"/>
+        </scene>
+        <!--Pets: Card Grid-->
+        <scene sceneID="ZWl-BV-kdv">
+            <objects>
+                <viewController storyboardIdentifier="cardsStory" title="Pets: Card Grid" automaticallyAdjustsScrollViewInsets="NO" id="5WE-T9-xpZ" customClass="CardsViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cbr-Fe-kY2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="wsf-6e-RVr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="Q6u-L1-CxM" userLabel="card0">
+                                        <rect key="frame" x="2" y="8" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_dog" id="b4R-1A-VBm" userLabel="card1">
+                                        <rect key="frame" x="105" y="2" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_fish" id="tnU-J9-0kK" userLabel="card3">
+                                        <rect key="frame" x="2" y="145" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_rabbit" id="qsB-hX-P0y" userLabel="card2">
+                                        <rect key="frame" x="201" y="17" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_bird" id="7Rx-s9-WEW" userLabel="card4">
+                                        <rect key="frame" x="105" y="145" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_hamster" id="69Q-JN-pRl" userLabel="card5">
+                                        <rect key="frame" x="208" y="145" width="108" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                        </subviews>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="290"/>
+                    <connections>
+                        <outletCollection property="cardImage" destination="Q6u-L1-CxM" collectionClass="NSMutableArray" id="O4F-CJ-wIy"/>
+                        <outletCollection property="cardImage" destination="b4R-1A-VBm" collectionClass="NSMutableArray" id="nSg-3l-hMk"/>
+                        <outletCollection property="cardImage" destination="qsB-hX-P0y" collectionClass="NSMutableArray" id="0EA-th-LPk"/>
+                        <outletCollection property="cardImage" destination="tnU-J9-0kK" collectionClass="NSMutableArray" id="m5v-qr-Paj"/>
+                        <outletCollection property="cardImage" destination="7Rx-s9-WEW" collectionClass="NSMutableArray" id="r0I-5L-Ypl"/>
+                        <outletCollection property="cardImage" destination="69Q-JN-pRl" collectionClass="NSMutableArray" id="cUx-IH-OFr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScV-7F-hy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-476" y="2532"/>
         </scene>
         <!--Pets: Writing-->
         <scene sceneID="lRi-t6-MWT">
@@ -206,7 +261,7 @@ Let me teach you the animals in Chinese!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7f-5h-2rW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="1825"/>
+            <point key="canvasLocation" x="429" y="1833"/>
         </scene>
         <!--Pets: Summary - Flashcards-->
         <scene sceneID="tAh-ws-x5J">
@@ -216,35 +271,9 @@ Let me teach you the animals in Chinese!</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="nhy-sg-GiJ">
-                                <rect key="frame" x="-12" y="40" width="344" height="339"/>
+                            <view contentMode="scaleToFill" id="nhy-sg-GiJ" userLabel="cardsView">
+                                <rect key="frame" x="0.0" y="40" width="320" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="zrv-zi-Ybv" userLabel="card0">
-                                        <rect key="frame" x="15" y="40" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_dog" id="8sg-jz-5Pl" userLabel="card1">
-                                        <rect key="frame" x="118" y="34" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_fish" id="UoA-v6-M8F" userLabel="card3">
-                                        <rect key="frame" x="15" y="177" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_rabbit" id="5AS-ct-9Mu" userLabel="card2">
-                                        <rect key="frame" x="214" y="49" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_bird" id="3Rl-jR-6Sq" userLabel="card4">
-                                        <rect key="frame" x="118" y="177" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_hamster" id="qP1-qd-6Kr" userLabel="card5">
-                                        <rect key="frame" x="221" y="177" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gEa-xe-wO1" userLabel="btn-home">
                                 <rect key="frame" x="10" y="30" width="25" height="23"/>
@@ -304,19 +333,14 @@ Let me teach you the animals in Chinese!</string>
                     </view>
                     <navigationItem key="navigationItem" title="Learn: Pets" id="M8T-TI-YsI"/>
                     <connections>
+                        <outlet property="cardsView" destination="nhy-sg-GiJ" id="1Zj-DG-2ZC"/>
                         <outlet property="nextButton" destination="kfu-HO-j8m" id="SvP-ew-hhL"/>
                         <outlet property="speechBubble" destination="9XB-jc-qaV" id="Df3-T4-7v1"/>
-                        <outletCollection property="card" destination="zrv-zi-Ybv" collectionClass="NSMutableArray" id="NU7-x8-3bw"/>
-                        <outletCollection property="card" destination="8sg-jz-5Pl" collectionClass="NSMutableArray" id="FXs-bb-WSb"/>
-                        <outletCollection property="card" destination="5AS-ct-9Mu" collectionClass="NSMutableArray" id="MRM-PU-yuv"/>
-                        <outletCollection property="card" destination="UoA-v6-M8F" collectionClass="NSMutableArray" id="kWW-Yd-egS"/>
-                        <outletCollection property="card" destination="3Rl-jR-6Sq" collectionClass="NSMutableArray" id="96d-sD-wXz"/>
-                        <outletCollection property="card" destination="qP1-qd-6Kr" collectionClass="NSMutableArray" id="jrq-tk-9gI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7T-2E-cwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="1825"/>
+            <point key="canvasLocation" x="9" y="2485"/>
         </scene>
         <!--Pets: Navigation Controller-->
         <scene sceneID="WF5-mc-5cX">
@@ -658,7 +682,7 @@ Let me teach you the animals in Chinese!</string>
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1840" y="1833"/>
+            <point key="canvasLocation" x="844" y="1845"/>
         </scene>
         <!--Pets: Flashcards-->
         <scene sceneID="65J-DO-CIm">
@@ -746,35 +770,9 @@ Swipe left to study it again later.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="h4S-nB-XMt">
-                                <rect key="frame" x="-12" y="40" width="344" height="339"/>
+                            <view contentMode="scaleToFill" id="h4S-nB-XMt" userLabel="cardsView">
+                                <rect key="frame" x="0.0" y="40" width="320" height="339"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="5nZ-d2-wxy" userLabel="card0">
-                                        <rect key="frame" x="15" y="40" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_dog" id="0Ir-Xe-5Q0" userLabel="card1">
-                                        <rect key="frame" x="118" y="34" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_fish" id="eyZ-D4-Ibt" userLabel="card3">
-                                        <rect key="frame" x="15" y="177" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_rabbit" id="N8j-Z1-heA" userLabel="card2">
-                                        <rect key="frame" x="214" y="49" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_bird" id="V8L-KK-fWC" userLabel="card4">
-                                        <rect key="frame" x="118" y="177" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_hamster" id="DsX-ts-Ow1" userLabel="card5">
-                                        <rect key="frame" x="221" y="177" width="108" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="suw-dZ-QDC" userLabel="btn-home">
                                 <rect key="frame" x="10" y="30" width="25" height="23"/>
@@ -833,19 +831,14 @@ Swipe left to study it again later.</string>
                     </view>
                     <navigationItem key="navigationItem" title="Learn: Pets" id="6UM-3b-Adc"/>
                     <connections>
+                        <outlet property="cardsView" destination="h4S-nB-XMt" id="P0s-l5-G85"/>
                         <outlet property="nextButton" destination="aCS-fu-zqt" id="JSw-dL-bUv"/>
                         <outlet property="speechBubble" destination="DL6-eg-oWF" id="smX-bx-JGl"/>
-                        <outletCollection property="card" destination="5nZ-d2-wxy" collectionClass="NSMutableArray" id="XuG-r6-51d"/>
-                        <outletCollection property="card" destination="0Ir-Xe-5Q0" collectionClass="NSMutableArray" id="KMg-Ku-VE8"/>
-                        <outletCollection property="card" destination="N8j-Z1-heA" collectionClass="NSMutableArray" id="gLk-Gk-57v"/>
-                        <outletCollection property="card" destination="DsX-ts-Ow1" collectionClass="NSMutableArray" id="tgN-bp-FZ9"/>
-                        <outletCollection property="card" destination="V8L-KK-fWC" collectionClass="NSMutableArray" id="MCa-qP-ic7"/>
-                        <outletCollection property="card" destination="eyZ-D4-Ibt" collectionClass="NSMutableArray" id="oda-hb-ceI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfm-Tz-xmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="1833"/>
+            <point key="canvasLocation" x="441" y="2485"/>
         </scene>
     </scenes>
     <resources>
@@ -870,8 +863,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hcK-h2-Pfc"/>
         <segue reference="5wx-4I-4YV"/>
+        <segue reference="sEp-Tj-szb"/>
         <segue reference="CYv-dR-2iv"/>
     </inferredMetricsTieBreakers>
 </document>
