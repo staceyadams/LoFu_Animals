@@ -17,6 +17,7 @@ class MatchingViewController: UIViewController {
     @IBOutlet weak var text2: UILabel!
     @IBOutlet weak var finishedView: UIView!
     @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var speechBubble: UIImageView!
     
     
     var animalSticker: [String] = ["sticker_cat", "sticker_dog", "sticker_fish", "sticker_rabbit", "sticker_bird", "sticker_hamster"]
@@ -51,10 +52,11 @@ class MatchingViewController: UIViewController {
         {
             animalImage[index].image = UIImage(named: animalSticker[index])
             card[index].image = UIImage(named: animalCard[index])
-            statusIcon[index].alpha = 0
+            statusIcon[index].hidden = true
         }
         
         finishedView.alpha = 0
+        wiggleStickers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,7 +87,8 @@ class MatchingViewController: UIViewController {
             selectedIndex = imageView.tag
             originalCenter = animalImage[selectedIndex].center
             transformAnimal()
-            self.statusIcon[self.selectedIndex].alpha = 0
+            self.statusIcon[self.selectedIndex].hidden = true
+            self.statusIcon[selectedIndex].transform = CGAffineTransformMakeScale(0, 0)
 
             
         } else if (sender.state == UIGestureRecognizerState.Changed)
@@ -98,9 +101,10 @@ class MatchingViewController: UIViewController {
             scale = 1
             transformAnimal()
             
-            UIView.animateWithDuration(0.3, animations:
+            UIView.animateWithDuration(0.1, animations:
             { () -> Void in
-                self.statusIcon[self.selectedIndex].alpha = 1
+                self.statusIcon[self.selectedIndex].hidden = false
+                self.statusIcon[self.selectedIndex].transform = CGAffineTransformMakeScale(self.scale, self.scale)
             })
             
             var animalImageX = animalImage[selectedIndex].center.x
@@ -148,7 +152,7 @@ class MatchingViewController: UIViewController {
                     self.text1.hidden = true
                     self.text2.hidden = true
                     self.finishedView.alpha = 1
-                    self.homeButtonAnimate()
+                    self.finishedViewAnimate()
                 })
 
             }
@@ -168,18 +172,51 @@ class MatchingViewController: UIViewController {
         statusIcon[selectedIndex].center.y = animalImage[selectedIndex].center.y + 25
     }
     
-    func homeButtonAnimate()
+    func wiggleStickers()
     {
         // Animation with damping and velocity
         UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
             { () -> Void in
-                self.homeButton.transform = CGAffineTransformMakeScale(1.2, 1.2)
+                var rotate = CGFloat(-2 * M_PI/180)
+                for index in 0...5
+                {
+                    self.animalImage[index].transform = CGAffineTransformRotate(self.animalImage[index].transform, rotate)
+                }
             })
             { (finished: Bool) -> Void in
                 // Here we use autoreverse and repeat
                 UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
                     { () -> Void in
+                        var rotate = CGFloat(2 * M_PI/180)
+                        for index in 0...5
+                        {
+                            self.animalImage[index].transform = CGAffineTransformRotate(self.animalImage[index].transform, rotate)
+                        }
+                    })
+                    { (Bool) -> Void in }
+        }
+    }
+    
+    func finishedViewAnimate()
+    {
+        // Animation with damping and velocity
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
+            { () -> Void in
+                var rotate = CGFloat(-2 * M_PI/180)
+                self.homeButton.transform = CGAffineTransformMakeScale(1.2, 1.2)
+                self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
+                for index in 0...5
+                    {self.statusIcon[index].transform = CGAffineTransformMakeScale(1.1, 1.1)}
+            })
+            { (finished: Bool) -> Void in
+                // Here we use autoreverse and repeat
+                UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
+                    { () -> Void in
+                        var rotate = CGFloat(2 * M_PI/180)
                         self.homeButton.transform = CGAffineTransformMakeScale(1, 1)
+                        self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
+                        for index in 0...5
+                            {self.statusIcon[index].transform = CGAffineTransformMakeScale(1, 1)}
                     })
                     { (Bool) -> Void in }
         }
