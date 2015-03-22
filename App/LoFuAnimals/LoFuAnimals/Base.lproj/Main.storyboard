@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="iQ8-6S-ZXM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZcY-2g-c3I">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -340,7 +340,7 @@ Let me teach you the animals in Chinese!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7T-2E-cwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="2485"/>
+            <point key="canvasLocation" x="4" y="2485"/>
         </scene>
         <!--Pets: Navigation Controller-->
         <scene sceneID="WF5-mc-5cX">
@@ -577,7 +577,7 @@ Let me teach you the animals in Chinese!</string>
                                 <rect key="frame" x="0.0" y="323" width="320" height="245"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winBanner" id="Tzp-Uw-QJq">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winBanner_1" id="Tzp-Uw-QJq">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -618,6 +618,7 @@ Let me teach you the animals in Chinese!</string>
                         <outlet property="text1" destination="iaF-4n-te4" id="Phq-cc-jSP"/>
                         <outlet property="text2" destination="h9h-mh-lLh" id="aEL-fJ-Enx"/>
                         <outlet property="trayBG" destination="iys-bk-856" id="AdN-Qx-jAu"/>
+                        <outlet property="winBanner" destination="Tzp-Uw-QJq" id="tGJ-XE-R73"/>
                         <outletCollection property="animalImage" destination="Gjh-0B-78E" collectionClass="NSMutableArray" id="YKz-8Q-Fhn"/>
                         <outletCollection property="animalImage" destination="bny-DQ-Lpj" collectionClass="NSMutableArray" id="l8U-Qp-eKl"/>
                         <outletCollection property="animalImage" destination="5tK-64-aZG" collectionClass="NSMutableArray" id="rhc-UJ-5qC"/>
@@ -630,24 +631,24 @@ Let me teach you the animals in Chinese!</string>
                         <outletCollection property="statusIcon" destination="ijh-tk-VIz" collectionClass="NSMutableArray" id="tBH-eg-iCR"/>
                         <outletCollection property="statusIcon" destination="qNV-6X-xin" collectionClass="NSMutableArray" id="faS-mS-KXp"/>
                         <outletCollection property="statusIcon" destination="Cnb-6M-yN3" collectionClass="NSMutableArray" id="yEa-aM-XYN"/>
-                        <outletCollection property="card" destination="VI0-K2-l60" collectionClass="NSMutableArray" id="2JJ-4c-vdE"/>
-                        <outletCollection property="card" destination="ZZ3-cR-Ddc" collectionClass="NSMutableArray" id="Ay3-g1-0BH"/>
-                        <outletCollection property="card" destination="a5J-ex-Alb" collectionClass="NSMutableArray" id="Fgh-5o-uA0"/>
-                        <outletCollection property="card" destination="4Ks-rD-5MN" collectionClass="NSMutableArray" id="Z6W-yt-edl"/>
-                        <outletCollection property="card" destination="fCi-7V-lD1" collectionClass="NSMutableArray" id="zZO-eI-QSh"/>
-                        <outletCollection property="card" destination="hFr-cz-fCI" collectionClass="NSMutableArray" id="I7r-BB-loR"/>
                         <outletCollection property="cardView" destination="tS8-n9-nNp" collectionClass="NSMutableArray" id="Q3Z-Oe-KEd"/>
                         <outletCollection property="cardView" destination="Drp-P6-ksC" collectionClass="NSMutableArray" id="2c9-l1-uu7"/>
                         <outletCollection property="cardView" destination="NEx-sx-yQZ" collectionClass="NSMutableArray" id="gFT-Hv-nnL"/>
                         <outletCollection property="cardView" destination="mug-5I-Ztd" collectionClass="NSMutableArray" id="WtU-dr-rXE"/>
                         <outletCollection property="cardView" destination="K34-vD-Ydy" collectionClass="NSMutableArray" id="uHw-dx-k8f"/>
                         <outletCollection property="cardView" destination="C8s-U2-GNb" collectionClass="NSMutableArray" id="jFm-Xn-Dfw"/>
-                        <outletCollection property="cardTextLabel" destination="BR0-2w-usH" collectionClass="NSMutableArray" id="Pic-3a-CKP"/>
-                        <outletCollection property="cardTextLabel" destination="lyO-4O-653" collectionClass="NSMutableArray" id="mVo-Cl-WCq"/>
-                        <outletCollection property="cardTextLabel" destination="Pta-LL-KIz" collectionClass="NSMutableArray" id="bit-Bh-LGz"/>
-                        <outletCollection property="cardTextLabel" destination="Ap5-M4-Hkw" collectionClass="NSMutableArray" id="fxK-av-QPV"/>
-                        <outletCollection property="cardTextLabel" destination="L2A-Pe-3FF" collectionClass="NSMutableArray" id="qif-42-w8H"/>
-                        <outletCollection property="cardTextLabel" destination="zHY-1m-sZU" collectionClass="NSMutableArray" id="z1O-9G-rgC"/>
+                        <outletCollection property="cardTextLabel" destination="BR0-2w-usH" collectionClass="NSMutableArray" id="kR1-8V-c6m"/>
+                        <outletCollection property="cardTextLabel" destination="lyO-4O-653" collectionClass="NSMutableArray" id="Kjy-Tb-fhy"/>
+                        <outletCollection property="cardTextLabel" destination="Pta-LL-KIz" collectionClass="NSMutableArray" id="87N-We-twf"/>
+                        <outletCollection property="cardTextLabel" destination="Ap5-M4-Hkw" collectionClass="NSMutableArray" id="TcJ-8o-61E"/>
+                        <outletCollection property="cardTextLabel" destination="L2A-Pe-3FF" collectionClass="NSMutableArray" id="B7q-lC-JPz"/>
+                        <outletCollection property="cardTextLabel" destination="zHY-1m-sZU" collectionClass="NSMutableArray" id="NHW-nk-ICh"/>
+                        <outletCollection property="cardImage" destination="VI0-K2-l60" collectionClass="NSMutableArray" id="ELS-ED-oMh"/>
+                        <outletCollection property="cardImage" destination="ZZ3-cR-Ddc" collectionClass="NSMutableArray" id="Phw-1u-JsM"/>
+                        <outletCollection property="cardImage" destination="hFr-cz-fCI" collectionClass="NSMutableArray" id="nPM-Ic-SNj"/>
+                        <outletCollection property="cardImage" destination="a5J-ex-Alb" collectionClass="NSMutableArray" id="BiK-nk-tpP"/>
+                        <outletCollection property="cardImage" destination="fCi-7V-lD1" collectionClass="NSMutableArray" id="24u-K0-6VO"/>
+                        <outletCollection property="cardImage" destination="4Ks-rD-5MN" collectionClass="NSMutableArray" id="zcn-zv-wND"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzM-nA-0VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -838,7 +839,7 @@ Swipe left to study it again later.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfm-Tz-xmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="441" y="2485"/>
+            <point key="canvasLocation" x="429" y="2485"/>
         </scene>
     </scenes>
     <resources>
@@ -855,7 +856,7 @@ Swipe left to study it again later.</string>
         <image name="flashcard_rabbit" width="258" height="331"/>
         <image name="icon-correct" width="30" height="30"/>
         <image name="speechBubble" width="196" height="87"/>
-        <image name="winBanner" width="320" height="39"/>
+        <image name="winBanner_1" width="320" height="39"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -863,8 +864,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5wx-4I-4YV"/>
-        <segue reference="sEp-Tj-szb"/>
+        <segue reference="BPd-jK-3EV"/>
         <segue reference="CYv-dR-2iv"/>
+        <segue reference="hcK-h2-Pfc"/>
     </inferredMetricsTieBreakers>
 </document>

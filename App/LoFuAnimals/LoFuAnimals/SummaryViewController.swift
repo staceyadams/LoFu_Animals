@@ -25,7 +25,7 @@ class SummaryViewController: UIViewController
         
         addChildViewController(cardsViewVC)
         var contentView = cardsViewVC.view
-        contentView.frame = cardsView.frame
+        contentView.frame = cardsView.bounds // Use bounds instead of frame whenever you want to set the size, but have a x, y position of 0,0
         cardsView.addSubview(contentView)
         cardsViewVC.didMoveToParentViewController(self)
         

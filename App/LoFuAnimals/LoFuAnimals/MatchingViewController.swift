@@ -10,10 +10,10 @@ import UIKit
 
 class MatchingViewController: UIViewController {
     @IBOutlet var statusIcon: [UIImageView]!
-    @IBOutlet var card: [UIImageView]!
     @IBOutlet var animalImage: [UIImageView]!
     @IBOutlet var cardView: [UIView]!
     @IBOutlet var cardTextLabel: [UILabel]!
+    @IBOutlet var cardImage: [UIImageView]! //card image
     
     @IBOutlet weak var trayBG: UIView!
     @IBOutlet weak var text1: UILabel!
@@ -21,8 +21,9 @@ class MatchingViewController: UIViewController {
     @IBOutlet weak var finishedView: UIView!
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var speechBubble: UIImageView!
-    
-    
+    @IBOutlet weak var winBanner: UIImageView!
+    var winBannerImages = UIImage.animatedImageNamed("winBanner_", duration: 0.5)
+
     var animalSticker: [String] = ["sticker_cat", "sticker_dog", "sticker_fish", "sticker_rabbit", "sticker_bird", "sticker_hamster"]
     var cardText: [String] = ["猫", "狗", "鱼", "兔子", "鸟", "仓鼠"]
     
@@ -53,11 +54,10 @@ class MatchingViewController: UIViewController {
         for index in 0...5
         {
             animalImage[index].image = UIImage(named: animalSticker[index])
-            card[index].image = UIImage(named: "paper")
+            cardImage[index].image = UIImage(named: "paper")
             cardTextLabel[index].text = cardText[index]
             statusIcon[index].hidden = true
         }
-        
         
         finishedView.alpha = 0
         wiggleStickers()
@@ -150,14 +150,16 @@ class MatchingViewController: UIViewController {
             }
             
             // Once all answers are correct, go to finished state
-            if correctAnswerCount == card.count
+            if correctAnswerCount == cardView.count
             {
-                UIView.animateWithDuration(0.3, animations: { () -> Void in
+                UIView.animateWithDuration(0.3, animations:
+                { () -> Void in
                     self.trayBG.alpha = 0
                     self.text1.hidden = true
                     self.text2.hidden = true
                     self.finishedView.alpha = 1
                     self.finishedViewAnimate()
+                    self.winBanner.image = self.winBannerImages
                 })
 
             }
