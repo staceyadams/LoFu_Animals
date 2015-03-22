@@ -12,6 +12,7 @@
 		B507A7B91ABE2EEA002AB588 /* cartoonist_kooky.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B507A7B51ABE2EEA002AB588 /* cartoonist_kooky.ttf */; };
 		B507A7BA1ABE2EEA002AB588 /* Delius-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B507A7B61ABE2EEA002AB588 /* Delius-Regular.ttf */; };
 		B507A7BB1ABE2EEA002AB588 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B507A7B71ABE2EEA002AB588 /* OFL.txt */; };
+		B50F63DC1ABF452F00B12016 /* FarmFlashcardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F63DB1ABF452F00B12016 /* FarmFlashcardsViewController.swift */; };
 		B53FB7451AB65C2F00BD4BBA /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB7441AB65C2F00BD4BBA /* AppState.swift */; };
 		B53FB74B1AB67B6700BD4BBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB74A1AB67B6700BD4BBA /* ViewController.swift */; };
 		B53FB7511AB67B9E00BD4BBA /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FB7501AB67B9E00BD4BBA /* WritingViewController.swift */; };
@@ -46,6 +47,7 @@
 		B507A7B51ABE2EEA002AB588 /* cartoonist_kooky.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cartoonist_kooky.ttf; sourceTree = "<group>"; };
 		B507A7B61ABE2EEA002AB588 /* Delius-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delius-Regular.ttf"; sourceTree = "<group>"; };
 		B507A7B71ABE2EEA002AB588 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		B50F63DB1ABF452F00B12016 /* FarmFlashcardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmFlashcardsViewController.swift; sourceTree = "<group>"; };
 		B53FB7441AB65C2F00BD4BBA /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B53FB74A1AB67B6700BD4BBA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B53FB7501AB67B9E00BD4BBA /* WritingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		B50F63DA1ABF450300B12016 /* Farm */ = {
+			isa = PBXGroup;
+			children = (
+				B50F63DB1ABF452F00B12016 /* FarmFlashcardsViewController.swift */,
+			);
+			name = Farm;
+			sourceTree = "<group>";
+		};
 		B5EFDDA01AB3B916006D96B5 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 				B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */,
 				B5EFDDB21AB3B916006D96B5 /* Main.storyboard */,
 				B5FD8D941ABE55480044FDE8 /* Pets */,
+				B50F63DA1ABF450300B12016 /* Farm */,
 				B53FB74A1AB67B6700BD4BBA /* ViewController.swift */,
 				B5EFDDCE1AB3BAF2006D96B5 /* WelcomeViewController.swift */,
 				B5EFDDB51AB3B916006D96B5 /* Images.xcassets */,
@@ -354,6 +365,7 @@
 				B53FB74B1AB67B6700BD4BBA /* ViewController.swift in Sources */,
 				B53FB7511AB67B9E00BD4BBA /* WritingViewController.swift in Sources */,
 				B564C9991ABF19DF007B21AA /* CardsViewController.swift in Sources */,
+				B50F63DC1ABF452F00B12016 /* FarmFlashcardsViewController.swift in Sources */,
 				B5EFDDCF1AB3BAF2006D96B5 /* WelcomeViewController.swift in Sources */,
 				B57A08F51ABB75E300ABEF5A /* SummaryViewController.swift in Sources */,
 				B5FD8D961ABE77AF0044FDE8 /* Common.swift in Sources */,

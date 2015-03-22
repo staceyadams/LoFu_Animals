@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZcY-2g-c3I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VZB-ne-X81">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -11,8 +11,11 @@
             <string>Delius-Regular</string>
             <string>Delius-Regular</string>
             <string>Delius-Regular</string>
+            <string>Delius-Regular</string>
         </mutableArray>
         <mutableArray key="cartoonist_kooky.ttf">
+            <string>CartoonistKooky</string>
+            <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
@@ -58,7 +61,7 @@ Let me teach you the animals in Chinese!</string>
                                 </subviews>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xDr-zy-eak">
-                                <rect key="frame" x="134" y="63" width="39" height="21"/>
+                                <rect key="frame" x="134" y="37" width="39" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -85,7 +88,7 @@ Let me teach you the animals in Chinese!</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RM9-cm-2y5" kind="modal" id="hcK-h2-Pfc"/>
+                                    <segue destination="3A4-EV-8Zz" kind="modal" id="hcK-h2-Pfc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,7 +97,7 @@ Let me teach you the animals in Chinese!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwg-fU-NhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="224" y="1089"/>
+            <point key="canvasLocation" x="-352" y="1073"/>
         </scene>
         <!--Menu-->
         <scene sceneID="Nfc-yT-maG">
@@ -105,13 +108,13 @@ Let me teach you the animals in Chinese!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Ac-hZ-ULe">
-                                <rect key="frame" x="235" y="152" width="31" height="30"/>
+                                <rect key="frame" x="132" y="199" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pets">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2El-vV-BJL" kind="modal" modalTransitionStyle="crossDissolve" id="dWO-jc-Nth"/>
+                                    <segue destination="izJ-H1-pSL" kind="push" id="qS1-sN-yDJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="menu screen (table view)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XyL-dN-J7s">
@@ -121,13 +124,24 @@ Let me teach you the animals in Chinese!</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mv4-eY-Zdg">
+                                <rect key="frame" x="129" y="248" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Farm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5tW-bp-457" kind="push" id="9vA-tf-pnr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YYZ-Nm-8QP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaD-sd-Ac2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="655" y="1089"/>
+            <point key="canvasLocation" x="439" y="1073"/>
         </scene>
         <!--Pets: Card Grid-->
         <scene sceneID="ZWl-BV-kdv">
@@ -341,24 +355,6 @@ Let me teach you the animals in Chinese!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7T-2E-cwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4" y="2485"/>
-        </scene>
-        <!--Pets: Navigation Controller-->
-        <scene sceneID="WF5-mc-5cX">
-            <objects>
-                <navigationController title="Pets: Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2El-vV-BJL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5DH-b8-Yzs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="izJ-H1-pSL" kind="relationship" relationship="rootViewController" id="WWN-a8-0Pg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P2F-OP-TyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-476" y="1814"/>
         </scene>
         <!--Pets: Matching-->
         <scene sceneID="82z-pA-qWP">
@@ -596,7 +592,7 @@ Let me teach you the animals in Chinese!</string>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="RM9-cm-2y5" kind="modal" id="sEp-Tj-szb"/>
+                                            <segue destination="3A4-EV-8Zz" kind="modal" id="sEp-Tj-szb"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grrreat Job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWW-U1-orR">
@@ -719,6 +715,9 @@ Let me teach you the animals in Chinese!</string>
                                 <state key="normal" image="btn-home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressHome:" destination="izJ-H1-pSL" eventType="touchUpInside" id="cei-Tl-DcF"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" id="t5i-Ai-1eL" userLabel="Text">
                                 <rect key="frame" x="0.0" y="468" width="320" height="100"/>
@@ -841,6 +840,85 @@ Swipe left to study it again later.</string>
             </objects>
             <point key="canvasLocation" x="429" y="2485"/>
         </scene>
+        <!--Farm: Flashcards-->
+        <scene sceneID="qd1-iD-hwE">
+            <objects>
+                <viewController title="Farm: Flashcards" automaticallyAdjustsScrollViewInsets="NO" id="5tW-bp-457" customClass="FarmFlashcardViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FHg-24-fZ2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b0T-Vy-31Z" userLabel="btn-home">
+                                <rect key="frame" x="10" y="30" width="25" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn-home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressHome:" destination="5tW-bp-457" eventType="touchUpInside" id="oTw-L4-XVW"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="LT6-CM-Gw9" userLabel="Text">
+                                <rect key="frame" x="0.0" y="468" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lAu-ps-z4e">
+                                        <rect key="frame" x="0.0" y="45" width="320" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Learned it? Swipe right.
+Swipe left to study it again later.</string>
+                                        <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="16"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="animals left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="df2-MU-ZsM">
+                                        <rect key="frame" x="106" y="12" width="145" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="20"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BSK-vi-z03">
+                                        <rect key="frame" x="75" y="8" width="26" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="40"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76323341836734693" green="0.6047895293317177" blue="0.50461999503188981" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="No6-Bu-mPD"/>
+                    <connections>
+                        <outlet property="cardsLeftLabel" destination="BSK-vi-z03" id="XdU-Gm-9qY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rN6-a3-1FN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="3213"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qVb-kw-MDx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3A4-EV-8Zz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hCj-mb-vfu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="98r-AM-Hs0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RM9-cm-2y5" kind="relationship" relationship="rootViewController" id="Emx-R0-qI4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXS-JQ-ffZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="1073"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LoFu" width="90" height="99"/>
@@ -864,8 +942,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BPd-jK-3EV"/>
         <segue reference="CYv-dR-2iv"/>
+        <segue reference="BPd-jK-3EV"/>
         <segue reference="hcK-h2-Pfc"/>
     </inferredMetricsTieBreakers>
 </document>
