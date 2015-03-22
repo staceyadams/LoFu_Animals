@@ -9,9 +9,6 @@
 import UIKit
 
 class MatchingViewController: UIViewController {
-
-
-    
     @IBOutlet var statusIcon: [UIImageView]!
     @IBOutlet var card: [UIImageView]!
     @IBOutlet var animalImage: [UIImageView]!
@@ -19,6 +16,7 @@ class MatchingViewController: UIViewController {
     @IBOutlet weak var text1: UILabel!
     @IBOutlet weak var text2: UILabel!
     @IBOutlet weak var finishedView: UIView!
+    @IBOutlet weak var homeButton: UIButton!
     
     
     var animalSticker: [String] = ["sticker_cat", "sticker_dog", "sticker_fish", "sticker_rabbit", "sticker_bird", "sticker_hamster"]
@@ -83,7 +81,7 @@ class MatchingViewController: UIViewController {
         
         if (sender.state == UIGestureRecognizerState.Began)
         {
-            scale = 1.5
+            scale = 1.3
             selectedIndex = imageView.tag
             originalCenter = animalImage[selectedIndex].center
             transformAnimal()
@@ -119,9 +117,12 @@ class MatchingViewController: UIViewController {
 //            println("less than X: \(cardX + cardWidth)")
 //            println("less than Y: \(cardY + cardHeight)")
             
-            if animalImageY >= 380
+            // If dropped back into tray area, don't show status icon
+            if animalImageY >= trayBG.frame.origin.y
             {statusIcon[selectedIndex].alpha = 0}
             
+            // If it's within the correct card's dimensions, place it
+            // Because the cards are rotated, this math isn't entirely accurate
             if (animalImageX >= cardX) && (animalImageX <= cardX + cardWidth) &&
                (animalImageY >= cardY) && (animalImageY <= cardY + cardHeight)
             
@@ -139,13 +140,15 @@ class MatchingViewController: UIViewController {
                 positionIcon()
             }
             
-            if correctAnswerCount == 6
+            // Once all answers are correct, go to finished state
+            if correctAnswerCount == card.count
             {
                 UIView.animateWithDuration(0.3, animations: { () -> Void in
                     self.trayBG.alpha = 0
                     self.text1.hidden = true
                     self.text2.hidden = true
                     self.finishedView.alpha = 1
+                    self.homeButtonAnimate()
                 })
 
             }
@@ -163,5 +166,22 @@ class MatchingViewController: UIViewController {
     {
         statusIcon[selectedIndex].center.x = animalImage[selectedIndex].center.x + 25
         statusIcon[selectedIndex].center.y = animalImage[selectedIndex].center.y + 25
+    }
+    
+    func homeButtonAnimate()
+    {
+        // Animation with damping and velocity
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
+            { () -> Void in
+                self.homeButton.transform = CGAffineTransformMakeScale(1.2, 1.2)
+            })
+            { (finished: Bool) -> Void in
+                // Here we use autoreverse and repeat
+                UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
+                    { () -> Void in
+                        self.homeButton.transform = CGAffineTransformMakeScale(1, 1)
+                    })
+                    { (Bool) -> Void in }
+        }
     }
 }

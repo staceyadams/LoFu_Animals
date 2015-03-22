@@ -24,6 +24,7 @@
 		B5EFDDC51AB3B916006D96B5 /* LoFuAnimalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFDDC41AB3B916006D96B5 /* LoFuAnimalsTests.swift */; };
 		B5EFDDCF1AB3BAF2006D96B5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFDDCE1AB3BAF2006D96B5 /* WelcomeViewController.swift */; };
 		B5F4E6B31AB4CF7900BDCD6B /* FlashcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4E6B21AB4CF7900BDCD6B /* FlashcardViewController.swift */; };
+		B5FD8D961ABE77AF0044FDE8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FD8D951ABE77AF0044FDE8 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B5EFDDC41AB3B916006D96B5 /* LoFuAnimalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoFuAnimalsTests.swift; sourceTree = "<group>"; };
 		B5EFDDCE1AB3BAF2006D96B5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B5F4E6B21AB4CF7900BDCD6B /* FlashcardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardViewController.swift; sourceTree = "<group>"; };
+		B5FD8D951ABE77AF0044FDE8 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		B5EFDDAB1AB3B916006D96B5 /* LoFuAnimals */ = {
 			isa = PBXGroup;
 			children = (
+				B5FD8D951ABE77AF0044FDE8 /* Common.swift */,
 				B507A7B21ABE2ECD002AB588 /* Resources */,
 				B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */,
 				B5EFDDB21AB3B916006D96B5 /* Main.storyboard */,
@@ -349,6 +352,7 @@
 				B53FB7511AB67B9E00BD4BBA /* WritingViewController.swift in Sources */,
 				B5EFDDCF1AB3BAF2006D96B5 /* WelcomeViewController.swift in Sources */,
 				B57A08F51ABB75E300ABEF5A /* SummaryViewController.swift in Sources */,
+				B5FD8D961ABE77AF0044FDE8 /* Common.swift in Sources */,
 				B5EFDDAF1AB3B916006D96B5 /* AppDelegate.swift in Sources */,
 				B5F4E6B31AB4CF7900BDCD6B /* FlashcardViewController.swift in Sources */,
 				B53FB7451AB65C2F00BD4BBA /* AppState.swift in Sources */,

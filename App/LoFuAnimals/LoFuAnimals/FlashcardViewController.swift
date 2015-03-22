@@ -36,6 +36,7 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
         view.insertSubview(backCardView, belowSubview: frontCardView)
         
         cardsLeftLabel.text = "\(animals.count)"
+        cardsLeftLabelAnimate()
     }
 
     
@@ -167,23 +168,40 @@ class FlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     }
     
     // @todo why does it error on the buttons but not on the swipes??
+//    @IBAction func pressLater(sender: AnyObject)
+//    {
+//        frontCardView.mdc_swipe(MDCSwipeDirection.Left)
+//    }
+//
+//    @IBAction func pressLearned(sender: AnyObject)
+//    {
+//        frontCardView.mdc_swipe(MDCSwipeDirection.Right)
+//    }
+//    
+//
+//    // Back button
+//    @IBAction func didClickBackButton(sender: AnyObject)
+//    {
+//        navigationController!.popViewControllerAnimated(true)
+//    }
     
-    @IBAction func pressLater(sender: AnyObject)
+    
+    func cardsLeftLabelAnimate()
     {
-        frontCardView.mdc_swipe(MDCSwipeDirection.Left)
+        // Animation with damping and velocity
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
+            { () -> Void in
+                self.cardsLeftLabel.transform = CGAffineTransformMakeScale(1.2, 1.2)
+            })
+            { (finished: Bool) -> Void in
+                // Here we use autoreverse and repeat
+                UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
+                    { () -> Void in
+                        self.cardsLeftLabel.transform = CGAffineTransformMakeScale(1, 1)
+                    })
+                    { (Bool) -> Void in }
+            }
     }
 
-    @IBAction func pressLearned(sender: AnyObject)
-    {
-        frontCardView.mdc_swipe(MDCSwipeDirection.Right)
-    }
-    
-
-    // Back button
-    @IBAction func didClickBackButton(sender: AnyObject)
-    {
-        navigationController!.popViewControllerAnimated(true)
-    }
-    
     
 }

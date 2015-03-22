@@ -11,6 +11,7 @@ import UIKit
 class SummaryViewController: UIViewController
 {
    
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet var card: [UIImageView]!
     var animals: [String] = ["flashcard_cat", "flashcard_dog", "flashcard_fish", "flashcard_rabbit", "flashcard_bird", "flashcard_hamster"]
     
@@ -33,6 +34,8 @@ class SummaryViewController: UIViewController
         {
             card[index].image = UIImage(named: animals[index])
         }
+        
+        nextButtonAnimate()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +44,22 @@ class SummaryViewController: UIViewController
     }
     
     
-    
+    func nextButtonAnimate()
+    {
+        // Animation with damping and velocity
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
+            { () -> Void in
+                self.nextButton.transform = CGAffineTransformMakeScale(1.2, 1.2)
+            })
+            { (finished: Bool) -> Void in
+                // Here we use autoreverse and repeat
+                UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
+                    { () -> Void in
+                        self.nextButton.transform = CGAffineTransformMakeScale(1, 1)
+                    })
+                    { (Bool) -> Void in }
+        }
+    }
 
     /*
     // MARK: - Navigation
