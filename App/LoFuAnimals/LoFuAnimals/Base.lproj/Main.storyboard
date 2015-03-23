@@ -41,26 +41,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1068"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xDr-zy-eak">
-                                        <rect key="frame" x="137" y="63" width="39" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <view contentMode="scaleToFill" id="BX9-ut-FeI">
-                                        <rect key="frame" x="0.0" y="320" width="320" height="380"/>
+                                        <rect key="frame" x="0.0" y="334" width="320" height="366"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll down to get started..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nyz-Xn-hJY">
-                                                <rect key="frame" x="90" y="79" width="100" height="89"/>
+                                                <rect key="frame" x="90" y="65" width="100" height="89"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="17"/>
                                                 <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" id="OVz-Ok-74X" userLabel="Words">
-                                                <rect key="frame" x="0.0" y="29" width="320" height="353"/>
+                                                <rect key="frame" x="0.0" y="15" width="320" height="353"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <view tag="5" contentMode="scaleToFill" id="kvu-J7-GSD" userLabel="View5">
@@ -168,7 +161,7 @@
                                                 </subviews>
                                             </view>
                                             <view contentMode="scaleToFill" id="lI6-OS-e7x" userLabel="Animals">
-                                                <rect key="frame" x="0.0" y="29" width="320" height="350"/>
+                                                <rect key="frame" x="0.0" y="15" width="320" height="350"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_hamster" id="Ov2-l6-U5z" userLabel="animal5">
@@ -204,7 +197,7 @@
                                                 </subviews>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="feQ-St-P4I" userLabel="StartButton">
-                                                <rect key="frame" x="103" y="319" width="113" height="39"/>
+                                                <rect key="frame" x="103" y="305" width="113" height="39"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="btn-next">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,7 +222,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lcU-x7-KWC">
-                                                <rect key="frame" x="57" y="2" width="200" height="100"/>
+                                                <rect key="frame" x="61" y="2" width="200" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">Hi, I'm LoFu.
 Let me teach you the animals in Chinese!</string>
@@ -239,6 +232,13 @@ Let me teach you the animals in Chinese!</string>
                                             </label>
                                         </subviews>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo goes here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xDr-zy-eak">
+                                        <rect key="frame" x="100" y="62" width="120" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -1065,7 +1065,7 @@ Swipe left to study it again later.</string>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.76323341836734693" green="0.6047895293317177" blue="0.50461999503188981" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.76323341836734693" green="0.60978699054840524" blue="0.71544014860244087" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="No6-Bu-mPD"/>
                     <connections>
