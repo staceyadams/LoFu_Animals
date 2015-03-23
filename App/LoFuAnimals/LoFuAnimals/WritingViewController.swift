@@ -94,9 +94,11 @@ class WritingViewController: UIViewController, UITextFieldDelegate
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         
         textField.resignFirstResponder()
+        didPressSubmit(self)
         
         return true;
         
     }
+
 
 }
