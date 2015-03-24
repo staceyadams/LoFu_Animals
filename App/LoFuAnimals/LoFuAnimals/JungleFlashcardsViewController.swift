@@ -1,14 +1,15 @@
 //
-//  FarmFlashcardsViewController.swift
+//  JungleFlashcardsViewController.swift
 //  LoFuAnimals
 //
-//  Created by Stacey Adams on 3/22/15.
+//  Created by Stacey Adams on 3/24/15.
 //  Copyright (c) 2015 Stacey & Bryan. All rights reserved.
 //
+
 import UIKit
 import MDCSwipeToChoose
 
-class FarmFlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
+class JungleFlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     @IBOutlet weak var cardsLeftLabel: UILabel!
     @IBOutlet weak var instructions: UIView!
@@ -16,17 +17,17 @@ class FarmFlashcardViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     
     
-    var animals: [String] = ["flashcard_sheep", "flashcard_cow", "flashcard_pig", "flashcard_rooster", "flashcard_hen", "flashcard_horse"]
+    var animals: [String] = ["flashcard_monkey", "flashcard_gorilla", "flashcard_tiger", "flashcard_elephant", "flashcard_cheetah", "flashcard_panda"]
     
     var currentPosition: Int = -1 // We increment before using, so set to -1 to begin
     var frontCardView: MDCSwipeToChooseView!
     var backCardView: MDCSwipeToChooseView!
-        
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-farm")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-jungle")!)
         unfinished.hidden = true
         
         frontCardView = popCardViewWithFrame(frontCardViewFrame(), animal: getNextAnimal())
