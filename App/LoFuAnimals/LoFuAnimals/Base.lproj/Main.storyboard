@@ -451,6 +451,10 @@ Let me teach you the animals in Chinese!</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="alO-qR-mW6" appends="YES" id="lE4-LM-1rP"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bRK-ot-55p" userLabel="btn-home">
                                 <rect key="frame" x="10" y="30" width="25" height="23"/>
@@ -459,7 +463,7 @@ Let me teach you the animals in Chinese!</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RM9-cm-2y5" kind="modal" id="zhw-dA-ZMa"/>
+                                    <segue destination="3A4-EV-8Zz" kind="modal" id="48E-Vd-ytU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -476,6 +480,11 @@ Let me teach you the animals in Chinese!</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7f-5h-2rW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="3" id="alO-qR-mW6">
+                    <connections>
+                        <action selector="onTapMulti:" destination="RTz-CW-lHt" id="lhT-8o-Wa1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1204" y="1767"/>
         </scene>
@@ -498,7 +507,7 @@ Let me teach you the animals in Chinese!</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RM9-cm-2y5" kind="modal" id="2JK-ff-AfH"/>
+                                    <segue destination="3A4-EV-8Zz" kind="modal" id="xMK-Et-MIs"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="5o9-oO-MhJ">
@@ -816,7 +825,7 @@ Let me teach you the animals in Chinese!</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RM9-cm-2y5" kind="modal" id="IOa-yS-eNL"/>
+                                    <segue destination="3A4-EV-8Zz" kind="modal" id="gh8-eh-cMy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -996,7 +1005,7 @@ Swipe left to study it again later.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RM9-cm-2y5" kind="modal" id="Ks6-jb-avd"/>
+                                    <segue destination="3A4-EV-8Zz" kind="modal" id="zcu-Gs-PL3"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="oRQ-t2-0iI">
@@ -1356,9 +1365,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="qS1-sN-yDJ"/>
-        <segue reference="zhw-dA-ZMa"/>
+        <segue reference="CYv-dR-2iv"/>
+        <segue reference="gh8-eh-cMy"/>
         <segue reference="5wx-4I-4YV"/>
-        <segue reference="sEp-Tj-szb"/>
     </inferredMetricsTieBreakers>
 </document>

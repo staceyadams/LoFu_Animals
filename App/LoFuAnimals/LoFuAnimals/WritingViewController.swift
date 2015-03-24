@@ -120,5 +120,11 @@ class WritingViewController: UIViewController, UITextFieldDelegate{
         return true;
         
     }
+    
+    @IBAction func onTapMulti(sender: AnyObject)
+    {
+        self.performSegueWithIdentifier("writingSummarySegue", sender: nil)
+    }
+    
 
 }

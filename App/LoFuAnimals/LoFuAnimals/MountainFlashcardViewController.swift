@@ -27,7 +27,7 @@ class MountainFlashcardViewController: UIViewController, MDCSwipeToChooseDelegat
     {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-jungle")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-mountain")!)
         unfinished.hidden = true
         
         frontCardView = popCardViewWithFrame(frontCardViewFrame(), animal: getNextAnimal())
