@@ -15,8 +15,13 @@
             <string>Delius-Regular</string>
             <string>Delius-Regular</string>
             <string>Delius-Regular</string>
+            <string>Delius-Regular</string>
+            <string>Delius-Regular</string>
         </mutableArray>
         <mutableArray key="cartoonist_kooky.ttf">
+            <string>CartoonistKooky</string>
+            <string>CartoonistKooky</string>
+            <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
@@ -317,13 +322,23 @@ Let me teach you the animals in Chinese!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xUU-9g-meV">
-                                <rect key="frame" x="127" y="320" width="41" height="30"/>
+                                <rect key="frame" x="127" y="295" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="jungle">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="ZGK-UP-XNO" kind="push" id="Yf0-eb-J4R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gYP-7M-WvQ">
+                                <rect key="frame" x="117" y="351" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mountain">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sih-PZ-dcc" kind="push" id="xwf-Ac-O5t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1124,7 +1139,7 @@ Swipe left to study it again later.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rN6-a3-1FN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439" y="2477"/>
+            <point key="canvasLocation" x="439" y="2461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qVb-kw-MDx">
@@ -1228,6 +1243,89 @@ Swipe left to study it again later.</string>
             </objects>
             <point key="canvasLocation" x="439" y="3153"/>
         </scene>
+        <!--Mountain: Flashcards-->
+        <scene sceneID="w2i-rE-cCy">
+            <objects>
+                <viewController title="Mountain: Flashcards" automaticallyAdjustsScrollViewInsets="NO" id="sih-PZ-dcc" customClass="MountainFlashcardViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bmb-6w-AKe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ehi-K5-fqL" userLabel="btn-home">
+                                <rect key="frame" x="10" y="30" width="25" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn-home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressHome:" destination="sih-PZ-dcc" eventType="touchUpInside" id="EHj-q3-QbF"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="4tE-eA-ZCf" userLabel="unfinished text">
+                                <rect key="frame" x="0.0" y="234" width="320" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So... we didn't finish the rest of the sequence for Mountain Animals so you'll have to go back now >_>" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zol-me-Ek3">
+                                        <rect key="frame" x="15" y="45" width="290" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="16"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learned!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z7q-Nj-toc">
+                                        <rect key="frame" x="0.0" y="12" width="320" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="20"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="8fF-1L-yMo" userLabel="Instructions">
+                                <rect key="frame" x="0.0" y="468" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wfh-H0-99t">
+                                        <rect key="frame" x="0.0" y="45" width="320" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Learned it? Swipe right.
+Swipe left to study it again later.</string>
+                                        <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="16"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="animals left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u3E-r5-HFb">
+                                        <rect key="frame" x="106" y="12" width="145" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="20"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t1A-Ez-1qE">
+                                        <rect key="frame" x="75" y="8" width="26" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="40"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76323341840000003" green="0.55887739018664184" blue="0.303316378414073" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4xv-10-0nU"/>
+                    <connections>
+                        <outlet property="cardsLeftLabel" destination="t1A-Ez-1qE" id="q8G-hm-X1y"/>
+                        <outlet property="instructions" destination="8fF-1L-yMo" id="FsJ-mh-6gL"/>
+                        <outlet property="unfinished" destination="4tE-eA-ZCf" id="eJR-TZ-ijI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epP-LF-rOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="3833"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LoFu" width="90" height="99"/>
@@ -1259,7 +1357,7 @@ Swipe left to study it again later.</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="qS1-sN-yDJ"/>
-        <segue reference="IOa-yS-eNL"/>
+        <segue reference="zhw-dA-ZMa"/>
         <segue reference="5wx-4I-4YV"/>
         <segue reference="sEp-Tj-szb"/>
     </inferredMetricsTieBreakers>
