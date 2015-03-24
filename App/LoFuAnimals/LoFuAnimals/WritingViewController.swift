@@ -8,13 +8,13 @@
 
 import UIKit
 
-class WritingViewController: UIViewController, UITextFieldDelegate
-{
+class WritingViewController: UIViewController, UITextFieldDelegate{
 
     @IBOutlet weak var writingTextField: UITextField!
     @IBOutlet weak var writingImage: UIImageView!
     @IBOutlet weak var displayWord: UILabel!
     @IBOutlet weak var backgroundTile: UIView!
+    @IBOutlet weak var correctLabel: UITextField!
     
     var animalsText: [String] = ["猫", "狗", "鱼", "兔子", "鸟", "仓鼠"]
     var animalsCards: [String] = ["cat", "dog", "fish", "rabbit", "bird", "hamster"]
@@ -31,10 +31,11 @@ class WritingViewController: UIViewController, UITextFieldDelegate
         backgroundTile.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
         writingTextField.delegate = self
       
-        currentWord = animalsText[0]
-        currentWordImage = animalsCards[0]
+        correctLabel.alpha = 0
+        currentWord = animalsText[currentPosition]
+        currentWordImage = animalsCards[currentPosition]
         writingImage.image = UIImage(named:currentWordImage)
-        displayWord.text = animalsText[0]
+        displayWord.text = animalsText[currentPosition]
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,24 +45,45 @@ class WritingViewController: UIViewController, UITextFieldDelegate
 
     @IBAction func didPressSubmit(sender: AnyObject)
     {
+
+        
         if writingTextField.text == currentWord
         {
-           // setNextAnimal()
             
-//println("\(currentWord) + \(currentWordImage)")
-            // println(currentPosition)
+            //Check if it's last image & do the segue
+            if (currentPosition == animalsText.count - 1) {
+                
+                performSegueWithIdentifier("goToSummary", sender: nil)
+                //println("SEGUE NOW!")
+            }
             
+            //Animate "Correct" Animation
+            UIView.animateWithDuration(0.2, animations: { () -> Void in
+                
+                self.correctLabel.alpha = 1
+            })
+            
+            
+            //Get the next animal in place
             getNextAnimal()
+
+            //Artifical delay so "Correct" animation can play
+            delay(2.0, { () -> () in
+                
+                self.correctLabel.alpha = 0
+
+                self.displayWord.text = self.animalsText[self.currentPosition]
+                self.currentWord = self.animalsText[self.currentPosition]
+                self.currentWordImage = self.animalsCards[self.currentPosition]
+                self.writingImage.image = UIImage(named:self.currentWordImage)
+                
+            })
+        
             
-            displayWord.text = animalsText[currentPosition]
-            currentWord = animalsText[currentPosition]
-            currentWordImage = animalsCards[currentPosition]
-            writingImage.image = UIImage(named:currentWordImage)
             
-            //println(currentPosition)
-            //println("\(currentWord) + \(currentWordImage)")
+
             
-            writingTextField.resignFirstResponder()
+            
             
         }
         else
@@ -69,27 +91,20 @@ class WritingViewController: UIViewController, UITextFieldDelegate
             var alertView = UIAlertView(title: "Try Again", message: "Sorry, that wasn't quite right. Give it another try.", delegate: nil, cancelButtonTitle: "OK")
             alertView.show()
         }
-        
-        if animalsText.count < 0
-        {
-            println("move on")
-        }
+
     }
     
     func getNextAnimal() -> String
     {
-        currentPosition++ // Move to next position
-        if (currentPosition == animalsText.count) {
-            
-            currentPosition = animalsText.count; // Keep the image the sam as the final one
-            
-            //Do the Segue
-            //prepareForSegue("waiting", sender: nil)
-            println("SEGUE NOW!")
+        if currentPosition < animalsText.count - 1 {
+            currentPosition++ // Move to next position
         }
-        
+        else {
+            currentPosition = animalsText.count - 1
+        }
         return animalsText[currentPosition]
     }
+    
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         
@@ -99,6 +114,5 @@ class WritingViewController: UIViewController, UITextFieldDelegate
         return true;
         
     }
-
 
 }
