@@ -25,7 +25,6 @@
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
-            <string>CartoonistKooky</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -415,27 +414,10 @@ Let me teach you the animals in Chinese!</string>
                                         <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="48"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LQy-uC-ANd">
-                                        <rect key="frame" x="20" y="503" width="320" height="80"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="ky3-EG-Cfb">
+                                        <rect key="frame" x="165" y="216" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.31764705879999999" green="0.72549019609999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
-                                        <state key="normal" title="Next">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didPressSubmit:" destination="RTz-CW-lHt" eventType="touchUpInside" id="ADG-Qt-mfn"/>
-                                        </connections>
-                                    </button>
-                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CORRECT!" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="18" id="67i-jr-XRO">
-                                        <rect key="frame" x="68" y="125" width="224" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40978869800000001" green="0.71133267879999995" blue="0.35698512199999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    </imageView>
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bRK-ot-55p" userLabel="btn-home">
@@ -451,11 +433,11 @@ Let me teach you the animals in Chinese!</string>
                     <navigationItem key="navigationItem" id="Is5-WE-JYM"/>
                     <connections>
                         <outlet property="backgroundTile" destination="chy-ay-ZHU" id="wWk-Id-B6W"/>
-                        <outlet property="correctLabel" destination="67i-jr-XRO" id="QGu-FE-IRi"/>
+                        <outlet property="correctIcon" destination="ky3-EG-Cfb" id="jzP-z9-OG6"/>
                         <outlet property="displayWord" destination="dAx-Jh-cz1" id="u9z-Uf-YXt"/>
                         <outlet property="writingImage" destination="8T8-Bv-fZV" id="ZxL-N2-Nnt"/>
                         <outlet property="writingTextField" destination="BOM-Pf-M4K" id="Uj4-bG-0I5"/>
-                        <segue destination="N0J-Wg-9Y5" kind="modal" identifier="goToSummary" id="muF-bF-wRB"/>
+                        <segue destination="N0J-Wg-9Y5" kind="modal" identifier="writingSummarySegue" modalTransitionStyle="crossDissolve" id="muF-bF-wRB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7f-5h-2rW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1134,8 +1116,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BPd-jK-3EV"/>
         <segue reference="CYv-dR-2iv"/>
+        <segue reference="BPd-jK-3EV"/>
         <segue reference="hcK-h2-Pfc"/>
     </inferredMetricsTieBreakers>
 </document>
