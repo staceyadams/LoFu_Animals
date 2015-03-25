@@ -21,6 +21,8 @@
 		B59212221AC21294007F6A35 /* JungleFlashcardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59212211AC21294007F6A35 /* JungleFlashcardsViewController.swift */; };
 		B59212251AC221C8007F6A35 /* MountainFlashcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59212241AC221C8007F6A35 /* MountainFlashcardViewController.swift */; };
 		B59212281AC244BE007F6A35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59212271AC244BE007F6A35 /* HomeViewController.swift */; };
+		B5A4E5BD1AC26AFF00836E09 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E5BC1AC26AFF00836E09 /* MenuViewController.swift */; };
+		B5A4E5BF1AC26B0D00836E09 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E5BE1AC26B0D00836E09 /* MenuTableViewCell.swift */; };
 		B5DDB97D1AB9DFBA00C6F5C6 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDB97C1AB9DFBA00C6F5C6 /* MatchingViewController.swift */; };
 		B5EFDDAF1AB3B916006D96B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EFDDAE1AB3B916006D96B5 /* AppDelegate.swift */; };
 		B5EFDDB41AB3B916006D96B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EFDDB21AB3B916006D96B5 /* Main.storyboard */; };
@@ -59,6 +61,8 @@
 		B59212211AC21294007F6A35 /* JungleFlashcardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JungleFlashcardsViewController.swift; sourceTree = "<group>"; };
 		B59212241AC221C8007F6A35 /* MountainFlashcardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainFlashcardViewController.swift; sourceTree = "<group>"; };
 		B59212271AC244BE007F6A35 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B5A4E5BC1AC26AFF00836E09 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B5A4E5BE1AC26B0D00836E09 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		B5DDB97C1AB9DFBA00C6F5C6 /* MatchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 		B5EFDDA91AB3B916006D96B5 /* LoFuAnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoFuAnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EFDDAD1AB3B916006D96B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				B59212231AC212EC007F6A35 /* Jungle */,
 				B53FB74A1AB67B6700BD4BBA /* ViewController.swift */,
 				B5EFDDCE1AB3BAF2006D96B5 /* WelcomeViewController.swift */,
+				B5A4E5BC1AC26AFF00836E09 /* MenuViewController.swift */,
+				B5A4E5BE1AC26B0D00836E09 /* MenuTableViewCell.swift */,
 				B59212271AC244BE007F6A35 /* HomeViewController.swift */,
 				B5EFDDB51AB3B916006D96B5 /* Images.xcassets */,
 				B5EFDDB71AB3B916006D96B5 /* LaunchScreen.xib */,
@@ -388,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53FB74B1AB67B6700BD4BBA /* ViewController.swift in Sources */,
+				B5A4E5BD1AC26AFF00836E09 /* MenuViewController.swift in Sources */,
 				B53FB7511AB67B9E00BD4BBA /* WritingViewController.swift in Sources */,
 				B564C9991ABF19DF007B21AA /* CardsViewController.swift in Sources */,
 				B59212251AC221C8007F6A35 /* MountainFlashcardViewController.swift in Sources */,
@@ -396,6 +403,7 @@
 				B5EFDDCF1AB3BAF2006D96B5 /* WelcomeViewController.swift in Sources */,
 				B57A08F51ABB75E300ABEF5A /* SummaryViewController.swift in Sources */,
 				B5FD8D961ABE77AF0044FDE8 /* Common.swift in Sources */,
+				B5A4E5BF1AC26B0D00836E09 /* MenuTableViewCell.swift in Sources */,
 				B5EFDDAF1AB3B916006D96B5 /* AppDelegate.swift in Sources */,
 				B5F4E6B31AB4CF7900BDCD6B /* FlashcardViewController.swift in Sources */,
 				B53FB7451AB65C2F00BD4BBA /* AppState.swift in Sources */,
