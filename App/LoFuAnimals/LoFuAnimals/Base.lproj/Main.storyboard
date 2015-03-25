@@ -300,36 +300,6 @@ Let me teach you the animals in Chinese!</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mv4-eY-Zdg">
-                                <rect key="frame" x="245" y="21" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Farm">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="5tW-bp-457" kind="push" id="9vA-tf-pnr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xUU-9g-meV">
-                                <rect key="frame" x="217" y="90" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="jungle">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ZGK-UP-XNO" kind="push" id="Yf0-eb-J4R"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gYP-7M-WvQ">
-                                <rect key="frame" x="266" y="90" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Mount">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="sih-PZ-dcc" kind="push" id="xwf-Ac-O5t"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to learn?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6kW-c9-k9O">
                                 <rect key="frame" x="142" y="42" width="162" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -399,16 +369,6 @@ Let me teach you the animals in Chinese!</string>
                                 <rect key="frame" x="10" y="21" width="132" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Ac-hZ-ULe">
-                                <rect key="frame" x="168" y="20" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pets">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="izJ-H1-pSL" kind="push" id="qS1-sN-yDJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -417,11 +377,15 @@ Let me teach you the animals in Chinese!</string>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="menuTableView" destination="y8Q-gH-Hou" id="OnD-Wd-eUX"/>
+                        <segue destination="izJ-H1-pSL" kind="push" identifier="seguePets" id="IIZ-Hb-5jb"/>
+                        <segue destination="5tW-bp-457" kind="push" identifier="segueFarm" id="N04-m7-WZh"/>
+                        <segue destination="ZGK-UP-XNO" kind="push" identifier="segueJungle" id="QQO-aZ-l5u"/>
+                        <segue destination="sih-PZ-dcc" kind="push" identifier="segueMountain" id="Bau-eD-jI3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaD-sd-Ac2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439" y="1073"/>
+            <point key="canvasLocation" x="452" y="1073"/>
         </scene>
         <!--Pets: Card Grid-->
         <scene sceneID="ZWl-BV-kdv">
@@ -1683,8 +1647,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hcK-h2-Pfc"/>
-        <segue reference="qS1-sN-yDJ"/>
         <segue reference="BPd-jK-3EV"/>
+        <segue reference="IIZ-Hb-5jb"/>
+        <segue reference="hcK-h2-Pfc"/>
     </inferredMetricsTieBreakers>
 </document>

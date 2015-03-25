@@ -15,6 +15,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var menuImageName: [String] = ["flashcard_cat", "flashcard_cow", "flashcard_monkey", "flashcard_goat"]
     var menuTextName: [String] = ["Pets", "Farm Animals", "Jungle Animals", "Mountain Animals"]
     var menuBgName: [String] = ["bg-pets", "bg-farm", "bg-jungle", "bg-mountain"]
+    var segue: [String] = ["seguePets", "segueFarm", "segueJungle", "segueMountain"]
 
     override func viewDidLoad()
     {
@@ -46,5 +47,11 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        performSegueWithIdentifier(segue[indexPath.row], sender: self)
+    }
+
     
 }
