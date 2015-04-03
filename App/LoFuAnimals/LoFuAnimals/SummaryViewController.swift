@@ -13,7 +13,10 @@ class SummaryViewController: UIViewController
    
     @IBOutlet weak var cardsView: UIView!
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var speechBubble: UIImageView!
+    @IBOutlet weak var speechBubbleView: UIView!
+    @IBOutlet weak var LoFu: UIImageView!
+    @IBOutlet weak var buttonsView: UIView!
+    
     var cardsViewVC: CardsViewController!
     
     override func viewDidLoad()
@@ -29,11 +32,18 @@ class SummaryViewController: UIViewController
         cardsView.addSubview(contentView)
         cardsViewVC.didMoveToParentViewController(self)
         
-        
-        // Do any additional setup after loading the view.
-        
         view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)        
-        nextButtonAnimate()
+        
+        hideAll()
+        
+        delay(0.5,
+        { () -> () in
+            self.speechBubbleAnimate()
+            delay(0.3,
+            { () -> () in
+                self.buttonsAnimate()
+            })
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,27 +52,62 @@ class SummaryViewController: UIViewController
     }
     
     
-    func nextButtonAnimate()
+    func hideAll ()
     {
-        // Animation with damping and velocity
-        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
+        buttonsView.alpha = 0
+        LoFu.frame.origin.y = 308
+        speechBubbleView.transform = CGAffineTransformMakeScale(0, 0)
+    }
+    
+    
+    func speechBubbleAnimate()
+    {
+        UIView.animateWithDuration(0.2, animations:
+        { () -> Void in
+            self.LoFu.frame.origin.y = 108
+        })
+        { (finished: Bool) -> Void in
+            
+            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
             { () -> Void in
-                self.nextButton.transform = CGAffineTransformMakeScale(1.2, 1.2)
+                self.speechBubbleView.transform = CGAffineTransformMakeScale(1, 1)
                 var rotate = CGFloat(-1 * M_PI/180)
-                self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
-                
+                self.speechBubbleView.transform = CGAffineTransformRotate(self.speechBubbleView.transform, rotate)
             })
             { (finished: Bool) -> Void in
-                // Here we use autoreverse and repeat
                 UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
-                    { () -> Void in
-                        self.nextButton.transform = CGAffineTransformMakeScale(1, 1)
-                        var rotate = CGFloat(1 * M_PI/180)
-                        self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
-                    })
-                    { (Bool) -> Void in }
+                { () -> Void in
+                    var rotate = CGFloat(1 * M_PI/180)
+                    self.speechBubbleView.transform = CGAffineTransformRotate(self.speechBubbleView.transform, rotate)
+                })
+                { (Bool) -> Void in }
+            }
         }
     }
+
+    
+    func buttonsAnimate()
+    {
+        buttonsView.alpha = 1
+        // Animation with damping and velocity
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
+        { () -> Void in
+            self.nextButton.transform = CGAffineTransformMakeScale(1.2, 1.2)
+        })
+        { (finished: Bool) -> Void in
+            // Here we use autoreverse and repeat
+            UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
+            { () -> Void in
+                self.nextButton.transform = CGAffineTransformMakeScale(1, 1)
+            })
+            { (Bool) -> Void in }
+        }
+    }
+    
+    
+    
+    
+    
 
     /*
     // MARK: - Navigation
