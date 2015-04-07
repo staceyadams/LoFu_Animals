@@ -42,12 +42,6 @@
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
-            <string>CartoonistKooky</string>
-            <string>CartoonistKooky</string>
-            <string>CartoonistKooky</string>
-            <string>CartoonistKooky</string>
-            <string>CartoonistKooky</string>
-            <string>CartoonistKooky</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -186,34 +180,34 @@
                                                 <rect key="frame" x="0.0" y="15" width="320" height="350"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_hamster" id="Ov2-l6-U5z" userLabel="animal5">
+                                                    <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" id="Ov2-l6-U5z" userLabel="animal5">
                                                         <rect key="frame" x="235" y="200" width="59" height="64"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <gestureRecognizers/>
                                                     </imageView>
-                                                    <imageView tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_bird" id="Zpa-AJ-RrO" userLabel="animal4">
+                                                    <imageView tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" id="Zpa-AJ-RrO" userLabel="animal4">
                                                         <rect key="frame" x="135" y="200" width="59" height="64"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <gestureRecognizers/>
                                                     </imageView>
-                                                    <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_rabbit" id="oFO-ik-K1a" userLabel="animal3">
+                                                    <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" id="oFO-ik-K1a" userLabel="animal3">
                                                         <rect key="frame" x="30" y="200" width="59" height="64"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <gestureRecognizers/>
                                                     </imageView>
-                                                    <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_fish" id="B3x-10-dUP" userLabel="animal2">
+                                                    <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" id="B3x-10-dUP" userLabel="animal2">
                                                         <rect key="frame" x="240" y="65" width="59" height="64"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <gestureRecognizers/>
                                                     </imageView>
-                                                    <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_dog" id="WUq-bb-nil" userLabel="animal1">
+                                                    <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" id="WUq-bb-nil" userLabel="animal1">
                                                         <rect key="frame" x="135" y="65" width="59" height="64"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <gestureRecognizers/>
                                                     </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sticker_cat" id="y6Y-5d-gHT" userLabel="animal0">
+                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" id="y6Y-5d-gHT" userLabel="animal0">
                                                         <rect key="frame" x="30" y="65" width="59" height="64"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <gestureRecognizers/>
                                                     </imageView>
                                                 </subviews>
@@ -221,7 +215,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="feQ-St-P4I" userLabel="StartButton">
                                                 <rect key="frame" x="103" y="305" width="113" height="39"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="btn-next">
+                                                <state key="normal" image="btn-play">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -350,7 +344,7 @@ Let me teach you the animals in Chinese!</string>
                                                     <rect key="frame" x="245" y="28" width="62" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
-                                                    <state key="normal" image="btn-next">
+                                                    <state key="normal" image="btn-play">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -452,6 +446,17 @@ Let me teach you the animals in Chinese!</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="20A-OX-T8M" userLabel="btn-home">
+                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" image="btn-home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3A4-EV-8Zz" kind="modal" id="Jts-Nu-WU7"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" id="dJc-SX-hqL" userLabel="WritingView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="599"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -525,17 +530,6 @@ Let me teach you the animals in Chinese!</string>
                                     <outletCollection property="gestureRecognizers" destination="vzd-TU-ZtC" appends="YES" id="Wt9-Yr-mVC"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="20A-OX-T8M" userLabel="btn-home">
-                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="3A4-EV-8Zz" kind="modal" id="aZE-on-KVR"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.6549019814" green="0.84705889229999998" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
                     </view>
@@ -835,48 +829,48 @@ Let me teach you the animals in Chinese!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bny-DQ-Lpj" userLabel="animal1">
-                                        <rect key="frame" x="216" y="339" width="59" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="216" y="339" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="YDG-PT-nBh" appends="YES" id="KMp-1m-xex"/>
                                         </connections>
                                     </imageView>
                                     <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5tK-64-aZG" userLabel="animal2">
-                                        <rect key="frame" x="118" y="352" width="59" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="118" y="352" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Zv0-rM-nMx" appends="YES" id="zvd-yE-KSs"/>
                                         </connections>
                                     </imageView>
                                     <imageView tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gTy-5g-qtr" userLabel="animal4">
-                                        <rect key="frame" x="64" y="395" width="59" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="56" y="395" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="yTp-YJ-Eub" appends="YES" id="zS9-v2-RqN"/>
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Gjh-0B-78E" userLabel="animal0">
-                                        <rect key="frame" x="243" y="395" width="59" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="235" y="395" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="FfN-a9-CGA" appends="YES" id="ofa-7G-ucV"/>
                                         </connections>
                                     </imageView>
                                     <imageView tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8wI-tN-gSL" userLabel="animal5">
-                                        <rect key="frame" x="169" y="402" width="59" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="161" y="402" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="U3B-3E-Wrl" appends="YES" id="Jzf-Cp-deh"/>
                                         </connections>
                                     </imageView>
                                     <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OHv-Tb-0hU" userLabel="animal3">
-                                        <rect key="frame" x="14" y="352" width="59" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="14" y="352" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="NaZ-Ha-Ng5" appends="YES" id="AT3-jL-wGK"/>
@@ -1048,26 +1042,6 @@ Let's try writing now.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iHw-5g-lpx" userLabel="btn-later">
-                                <rect key="frame" x="44" y="470" width="71" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btn-again">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pressLater:" destination="izJ-H1-pSL" eventType="touchUpInside" id="qe4-Jt-Y0p"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mjt-vU-7Aq" userLabel="btn-learned">
-                                <rect key="frame" x="208" y="470" width="71" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btn-learned">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didClickBackButton:" destination="izJ-H1-pSL" eventType="touchUpInside" id="kjI-sH-Mtt"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ML3-DH-N6m" userLabel="btn-home">
                                 <rect key="frame" x="0.0" y="15" width="55" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1121,226 +1095,6 @@ Swipe left to study it again later.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1E-x3-s8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="439" y="1761"/>
-        </scene>
-        <!--Home View Controller-->
-        <scene sceneID="kDo-Mj-LTH">
-            <objects>
-                <viewController id="ffg-Gi-8t6" customClass="HomeViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sBz-BJ-bwC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="2UH-59-mvl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="oIJ-82-Uyx" userLabel="Pets">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" id="e3p-9K-SZG">
-                                                <rect key="frame" x="31" y="118" width="258" height="331"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" id="4cU-rq-cv2">
-                                                <rect key="frame" x="143" y="216" width="128" height="105"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bird" id="nOq-sC-Zbn">
-                                                <rect key="frame" x="193" y="298" width="78" height="105"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" id="8rD-S0-r6m">
-                                                <rect key="frame" x="60" y="143" width="102" height="105"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish" id="JiU-BY-Xtg">
-                                                <rect key="frame" x="168" y="143" width="95" height="65"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rabbit" id="mWr-GV-gta">
-                                                <rect key="frame" x="53" y="256" width="82" height="105"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamster" id="Uqq-0p-Tj4">
-                                                <rect key="frame" x="115" y="262" width="82" height="105"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sTM-av-2sZ">
-                                                <rect key="frame" x="60" y="394" width="211" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="20"/>
-                                                <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.31764705879999999" green="0.72549019609999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="W6b-Ah-0yv" userLabel="Farm">
-                                        <rect key="frame" x="320" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" id="8pX-gR-PEb">
-                                                <rect key="frame" x="31" y="118" width="258" height="331"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pig" id="RDI-Hp-6Nx">
-                                                <rect key="frame" x="143" y="216" width="79" height="89"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rooster" id="enO-Uw-SSY">
-                                                <rect key="frame" x="193" y="298" width="63" height="89"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hen" id="bTW-5H-cdo">
-                                                <rect key="frame" x="60" y="143" width="67" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cow" id="Nvd-m2-mlg">
-                                                <rect key="frame" x="168" y="143" width="80" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheep" id="Z7h-kZ-r8v">
-                                                <rect key="frame" x="53" y="256" width="87" height="96"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horse" id="dqv-nB-B8Q">
-                                                <rect key="frame" x="115" y="262" width="57" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farm Animals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CLM-J7-hNH">
-                                                <rect key="frame" x="50" y="394" width="221" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="20"/>
-                                                <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.85882352939999995" green="0.64611255376989185" blue="0.66181845219440849" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="Kii-EW-AiC" userLabel="Jungle">
-                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" id="3kX-Mk-6DW">
-                                                <rect key="frame" x="31" y="118" width="258" height="331"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gorilla" id="RcZ-qR-QJl">
-                                                <rect key="frame" x="143" y="216" width="66" height="89"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey" id="WV3-9u-bl1">
-                                                <rect key="frame" x="193" y="298" width="77" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiger" id="Om9-Ba-qwl">
-                                                <rect key="frame" x="60" y="143" width="81" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheetah" id="5QW-ty-WYH">
-                                                <rect key="frame" x="168" y="143" width="81" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panda" id="5R3-ff-ecq">
-                                                <rect key="frame" x="60" y="299" width="61" height="89"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jungle Animals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6La-DF-lGY">
-                                                <rect key="frame" x="67" y="394" width="204" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="20"/>
-                                                <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant" id="q3G-1B-O3J">
-                                                <rect key="frame" x="67" y="241" width="98" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.51615649303190747" green="0.65152662627551017" blue="0.40449195965187257" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="jrS-KV-vzs" userLabel="Mountain">
-                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" id="g4s-eM-rKA">
-                                                <rect key="frame" x="31" y="118" width="258" height="331"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wolf" id="n3t-5s-aVz">
-                                                <rect key="frame" x="143" y="216" width="94" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bear" id="myb-TP-5oH">
-                                                <rect key="frame" x="193" y="298" width="61" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moose" id="lxk-vO-Ti5">
-                                                <rect key="frame" x="60" y="143" width="56" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deer" id="tsn-f3-zC8">
-                                                <rect key="frame" x="168" y="143" width="61" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fox" id="ZLn-9k-aDV">
-                                                <rect key="frame" x="53" y="256" width="83" height="89"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mountain Animals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WhL-oS-AaS">
-                                                <rect key="frame" x="60" y="394" width="211" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="20"/>
-                                                <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goat" id="5mH-vp-SSn">
-                                                <rect key="frame" x="116" y="291" width="61" height="95"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.51781728316326525" green="0.38709476172382978" blue="0.11113010322174649" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                </subviews>
-                            </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to learn?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yVP-k8-6A9">
-                                <rect key="frame" x="35" y="43" width="250" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
-                                <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w7v-4G-s2Z" userLabel="btn-next">
-                                <rect key="frame" x="121" y="488" width="78" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
-                                <state key="normal" image="btn-next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <pageControl opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="kah-Fs-feH">
-                                <rect key="frame" x="125" y="443" width="60" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </pageControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="farmView" destination="W6b-Ah-0yv" id="Kmx-hR-PCE"/>
-                        <outlet property="jungleView" destination="Kii-EW-AiC" id="eYa-iy-RRz"/>
-                        <outlet property="mountainView" destination="jrS-KV-vzs" id="ORg-bU-tBg"/>
-                        <outlet property="pageControl" destination="kah-Fs-feH" id="3jW-WH-e0L"/>
-                        <outlet property="petView" destination="oIJ-82-Uyx" id="unz-G7-h3v"/>
-                        <outlet property="scrollView" destination="2UH-59-mvl" id="VXx-6Q-8Nc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kGA-8J-YvO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1033" y="651"/>
         </scene>
         <!--Farm: Flashcards-->
         <scene sceneID="qd1-iD-hwE">
@@ -1617,50 +1371,21 @@ Swipe left to study it again later.</string>
     <resources>
         <image name="LoFu" width="90" height="99"/>
         <image name="Logo" width="266" height="199"/>
-        <image name="bear" width="61" height="90"/>
-        <image name="bird" width="78" height="105"/>
-        <image name="btn-again" width="52" height="49"/>
-        <image name="btn-home" width="46" height="43"/>
-        <image name="btn-learned" width="71" height="71"/>
-        <image name="btn-next" width="58" height="39"/>
-        <image name="cat" width="128" height="105"/>
-        <image name="cheetah" width="81" height="90"/>
-        <image name="cow" width="80" height="90"/>
-        <image name="deer" width="61" height="90"/>
-        <image name="dog" width="102" height="105"/>
-        <image name="elephant" width="98" height="90"/>
-        <image name="fish" width="95" height="65"/>
+        <image name="btn-again" width="48" height="46"/>
+        <image name="btn-home" width="43" height="40"/>
+        <image name="btn-next" width="54" height="36"/>
+        <image name="btn-play" width="33" height="36"/>
+        <image name="cat" width="118" height="95"/>
         <image name="flashcard_bird" width="258" height="331"/>
         <image name="flashcard_cat" width="258" height="331"/>
         <image name="flashcard_dog" width="258" height="331"/>
         <image name="flashcard_fish" width="258" height="331"/>
         <image name="flashcard_hamster" width="258" height="331"/>
         <image name="flashcard_rabbit" width="258" height="331"/>
-        <image name="fox" width="83" height="89"/>
-        <image name="goat" width="61" height="95"/>
-        <image name="gorilla" width="66" height="89"/>
-        <image name="hamster" width="82" height="105"/>
-        <image name="hen" width="67" height="90"/>
-        <image name="horse" width="57" height="90"/>
         <image name="icon-correct" width="30" height="30"/>
-        <image name="monkey" width="77" height="90"/>
-        <image name="moose" width="56" height="100"/>
-        <image name="panda" width="61" height="89"/>
         <image name="paper" width="258" height="331"/>
-        <image name="pig" width="79" height="89"/>
-        <image name="rabbit" width="82" height="105"/>
-        <image name="rooster" width="63" height="89"/>
-        <image name="sheep" width="87" height="96"/>
         <image name="speechBubble" width="196" height="87"/>
-        <image name="sticker_bird" width="151" height="148"/>
-        <image name="sticker_cat" width="151" height="148"/>
-        <image name="sticker_dog" width="151" height="148"/>
-        <image name="sticker_fish" width="151" height="148"/>
-        <image name="sticker_hamster" width="151" height="148"/>
-        <image name="sticker_rabbit" width="151" height="148"/>
-        <image name="tiger" width="81" height="90"/>
         <image name="winBanner_1" width="320" height="39"/>
-        <image name="wolf" width="94" height="90"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1668,7 +1393,7 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CYv-dR-2iv"/>
+        <segue reference="IIZ-Hb-5jb"/>
         <segue reference="Nkj-0Z-QdO"/>
         <segue reference="hcK-h2-Pfc"/>
     </inferredMetricsTieBreakers>

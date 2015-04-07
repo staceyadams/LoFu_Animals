@@ -30,7 +30,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
     var animalImageEndX: [CGFloat] = [30, 135, 240, 30, 135, 240]
     var animalImageEndY: [CGFloat] = [65, 65, 65, 200, 200, 200]
     var cardText: [String] = ["猫", "牛", "狗", "羊", "鱼", "马"]
-    var animalImageName: [String] = ["sticker_cat", "sticker_cow", "sticker_dog", "sticker_sheep", "sticker_fish", "sticker_horse"]
+    var animalImageName: [String] = ["cat", "cow", "dog", "sheep", "fish", "horse"]
 
     override func viewDidLoad()
     {

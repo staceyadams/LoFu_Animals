@@ -24,7 +24,7 @@ class MatchingViewController: UIViewController {
     @IBOutlet weak var winBanner: UIImageView!
     var winBannerImages = UIImage.animatedImageNamed("winBanner_", duration: 0.5)
 
-    var animalSticker: [String] = ["sticker_rabbit", "sticker_fish", "sticker_cat",  "sticker_bird", "sticker_hamster", "sticker_dog"]
+    var animalSticker: [String] = ["rabbit", "fish", "cat", "bird", "hamster", "dog"]
     var cardText: [String] = ["兔子", "鱼", "猫", "鸟", "仓鼠", "狗" ]
     
     var selectedIndex: Int! = 0
