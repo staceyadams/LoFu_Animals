@@ -20,6 +20,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
     @IBOutlet weak var nextButton: UIButton!
     
     
+    
     var cardViewStartX: CGFloat! = 204
     var cardViewStartY: [CGFloat] = [0, 10, 20, 30, 40, 50]
     var cardViewEndX: [CGFloat] = [2, 106, 210, 2, 106, 210]

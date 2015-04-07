@@ -15,9 +15,10 @@ class WritingViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var displayWord: UILabel!
     @IBOutlet weak var backgroundTile: UIView!
     @IBOutlet weak var correctIcon: UIImageView!
+    @IBOutlet weak var wordsLeft: UILabel!
     
     var animalsText: [String] = ["猫", "狗", "鱼", "兔子", "鸟", "仓鼠"]
-    var animalsCards: [String] = ["cat", "dog", "fish", "rabbit", "bird", "hamster"]
+    var animalsImage: [String] = ["cat", "dog", "fish", "rabbit", "bird", "hamster"]
     var currentWord: String!
     var currentWordImage: String!
     
@@ -32,7 +33,7 @@ class WritingViewController: UIViewController, UITextFieldDelegate{
         writingTextField.delegate = self
         correctIcon.alpha = 0
         currentWord = animalsText[currentPosition]
-        currentWordImage = animalsCards[currentPosition]
+        currentWordImage = animalsImage[currentPosition]
         writingImage.image = UIImage(named:currentWordImage)
         displayWord.text = animalsText[currentPosition]
         writingTextField.becomeFirstResponder() // show keyboard immediately
@@ -76,8 +77,10 @@ class WritingViewController: UIViewController, UITextFieldDelegate{
                     self.writingTextField.text = nil
                     self.displayWord.text = self.animalsText[self.currentPosition]
                     self.currentWord = self.animalsText[self.currentPosition]
-                    self.currentWordImage = self.animalsCards[self.currentPosition]
+                    self.currentWordImage = self.animalsImage[self.currentPosition]
                     self.writingImage.image = UIImage(named:self.currentWordImage)
+                    self.wordsLeft.text = String(self.animalsText.count-self.currentPosition)
+                    self.wordsLeftLabelAnimate()
                 })
             })
         }
@@ -129,18 +132,34 @@ class WritingViewController: UIViewController, UITextFieldDelegate{
     
     @IBAction func onPressHint(sender: AnyObject)
     {
-        UIView.animateWithDuration(2, animations:
+    UIView.animateWithDuration(2, animations:
+        { () -> Void in
+            self.displayWord.alpha = 1
+            self.writingImage.alpha = 0
+        })
+        { (finished: Bool) -> Void in
+            UIView.animateWithDuration(4, animations:
             { () -> Void in
-                self.displayWord.alpha = 1
-                self.writingImage.alpha = 0
+                self.displayWord.alpha = 0
+                self.writingImage.alpha = 1
             })
-            { (finished: Bool) -> Void in
-                UIView.animateWithDuration(4, animations:
-                { () -> Void in
-                    self.displayWord.alpha = 0
-                    self.writingImage.alpha = 1
-                })
-            }
         }
+    }
+    
+    func wordsLeftLabelAnimate()
+    {
+        // Animation with damping and velocity
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
+        { () -> Void in
+            self.wordsLeft.transform = CGAffineTransformMakeScale(1.2, 1.2)
+        })
+        { (finished: Bool) -> Void in
+        UIView.animateWithDuration(0.5, delay: 0, options: nil, animations:
+            { () -> Void in
+                self.wordsLeft.transform = CGAffineTransformMakeScale(1, 1)
+            })
+            { (Bool) -> Void in }
+        }
+    }
 
 }

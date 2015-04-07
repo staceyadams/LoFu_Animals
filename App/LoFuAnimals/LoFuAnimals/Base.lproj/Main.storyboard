@@ -44,6 +44,10 @@
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
+            <string>CartoonistKooky</string>
+            <string>CartoonistKooky</string>
+            <string>CartoonistKooky</string>
+            <string>CartoonistKooky</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -473,6 +477,34 @@ Let me teach you the animals in Chinese!</string>
                                         <color key="textColor" white="0.1542255931" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3S1-nl-ALY">
+                                        <rect key="frame" x="4" y="79" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPressHint:" destination="uuE-rp-KJj" eventType="touchUpInside" id="Ut6-nf-Qcn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to go" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ncz-rD-C2D">
+                                        <rect key="frame" x="224" y="39" width="57" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="20"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="brP-Of-nWr">
+                                        <rect key="frame" x="190" y="35" width="26" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="40"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="kJl-NO-8kg">
+                                        <rect key="frame" x="222" y="66" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write the Chinese name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1uM-wh-Fz6">
                                         <rect key="frame" x="0.0" y="250" width="320" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -487,20 +519,6 @@ Let me teach you the animals in Chinese!</string>
                                         <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="kJl-NO-8kg">
-                                        <rect key="frame" x="222" y="66" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3S1-nl-ALY">
-                                        <rect key="frame" x="4" y="79" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onPressHint:" destination="uuE-rp-KJj" eventType="touchUpInside" id="Ut6-nf-Qcn"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <connections>
@@ -525,6 +543,7 @@ Let me teach you the animals in Chinese!</string>
                     <connections>
                         <outlet property="correctIcon" destination="kJl-NO-8kg" id="38a-Fv-9JS"/>
                         <outlet property="displayWord" destination="xUq-K9-Vlj" id="g6X-5k-Jvl"/>
+                        <outlet property="wordsLeft" destination="brP-Of-nWr" id="2kk-Ri-m7k"/>
                         <outlet property="writingImage" destination="SIt-fJ-0oX" id="nh7-Cp-T2O"/>
                         <outlet property="writingTextField" destination="Raj-sr-NBc" id="IWt-hE-KEz"/>
                         <segue destination="EKl-Nd-Un2" kind="modal" identifier="writingSummarySegue" modalTransitionStyle="crossDissolve" id="rHK-YQ-IvY"/>
@@ -537,7 +556,7 @@ Let me teach you the animals in Chinese!</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1647" y="1761"/>
+            <point key="canvasLocation" x="1589" y="1767"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rR3-8d-qhF">
@@ -570,7 +589,7 @@ Let me teach you the animals in Chinese!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15b-5c-JHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2066" y="1762"/>
+            <point key="canvasLocation" x="1992" y="1762"/>
         </scene>
         <!--Pets: Summary - Flashcards-->
         <scene sceneID="tAh-ws-x5J">
@@ -608,9 +627,16 @@ Let me teach you the animals in Chinese!</string>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets learned!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rqE-Q6-XHs">
-                                                <rect key="frame" x="-40" y="34" width="320" height="32"/>
+                                                <rect key="frame" x="-38" y="18" width="320" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
+                                                <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's test your knowledge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a28-RZ-NB0">
+                                                <rect key="frame" x="-39" y="44" width="320" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="15"/>
                                                 <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -898,10 +924,12 @@ Let me teach you the animals in Chinese!</string>
                                         <rect key="frame" x="39" y="52" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grrreat Job!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWW-U1-orR">
-                                        <rect key="frame" x="60" y="86" width="199" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWW-U1-orR">
+                                        <rect key="frame" x="60" y="71" width="199" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="30"/>
+                                        <string key="text">Grrreat Job!
+Let's try writing now.</string>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
                                         <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -915,6 +943,13 @@ Let me teach you the animals in Chinese!</string>
                                             <segue destination="uuE-rp-KJj" kind="modal" modalTransitionStyle="crossDissolve" id="YgZ-iW-UQu"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready for writing?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TaP-he-ZWO">
+                                        <rect key="frame" x="0.0" y="96" width="320" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="15"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZXz-4m-rMC" userLabel="btn-home">
@@ -1003,7 +1038,7 @@ Let me teach you the animals in Chinese!</string>
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1213" y="1762"/>
+            <point key="canvasLocation" x="1193" y="1762"/>
         </scene>
         <!--Pets: Flashcards-->
         <scene sceneID="65J-DO-CIm">
@@ -1634,7 +1669,7 @@ Swipe left to study it again later.</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="CYv-dR-2iv"/>
-        <segue reference="aZE-on-KVR"/>
         <segue reference="Nkj-0Z-QdO"/>
+        <segue reference="hcK-h2-Pfc"/>
     </inferredMetricsTieBreakers>
 </document>
