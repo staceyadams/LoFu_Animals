@@ -28,13 +28,14 @@ class WritingViewController: UIViewController, UITextFieldDelegate{
     {
         super.viewDidLoad()
         
-        backgroundTile.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
         writingTextField.delegate = self
         correctIcon.alpha = 0
         currentWord = animalsText[currentPosition]
         currentWordImage = animalsCards[currentPosition]
         writingImage.image = UIImage(named:currentWordImage)
         displayWord.text = animalsText[currentPosition]
+        writingTextField.becomeFirstResponder() // show keyboard immediately
     }
 
     override func didReceiveMemoryWarning() {
@@ -112,11 +113,10 @@ class WritingViewController: UIViewController, UITextFieldDelegate{
     }
     
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
-        textField.resignFirstResponder()
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        // textField.resignFirstResponder() // this hides the keyboard
         didPressSubmit(self)
-        
         return true;
         
     }
@@ -126,5 +126,21 @@ class WritingViewController: UIViewController, UITextFieldDelegate{
         self.performSegueWithIdentifier("writingSummarySegue", sender: nil)
     }
     
+    
+    @IBAction func onPressHint(sender: AnyObject)
+    {
+        UIView.animateWithDuration(2, animations:
+            { () -> Void in
+                self.displayWord.alpha = 1
+                self.writingImage.alpha = 0
+            })
+            { (finished: Bool) -> Void in
+                UIView.animateWithDuration(4, animations:
+                { () -> Void in
+                    self.displayWord.alpha = 0
+                    self.writingImage.alpha = 1
+                })
+            }
+        }
 
 }

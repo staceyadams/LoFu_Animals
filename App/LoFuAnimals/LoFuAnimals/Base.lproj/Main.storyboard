@@ -17,10 +17,8 @@
             <string>Delius-Regular</string>
             <string>Delius-Regular</string>
             <string>Delius-Regular</string>
-            <string>Delius-Regular</string>
         </mutableArray>
         <mutableArray key="cartoonist_kooky.ttf">
-            <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
             <string>CartoonistKooky</string>
@@ -443,57 +441,73 @@ Let me teach you the animals in Chinese!</string>
             <point key="canvasLocation" x="55" y="1767"/>
         </scene>
         <!--Pets: Writing-->
-        <scene sceneID="lRi-t6-MWT">
+        <scene sceneID="FxH-V2-awo">
             <objects>
-                <viewController storyboardIdentifier="writingStory" title="Pets: Writing" id="RTz-CW-lHt" customClass="WritingViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZKo-LR-HL8">
+                <viewController title="Pets: Writing" id="uuE-rp-KJj" customClass="WritingViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qBZ-Nh-9N8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="chy-ay-ZHU" userLabel="BG">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="221"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="oVZ-Zh-tRI">
-                                <rect key="frame" x="-20" y="-15" width="360" height="599"/>
+                            <view contentMode="scaleToFill" id="dJc-SX-hqL" userLabel="WritingView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="599"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write the animal above in Chinese." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w1Z-gl-SIF">
-                                        <rect key="frame" x="28" y="260" width="305" height="43"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="70" id="Raj-sr-NBc" userLabel="TextField">
+                                        <rect key="frame" x="162" y="79" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="18"/>
-                                        <color key="textColor" white="0.23839530109489052" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dAx-Jh-cz1">
-                                        <rect key="frame" x="20" y="55" width="320" height="129"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="129"/>
-                                        <color key="textColor" white="0.15422559306569342" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8T8-Bv-fZV" userLabel="cat">
-                                        <rect key="frame" x="149" y="200" width="62" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="write here" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="120" id="BOM-Pf-M4K">
-                                        <rect key="frame" x="-81" y="270" width="517" height="191"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="48"/>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="80"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="ky3-EG-Cfb">
-                                        <rect key="frame" x="165" y="216" width="30" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="SIt-fJ-0oX" userLabel="animal">
+                                        <rect key="frame" x="4" y="79" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                    <label opaque="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint Text" textAlignment="center" lineBreakMode="characterWrap" minimumScaleFactor="0.5" id="xUq-K9-Vlj">
+                                        <rect key="frame" x="4" y="79" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="80"/>
+                                        <color key="textColor" white="0.1542255931" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write the Chinese name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1uM-wh-Fz6">
+                                        <rect key="frame" x="0.0" y="250" width="320" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="20"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the animal for a hint." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jA2-Ik-rOp">
+                                        <rect key="frame" x="0.0" y="227" width="320" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="16"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-correct" id="kJl-NO-8kg">
+                                        <rect key="frame" x="222" y="66" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3S1-nl-ALY">
+                                        <rect key="frame" x="4" y="79" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPressHint:" destination="uuE-rp-KJj" eventType="touchUpInside" id="Ut6-nf-Qcn"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="alO-qR-mW6" appends="YES" id="lE4-LM-1rP"/>
+                                    <outletCollection property="gestureRecognizers" destination="vzd-TU-ZtC" appends="YES" id="Wt9-Yr-mVC"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bRK-ot-55p" userLabel="btn-home">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="20A-OX-T8M" userLabel="btn-home">
                                 <rect key="frame" x="0.0" y="15" width="55" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
@@ -501,30 +515,29 @@ Let me teach you the animals in Chinese!</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3A4-EV-8Zz" kind="modal" id="48E-Vd-ytU"/>
+                                    <segue destination="3A4-EV-8Zz" kind="modal" id="aZE-on-KVR"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.6549019814" green="0.84705889229999998" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Is5-WE-JYM"/>
+                    <navigationItem key="navigationItem" id="iCg-gE-ZG3"/>
                     <connections>
-                        <outlet property="backgroundTile" destination="chy-ay-ZHU" id="wWk-Id-B6W"/>
-                        <outlet property="correctIcon" destination="ky3-EG-Cfb" id="jzP-z9-OG6"/>
-                        <outlet property="displayWord" destination="dAx-Jh-cz1" id="u9z-Uf-YXt"/>
-                        <outlet property="writingImage" destination="8T8-Bv-fZV" id="ZxL-N2-Nnt"/>
-                        <outlet property="writingTextField" destination="BOM-Pf-M4K" id="Uj4-bG-0I5"/>
-                        <segue destination="EKl-Nd-Un2" kind="modal" identifier="writingSummarySegue" modalTransitionStyle="crossDissolve" id="1Vb-zz-ZWs"/>
+                        <outlet property="correctIcon" destination="kJl-NO-8kg" id="38a-Fv-9JS"/>
+                        <outlet property="displayWord" destination="xUq-K9-Vlj" id="g6X-5k-Jvl"/>
+                        <outlet property="writingImage" destination="SIt-fJ-0oX" id="nh7-Cp-T2O"/>
+                        <outlet property="writingTextField" destination="Raj-sr-NBc" id="IWt-hE-KEz"/>
+                        <segue destination="EKl-Nd-Un2" kind="modal" identifier="writingSummarySegue" modalTransitionStyle="crossDissolve" id="rHK-YQ-IvY"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N7f-5h-2rW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer numberOfTapsRequired="3" id="alO-qR-mW6">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZ0-k6-tY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="3" id="vzd-TU-ZtC" userLabel="TapSkipHack Gesture Recognizer">
                     <connections>
-                        <action selector="onTapMulti:" destination="RTz-CW-lHt" id="lhT-8o-Wa1"/>
+                        <action selector="onTapMulti:" destination="uuE-rp-KJj" id="4Xg-Pv-LJU"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1643" y="1761"/>
+            <point key="canvasLocation" x="1647" y="1761"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rR3-8d-qhF">
@@ -892,14 +905,14 @@ Let me teach you the animals in Chinese!</string>
                                         <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jyj-qL-113" userLabel="btn-home">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jyj-qL-113" userLabel="btn-next">
                                         <rect key="frame" x="242" y="158" width="78" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="btn-next">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="RTz-CW-lHt" kind="modal" modalTransitionStyle="crossDissolve" id="TRF-Xd-F57"/>
+                                            <segue destination="uuE-rp-KJj" kind="modal" modalTransitionStyle="crossDissolve" id="YgZ-iW-UQu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1292,100 +1305,7 @@ Swipe left to study it again later.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGA-8J-YvO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927" y="791"/>
-        </scene>
-        <!--Pets: Summary - Writing-->
-        <scene sceneID="4nI-pm-W2k">
-            <objects>
-                <viewController title="Pets: Summary - Writing" id="N0J-Wg-9Y5" customClass="SummaryViewController" customModule="LoFuAnimals" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jm7-mo-Ydc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="h4S-nB-XMt" userLabel="cardsView">
-                                <rect key="frame" x="0.0" y="40" width="320" height="339"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="suw-dZ-QDC" userLabel="btn-home">
-                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="3A4-EV-8Zz" kind="modal" id="zcu-Gs-PL3"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" id="oRQ-t2-0iI">
-                                <rect key="frame" x="0.0" y="370" width="320" height="198"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="9XZ-7b-h8U" userLabel="SpeechBubbleView">
-                                        <rect key="frame" x="39" y="7" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speechBubble" id="bN3-Bb-bGj">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Writing learned!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWA-sh-7Np">
-                                                <rect key="frame" x="-40" y="34" width="320" height="32"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
-                                                <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="jO2-f3-h0D" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="98" width="320" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1tw-8T-qBz" userLabel="btn-reviewAgain">
-                                                <rect key="frame" x="13" y="26" width="52" height="49"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="18"/>
-                                                <state key="normal" image="btn-again">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="RTz-CW-lHt" kind="modal" modalTransitionStyle="crossDissolve" id="5wx-4I-4YV"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aCS-fu-zqt" userLabel="btn-next">
-                                                <rect key="frame" x="241" y="11" width="78" height="79"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
-                                                <state key="normal" image="btn-next">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoFu" id="7zm-VR-ptl">
-                                        <rect key="frame" x="122" y="108" width="77" height="84"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.6549019814" green="0.84705889229999998" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Learn: Pets" id="6UM-3b-Adc"/>
-                    <connections>
-                        <outlet property="LoFu" destination="7zm-VR-ptl" id="bIt-6b-Vxi"/>
-                        <outlet property="buttonsView" destination="jO2-f3-h0D" id="fbv-Jj-aKD"/>
-                        <outlet property="cardsView" destination="h4S-nB-XMt" id="P0s-l5-G85"/>
-                        <outlet property="nextButton" destination="aCS-fu-zqt" id="JSw-dL-bUv"/>
-                        <outlet property="speechBubbleView" destination="9XZ-7b-h8U" id="ucR-m6-elQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hfm-Tz-xmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1758" y="791"/>
+            <point key="canvasLocation" x="1033" y="651"/>
         </scene>
         <!--Farm: Flashcards-->
         <scene sceneID="qd1-iD-hwE">
@@ -1713,9 +1633,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Nkj-0Z-QdO"/>
-        <segue reference="5wx-4I-4YV"/>
-        <segue reference="zcu-Gs-PL3"/>
         <segue reference="CYv-dR-2iv"/>
+        <segue reference="aZE-on-KVR"/>
+        <segue reference="Nkj-0Z-QdO"/>
     </inferredMetricsTieBreakers>
 </document>

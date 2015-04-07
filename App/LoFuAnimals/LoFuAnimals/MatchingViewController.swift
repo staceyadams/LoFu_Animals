@@ -138,6 +138,7 @@ class MatchingViewController: UIViewController {
             {
                 animalImage[selectedIndex].center.y = cardView[selectedIndex].center.y + 25
                 animalImage[selectedIndex].center.x = cardView[selectedIndex].center.x
+                animalImage[selectedIndex].userInteractionEnabled = false
                 statusIcon[selectedIndex].image = UIImage(named: "icon-correct")
                 positionIcon()
                 correctAnswerCount++
