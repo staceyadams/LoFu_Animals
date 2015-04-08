@@ -260,6 +260,7 @@ Let me teach you the animals in Chinese!</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="700"/>
                     <connections>
+                        <outlet property="logoImage" destination="6eo-jW-6jb" id="fLP-3W-VrK"/>
                         <outlet property="message" destination="Nyz-Xn-hJY" id="wQv-d0-28O"/>
                         <outlet property="nextButton" destination="feQ-St-P4I" id="h1G-AW-1A5"/>
                         <outlet property="scrollView" destination="yUW-g7-O9t" id="e38-Ez-dGE"/>
@@ -1397,6 +1398,6 @@ Swipe left to study it again later.</string>
     <inferredMetricsTieBreakers>
         <segue reference="Nkj-0Z-QdO"/>
         <segue reference="CYv-dR-2iv"/>
-        <segue reference="xMK-Et-MIs"/>
+        <segue reference="hcK-h2-Pfc"/>
     </inferredMetricsTieBreakers>
 </document>

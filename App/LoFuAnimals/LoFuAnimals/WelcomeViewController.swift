@@ -18,6 +18,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var speechBubble: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var logoImage: UIImageView!
     
     
     
@@ -42,6 +43,15 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
         scrollView.delegate = self
         scrollView.contentSize = CGSize(width: 320, height: 1200)
         cardsStartPosition()
+        
+        //Set initial logo scale
+        logoImage.transform = CGAffineTransformMakeScale(0.01, 0.01)
+        
+        delay(0.5,
+            { () -> () in
+                self.logoAnimate()
+
+        })
         
         for index in 0...5
         {
@@ -115,6 +125,31 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
                         self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
                     })
                     { (Bool) -> Void in }
+        }
+    }
+    
+    func logoAnimate()
+    {
+        UIView.animateWithDuration(0.2, animations:
+            { () -> Void in
+                
+            })
+            { (finished: Bool) -> Void in
+                
+                UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.65, initialSpringVelocity: 10, options: nil, animations:
+                    { () -> Void in
+                        self.logoImage.transform = CGAffineTransformMakeScale(1, 1)
+                        var rotate = CGFloat(-1 * M_PI/180)
+                        self.logoImage.transform = CGAffineTransformRotate(self.logoImage.transform, rotate)
+                    })
+                    { (finished: Bool) -> Void in
+                        UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
+                            { () -> Void in
+                                var rotate = CGFloat(1 * M_PI/180)
+                                self.logoImage.transform = CGAffineTransformRotate(self.logoImage.transform, rotate)
+                            })
+                            { (Bool) -> Void in }
+                }
         }
     }
     
