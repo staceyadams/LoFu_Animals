@@ -304,11 +304,6 @@ Let me teach you the animals in Chinese!</string>
                                 <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" id="qyZ-4H-Ia6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.68340739890000002" blue="0.8525323158" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" sectionHeaderHeight="22" sectionFooterHeight="22" id="y8Q-gH-Hou">
                                 <rect key="frame" x="0.0" y="120" width="320" height="448"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -324,28 +319,28 @@ Let me teach you the animals in Chinese!</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="bSt-V0-aCE" userLabel="image">
-                                                            <rect key="frame" x="8" y="18" width="52" height="67"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="bSt-V0-aCE" userLabel="image0">
+                                                            <rect key="frame" x="6" y="16" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="s6n-Cg-lLd" userLabel="image">
-                                                            <rect key="frame" x="47" y="27" width="52" height="67"/>
+                                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="s6n-Cg-lLd" userLabel="image1">
+                                                            <rect key="frame" x="45" y="49" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="rFo-Ar-tY2" userLabel="image">
-                                                            <rect key="frame" x="86" y="18" width="52" height="67"/>
+                                                        <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="jj6-dA-Q12" userLabel="image4">
+                                                            <rect key="frame" x="158" y="8" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="fSi-Ex-FVQ" userLabel="image">
-                                                            <rect key="frame" x="125" y="27" width="52" height="67"/>
+                                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="fSi-Ex-FVQ" userLabel="image3">
+                                                            <rect key="frame" x="119" y="49" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="jj6-dA-Q12" userLabel="image">
-                                                            <rect key="frame" x="163" y="18" width="52" height="67"/>
+                                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="rFo-Ar-tY2" userLabel="image2">
+                                                            <rect key="frame" x="80" y="8" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="Vmr-lD-uF3" userLabel="image">
-                                                            <rect key="frame" x="202" y="27" width="52" height="67"/>
+                                                        <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="Vmr-lD-uF3" userLabel="image5">
+                                                            <rect key="frame" x="195" y="44" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
@@ -360,10 +355,6 @@ Let me teach you the animals in Chinese!</string>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" id="UZm-ev-1uA" userLabel="image">
                                                             <rect key="frame" x="20" y="9" width="73" height="94"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="Co1-xk-Z53" userLabel="image">
-                                                            <rect key="frame" x="20" y="8" width="73" height="94"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y3S-AP-iAf">
@@ -382,6 +373,10 @@ Let me teach you the animals in Chinese!</string>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                         </button>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="Co1-xk-Z53" userLabel="image">
+                                                            <rect key="frame" x="21" y="8" width="73" height="94"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <gestureRecognizers/>
                                                 </view>
@@ -393,7 +388,14 @@ Let me teach you the animals in Chinese!</string>
                                             <outlet property="menuImage" destination="Co1-xk-Z53" id="JZx-mT-nZ0"/>
                                             <outlet property="menuTitle" destination="y3S-AP-iAf" id="zKD-9L-aE3"/>
                                             <outlet property="menuView" destination="oE0-LJ-k6p" id="fDa-1s-wCJ"/>
+                                            <outlet property="revealImage0" destination="bSt-V0-aCE" id="33F-D4-4a4"/>
+                                            <outlet property="revealImage1" destination="s6n-Cg-lLd" id="CAY-k4-iLo"/>
+                                            <outlet property="revealImage2" destination="rFo-Ar-tY2" id="qqA-Mt-mxG"/>
+                                            <outlet property="revealImage3" destination="fSi-Ex-FVQ" id="uE7-ij-p4h"/>
+                                            <outlet property="revealImage4" destination="jj6-dA-Q12" id="haN-rk-Cye"/>
+                                            <outlet property="revealImage5" destination="Vmr-lD-uF3" id="GsG-xL-RI2"/>
                                             <outlet property="revealView" destination="CPu-hD-1LD" id="jyR-sX-RAD"/>
+                                            <outletCollection property="revealImage" destination="Vmr-lD-uF3" collectionClass="NSMutableArray" id="ctb-fH-Y60"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1434,8 +1436,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="IIZ-Hb-5jb"/>
         <segue reference="Nkj-0Z-QdO"/>
-        <segue reference="hcK-h2-Pfc"/>
+        <segue reference="IIZ-Hb-5jb"/>
+        <segue reference="gh8-eh-cMy"/>
     </inferredMetricsTieBreakers>
 </document>

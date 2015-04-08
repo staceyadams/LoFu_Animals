@@ -18,6 +18,15 @@ class MenuTableViewCell: UITableViewCell, UIGestureRecognizerDelegate
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var revealView: UIView!
     
+    @IBOutlet var revealImage: [UIImageView]!
+    
+    @IBOutlet weak var revealImage0: UIImageView!
+    @IBOutlet weak var revealImage1: UIImageView!
+    @IBOutlet weak var revealImage2: UIImageView!
+    @IBOutlet weak var revealImage3: UIImageView!
+    @IBOutlet weak var revealImage4: UIImageView!
+    @IBOutlet weak var revealImage5: UIImageView!
+    
     var mainViewXPanBegan: CGFloat!
     var mainViewFinalX: CGFloat!
     
