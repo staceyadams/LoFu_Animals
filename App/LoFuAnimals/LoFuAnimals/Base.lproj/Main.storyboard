@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZcY-2g-c3I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZcY-2g-c3I">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -213,9 +213,9 @@
                                                 </subviews>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="feQ-St-P4I" userLabel="StartButton">
-                                                <rect key="frame" x="103" y="305" width="113" height="39"/>
+                                                <rect key="frame" x="128" y="292" width="64" height="64"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="btn-play">
+                                                <state key="normal" image="btn-play-start">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -1375,6 +1375,7 @@ Swipe left to study it again later.</string>
         <image name="btn-home" width="43" height="40"/>
         <image name="btn-next" width="54" height="36"/>
         <image name="btn-play" width="33" height="36"/>
+        <image name="btn-play-start" width="64" height="64"/>
         <image name="cat" width="118" height="95"/>
         <image name="flashcard_bird" width="258" height="331"/>
         <image name="flashcard_cat" width="258" height="331"/>
