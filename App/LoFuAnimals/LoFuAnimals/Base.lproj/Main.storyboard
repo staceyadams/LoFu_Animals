@@ -320,8 +320,38 @@ Let me teach you the animals in Chinese!</string>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S6a-fl-uFf" id="oE0-LJ-k6p" userLabel="menuView">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" id="qug-Bi-FOr">
-                                                    <rect key="frame" x="0.0" y="1" width="320" height="112"/>
+                                                <view contentMode="scaleToFill" id="CPu-hD-1LD" userLabel="revealView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="bSt-V0-aCE" userLabel="image">
+                                                            <rect key="frame" x="8" y="18" width="52" height="67"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="s6n-Cg-lLd" userLabel="image">
+                                                            <rect key="frame" x="47" y="27" width="52" height="67"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="rFo-Ar-tY2" userLabel="image">
+                                                            <rect key="frame" x="86" y="18" width="52" height="67"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="fSi-Ex-FVQ" userLabel="image">
+                                                            <rect key="frame" x="125" y="27" width="52" height="67"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="jj6-dA-Q12" userLabel="image">
+                                                            <rect key="frame" x="163" y="18" width="52" height="67"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashcard_cat" id="Vmr-lD-uF3" userLabel="image">
+                                                            <rect key="frame" x="202" y="27" width="52" height="67"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </view>
+                                                <view contentMode="scaleToFill" id="qug-Bi-FOr" userLabel="mainView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" id="cg4-cE-gYd" userLabel="image">
@@ -336,6 +366,13 @@ Let me teach you the animals in Chinese!</string>
                                                             <rect key="frame" x="20" y="8" width="73" height="94"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y3S-AP-iAf">
+                                                            <rect key="frame" x="119" y="8" width="124" height="98"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
+                                                            <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ULd-jA-8Hl" userLabel="btn-next">
                                                             <rect key="frame" x="254" y="30" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -346,23 +383,17 @@ Let me teach you the animals in Chinese!</string>
                                                             </state>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                                                    <gestureRecognizers/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y3S-AP-iAf">
-                                                    <rect key="frame" x="119" y="8" width="124" height="98"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
-                                                    <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.31764705879999999" green="0.72549019609999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="mainView" destination="qug-Bi-FOr" id="rZI-FM-sqw"/>
                                             <outlet property="menuButton" destination="ULd-jA-8Hl" id="nSa-jm-LYe"/>
                                             <outlet property="menuImage" destination="Co1-xk-Z53" id="JZx-mT-nZ0"/>
                                             <outlet property="menuTitle" destination="y3S-AP-iAf" id="zKD-9L-aE3"/>
                                             <outlet property="menuView" destination="oE0-LJ-k6p" id="fDa-1s-wCJ"/>
+                                            <outlet property="revealView" destination="CPu-hD-1LD" id="jyR-sX-RAD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -48,6 +48,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.menuImage.image = UIImage(named: menuImageName[indexPath.row])
         cell.menuTitle.text = menuTextName[indexPath.row]
         cell.menuView.backgroundColor = UIColor(patternImage: UIImage(named: menuBgName[indexPath.row])!)
+        cell.mainView.backgroundColor = UIColor(patternImage: UIImage(named: menuBgName[indexPath.row])!)
+        cell.selectionStyle = .None
         
         return cell
     }
