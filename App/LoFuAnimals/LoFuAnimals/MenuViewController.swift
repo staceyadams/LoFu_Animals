@@ -16,6 +16,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var menuTextName: [String] = ["Pets", "Farm Animals", "Jungle Animals", "Mountain Animals"]
     var menuBgName: [String] = ["bg-pets", "bg-farm", "bg-jungle", "bg-mountain"]
     var segue: [String] = ["seguePets", "segueFarm", "segueJungle", "segueMountain"]
+    var originalCenter = CGPoint()
+    var deleteOnDragRelease = false
 
     override func viewDidLoad()
     {
@@ -24,6 +26,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         menuTableView.delegate = self
         menuTableView.dataSource = self
         menuTableView.rowHeight = 112
+        menuTableView.backgroundColor = UIColor.clearColor()
+        
     }
 
     override func didReceiveMemoryWarning()
