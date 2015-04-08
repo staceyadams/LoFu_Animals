@@ -447,10 +447,10 @@ Let me teach you the animals in Chinese!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="20A-OX-T8M" userLabel="btn-home">
-                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
+                                <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home">
+                                <state key="normal" image="btn-home-circle">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -598,10 +598,10 @@ Let me teach you the animals in Chinese!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gEa-xe-wO1" userLabel="btn-home">
-                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
+                                <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home">
+                                <state key="normal" image="btn-home-circle">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -947,10 +947,10 @@ Let's try writing now.</string>
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZXz-4m-rMC" userLabel="btn-home">
-                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
+                                <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home">
+                                <state key="normal" image="btn-home-circle">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1043,10 +1043,10 @@ Let's try writing now.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ML3-DH-N6m" userLabel="btn-home">
-                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
+                                <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home">
+                                <state key="normal" image="btn-home-circle">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1373,6 +1373,7 @@ Swipe left to study it again later.</string>
         <image name="Logo" width="266" height="199"/>
         <image name="btn-again" width="48" height="46"/>
         <image name="btn-home" width="43" height="40"/>
+        <image name="btn-home-circle" width="64" height="64"/>
         <image name="btn-next" width="54" height="36"/>
         <image name="btn-play" width="33" height="36"/>
         <image name="btn-play-start" width="64" height="64"/>
@@ -1394,8 +1395,8 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="IIZ-Hb-5jb"/>
         <segue reference="Nkj-0Z-QdO"/>
-        <segue reference="hcK-h2-Pfc"/>
+        <segue reference="CYv-dR-2iv"/>
+        <segue reference="xMK-Et-MIs"/>
     </inferredMetricsTieBreakers>
 </document>
