@@ -19,6 +19,10 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
     @IBOutlet weak var speechBubble: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var LoFu: UIImageView!
+    @IBOutlet weak var speechBubbleView: UIView!
+    
     
     
     
@@ -38,20 +42,11 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-jungle")!)
-        nextButtonAnimate()
 
         scrollView.delegate = self
         scrollView.contentSize = CGSize(width: 320, height: 1200)
-        cardsStartPosition()
-        
-        //Set initial logo scale
-        logoImage.transform = CGAffineTransformMakeScale(0.01, 0.01)
-        
-        delay(0.5,
-            { () -> () in
-                self.logoAnimate()
 
-        })
+        hideAll ()
         
         for index in 0...5
         {
@@ -59,6 +54,17 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
             animalImage[index].image = UIImage(named: animalImageName[index])
         }
         
+        delay(0.5,
+        { () -> () in
+          self.logoAnimate()
+        })
+        
+        delay(1,
+        { () -> () in
+            self.cardsStartPosition()
+            self.speechBubbleAnimate()
+            self.nextButtonAnimate()
+        })
         
     }
 
@@ -113,7 +119,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
             { () -> Void in
                 self.nextButton.transform = CGAffineTransformMakeScale(1.2, 1.2)
                 var rotate = CGFloat(-1 * M_PI/180)
-                self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
+//                self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
                 
             })
             { (finished: Bool) -> Void in
@@ -122,11 +128,54 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate
                     { () -> Void in
                         self.nextButton.transform = CGAffineTransformMakeScale(1, 1)
                         var rotate = CGFloat(1 * M_PI/180)
-                        self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
+//                        self.speechBubble.transform = CGAffineTransformRotate(self.speechBubble.transform, rotate)
                     })
                     { (Bool) -> Void in }
         }
     }
+    
+    
+    
+    
+    func hideAll ()
+    {
+        logoImage.transform = CGAffineTransformMakeScale(0, 0)
+        contentView.alpha = 0
+        LoFu.frame.origin.y = 308
+        speechBubbleView.transform = CGAffineTransformMakeScale(0, 0)
+    }
+    
+    
+    func speechBubbleAnimate()
+    {
+        UIView.animateWithDuration(0.2, animations:
+            { () -> Void in
+                self.LoFu.frame.origin.y = 108
+                self.contentView.alpha = 1
+            })
+            { (finished: Bool) -> Void in
+                
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 40, options: nil, animations:
+                    { () -> Void in
+                        self.speechBubbleView.transform = CGAffineTransformMakeScale(1, 1)
+                        var rotate = CGFloat(-1 * M_PI/180)
+                        self.speechBubbleView.transform = CGAffineTransformRotate(self.speechBubbleView.transform, rotate)
+                    })
+                    { (finished: Bool) -> Void in
+                        UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.Repeat | UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.AllowUserInteraction, animations:
+                            { () -> Void in
+                                var rotate = CGFloat(1 * M_PI/180)
+                                self.speechBubbleView.transform = CGAffineTransformRotate(self.speechBubbleView.transform, rotate)
+                            })
+                            { (Bool) -> Void in }
+                }
+        }
+    }
+    
+    
+    
+    
+    
     
     func logoAnimate()
     {

@@ -229,23 +229,29 @@
                                         <rect key="frame" x="0.0" y="145" width="320" height="198"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" id="JgU-or-r8H" userLabel="SpeechBubbleView">
+                                                <rect key="frame" x="39" y="7" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speechBubble" id="TIt-1g-tYE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lcU-x7-KWC">
+                                                        <rect key="frame" x="20" y="-2" width="200" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">Hi, I'm LoFu.
+Let me teach you the animals in Chinese!</string>
+                                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="18"/>
+                                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoFu" id="keH-2b-V26">
                                                 <rect key="frame" x="121" y="108" width="77" height="84"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speechBubble" id="TIt-1g-tYE">
-                                                <rect key="frame" x="39" y="7" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lcU-x7-KWC">
-                                                <rect key="frame" x="61" y="2" width="200" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Hi, I'm LoFu.
-Let me teach you the animals in Chinese!</string>
-                                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="18"/>
-                                                <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" id="6eo-jW-6jb">
@@ -260,11 +266,14 @@ Let me teach you the animals in Chinese!</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="700"/>
                     <connections>
+                        <outlet property="LoFu" destination="keH-2b-V26" id="urq-Aa-BIR"/>
+                        <outlet property="contentView" destination="BX9-ut-FeI" id="2Ej-dO-4zd"/>
                         <outlet property="logoImage" destination="6eo-jW-6jb" id="fLP-3W-VrK"/>
                         <outlet property="message" destination="Nyz-Xn-hJY" id="wQv-d0-28O"/>
                         <outlet property="nextButton" destination="feQ-St-P4I" id="h1G-AW-1A5"/>
                         <outlet property="scrollView" destination="yUW-g7-O9t" id="e38-Ez-dGE"/>
                         <outlet property="speechBubble" destination="TIt-1g-tYE" id="UNu-EV-RaJ"/>
+                        <outlet property="speechBubbleView" destination="JgU-or-r8H" id="mLe-bu-Tuk"/>
                         <outletCollection property="cardView" destination="eqP-tc-WdS" collectionClass="NSMutableArray" id="NHp-Sy-spV"/>
                         <outletCollection property="cardView" destination="kfE-XR-qK5" collectionClass="NSMutableArray" id="ZWq-Ot-kBD"/>
                         <outletCollection property="cardView" destination="4wu-zo-WgW" collectionClass="NSMutableArray" id="Eka-cx-cgn"/>
@@ -1438,6 +1447,6 @@ Swipe left to study it again later.</string>
     <inferredMetricsTieBreakers>
         <segue reference="Nkj-0Z-QdO"/>
         <segue reference="IIZ-Hb-5jb"/>
-        <segue reference="gh8-eh-cMy"/>
+        <segue reference="hcK-h2-Pfc"/>
     </inferredMetricsTieBreakers>
 </document>
