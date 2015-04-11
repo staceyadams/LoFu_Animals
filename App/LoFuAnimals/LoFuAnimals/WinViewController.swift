@@ -36,7 +36,7 @@ class WinViewController: UIViewController
         
         view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-pets")!)
         
-        hideAllStart()
+        hideAll()
         
         delay(0.5,
             { () -> () in
@@ -46,7 +46,7 @@ class WinViewController: UIViewController
         
         delay(3,
         { () -> () in
-            self.hideAllEnd()
+            self.endAnim()
             delay(0.3,
                 { () -> () in
                     self.buttonsAnimate()
@@ -61,7 +61,7 @@ class WinViewController: UIViewController
     }
     
     
-    func hideAllStart ()
+    func hideAll ()
     {
         //buttonsView.alpha = 0
         LoFu.frame.origin.y = 608
@@ -113,16 +113,18 @@ class WinViewController: UIViewController
         }
     }
     
-    func hideAllEnd()
+    func endAnim()
     {
-        UIView.animateWithDuration(1, animations:
+        UIView.animateWithDuration(0.5, animations:
         { () -> Void in
             self.cardsView.transform = CGAffineTransformMakeScale(0, 0)
             self.winBanner.frame.origin.y = 20
             self.LoFu.transform = CGAffineTransformMakeScale(4, 4)
             self.LoFu.frame.origin.y = 200
+            self.LoFu.center.x = 173
             self.LoFu.image = UIImage(named: "LoFu-win")
             self.speechBubbleView.frame.origin.y = 90
+            self.speechBubbleView.frame.origin.x = 30
         })
     }
     
