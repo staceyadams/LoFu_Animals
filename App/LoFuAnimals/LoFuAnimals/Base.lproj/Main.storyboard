@@ -1465,7 +1465,7 @@ Swipe left to study it again later.</string>
     </scenes>
     <resources>
         <image name="LoFu" width="90" height="99"/>
-        <image name="Logo" width="266" height="199"/>
+        <image name="Logo" width="133" height="99"/>
         <image name="btn-again" width="128" height="128"/>
         <image name="btn-home" width="128" height="128"/>
         <image name="btn-home-transparent" width="128" height="128"/>
@@ -1489,7 +1489,7 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Ke1-0y-ScF"/>
-        <segue reference="CYv-dR-2iv"/>
+        <segue reference="hcK-h2-Pfc"/>
+        <segue reference="IIZ-Hb-5jb"/>
     </inferredMetricsTieBreakers>
 </document>
