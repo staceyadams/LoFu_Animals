@@ -217,7 +217,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="feQ-St-P4I" userLabel="StartButton">
                                                 <rect key="frame" x="128" y="292" width="64" height="64"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="btn-play-start">
+                                                <state key="normal" image="btn-play">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -375,7 +375,7 @@ Let me teach you the animals in Chinese!</string>
                                                             <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn-play-start" id="f4U-wR-ExT">
+                                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn-play" id="f4U-wR-ExT">
                                                             <rect key="frame" x="254" y="30" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -383,7 +383,7 @@ Let me teach you the animals in Chinese!</string>
                                                             <rect key="frame" x="254" y="30" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
-                                                            <state key="normal" image="btn-play-start">
+                                                            <state key="normal" image="btn-play">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
@@ -581,7 +581,7 @@ Let me teach you the animals in Chinese!</string>
                                 <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home-circle">
+                                <state key="normal" image="btn-home-transparent">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -626,7 +626,7 @@ Let me teach you the animals in Chinese!</string>
                                 <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home-circle">
+                                <state key="normal" image="btn-home-transparent">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -665,8 +665,20 @@ Let me teach you the animals in Chinese!</string>
                                         <rect key="frame" x="0.0" y="98" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kfu-HO-j8m" userLabel="btn-next">
+                                                <rect key="frame" x="240" y="23" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
+                                                <state key="normal" image="btn-next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="VZB-ne-X81" kind="modal" modalTransitionStyle="crossDissolve" id="tQP-sL-3PZ"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QtR-Dt-MDb" userLabel="btn-reviewAgain">
-                                                <rect key="frame" x="13" y="26" width="52" height="49"/>
+                                                <rect key="frame" x="16" y="23" width="60" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="18"/>
                                                 <state key="normal" image="btn-again">
@@ -675,19 +687,6 @@ Let me teach you the animals in Chinese!</string>
                                                 </state>
                                                 <connections>
                                                     <segue destination="izJ-H1-pSL" kind="modal" modalTransitionStyle="crossDissolve" id="CYv-dR-2iv"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kfu-HO-j8m" userLabel="btn-next">
-                                                <rect key="frame" x="242" y="13" width="78" height="79"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
-                                                <state key="normal" image="btn-next">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="VZB-ne-X81" kind="modal" modalTransitionStyle="crossDissolve" id="tQP-sL-3PZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -952,8 +951,15 @@ Let's try writing now.</string>
                                         <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready for writing?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TaP-he-ZWO">
+                                        <rect key="frame" x="0.0" y="96" width="320" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="15"/>
+                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jyj-qL-113" userLabel="btn-next">
-                                        <rect key="frame" x="242" y="158" width="78" height="79"/>
+                                        <rect key="frame" x="240" y="167" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="btn-next">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -962,20 +968,13 @@ Let's try writing now.</string>
                                             <segue destination="uuE-rp-KJj" kind="modal" modalTransitionStyle="crossDissolve" id="YgZ-iW-UQu"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready for writing?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TaP-he-ZWO">
-                                        <rect key="frame" x="0.0" y="96" width="320" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="15"/>
-                                        <color key="textColor" red="0.38422751910000003" green="0.13461979660000001" blue="0.092767904999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZXz-4m-rMC" userLabel="btn-home">
                                 <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home-circle">
+                                <state key="normal" image="btn-home-transparent">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1057,7 +1056,7 @@ Let's try writing now.</string>
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1193" y="1762"/>
+            <point key="canvasLocation" x="1201" y="1762"/>
         </scene>
         <!--Pets: Flashcards-->
         <scene sceneID="65J-DO-CIm">
@@ -1071,7 +1070,7 @@ Let's try writing now.</string>
                                 <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home-circle">
+                                <state key="normal" image="btn-home-transparent">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1129,17 +1128,6 @@ Swipe left to study it again later.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b0T-Vy-31Z" userLabel="btn-home">
-                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressHome:" destination="5tW-bp-457" eventType="touchUpInside" id="oTw-L4-XVW"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" id="yjS-4d-G5o" userLabel="unfinished text">
                                 <rect key="frame" x="0.0" y="234" width="320" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1191,6 +1179,17 @@ Swipe left to study it again later.</string>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b0T-Vy-31Z" userLabel="btn-home">
+                                <rect key="frame" x="-4" y="9" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" image="btn-home-transparent">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressHome:" destination="5tW-bp-457" eventType="touchUpInside" id="oTw-L4-XVW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.76323341836734693" green="0.60978699054840524" blue="0.71544014860244087" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -1284,10 +1283,10 @@ Swipe left to study it again later.</string>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nZU-zL-2a6" userLabel="btn-home">
-                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
+                                <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home">
+                                <state key="normal" image="btn-home-transparent">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1317,10 +1316,10 @@ Swipe left to study it again later.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ehi-K5-fqL" userLabel="btn-home">
-                                <rect key="frame" x="0.0" y="15" width="55" height="53"/>
+                                <rect key="frame" x="-4" y="9" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" image="btn-home">
+                                <state key="normal" image="btn-home-transparent">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1434,11 +1433,10 @@ Swipe left to study it again later.</string>
                                         </subviews>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h92-x3-AzC" userLabel="btn-home">
-                                        <rect key="frame" x="244" y="478" width="73" height="91"/>
+                                        <rect key="frame" x="240" y="490" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="CartoonistKooky" family="Cartoonist" pointSize="24"/>
-                                        <inset key="contentEdgeInsets" minX="10" minY="20" maxX="10" maxY="20"/>
-                                        <state key="normal" image="btn-home-circle">
+                                        <state key="normal" image="btn-home">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1468,11 +1466,11 @@ Swipe left to study it again later.</string>
     <resources>
         <image name="LoFu" width="90" height="99"/>
         <image name="Logo" width="266" height="199"/>
-        <image name="btn-again" width="48" height="46"/>
-        <image name="btn-home" width="43" height="40"/>
-        <image name="btn-home-circle" width="64" height="64"/>
-        <image name="btn-next" width="54" height="36"/>
-        <image name="btn-play-start" width="64" height="64"/>
+        <image name="btn-again" width="128" height="128"/>
+        <image name="btn-home" width="128" height="128"/>
+        <image name="btn-home-transparent" width="128" height="128"/>
+        <image name="btn-next" width="128" height="128"/>
+        <image name="btn-play" width="64" height="64"/>
         <image name="cat" width="118" height="95"/>
         <image name="flashcard_bird" width="258" height="331"/>
         <image name="flashcard_cat" width="258" height="331"/>
@@ -1491,7 +1489,7 @@ Swipe left to study it again later.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="IIZ-Hb-5jb"/>
-        <segue reference="hcK-h2-Pfc"/>
+        <segue reference="Ke1-0y-ScF"/>
+        <segue reference="CYv-dR-2iv"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -118,13 +118,6 @@ class MatchingViewController: UIViewController {
             var cardWidth = cardView[selectedIndex].frame.width
             var cardHeight = cardView[selectedIndex].frame.height
             
-//            println("animal x \(animalImageX)")
-//            println("card x \(cardX)")
-//            println("animal y \(animalImageY)")
-//            println("card y \(cardY)")
-//            println("less than X: \(cardX + cardWidth)")
-//            println("less than Y: \(cardY + cardHeight)")
-            
             // If dropped back into tray area, don't show status icon
             if animalImageY >= trayBG.frame.origin.y
             {statusIcon[selectedIndex].hidden = true}
